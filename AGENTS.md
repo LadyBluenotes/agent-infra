@@ -29,11 +29,13 @@
 - @code/index.md
 - @rules/style.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node work.
+- For UI/UX or frontend tasks, also apply @skills/code/accessibility.md.
 
 ### Review
 
 - @review/index.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node review.
+- For UI/UX or frontend reviews, include @skills/code/accessibility.md.
 
 ### Research
 
