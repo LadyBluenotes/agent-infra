@@ -36,6 +36,7 @@
 - @review/index.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node review.
 - For UI/UX or frontend reviews, include @skills/code/accessibility.md.
+- For visual/UI validation, include @agents/ui-visual-validator.md.
 
 ### Research
 
