@@ -47,6 +47,10 @@
 
 - @agents/performance-engineer.md
 
+### SEO
+
+- @agents/seo-audit.md
+
 ### Research
 
 - @research/index.md
