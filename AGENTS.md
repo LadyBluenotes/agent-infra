@@ -19,13 +19,26 @@
 
 ## Routing (Global Fallback)
 
+### Routing Guide
+
+- Docs: writing or editing documentation content.
+- Code: implementing features, fixes, refactors, tooling, or UI.
+- Code Quality: simplifying or refactoring recently changed code for clarity.
+- Review: reviewing code changes or providing feedback on implementations.
+- Debugging: investigating failures, errors, or unexpected behavior.
+- Performance: performance, observability, scalability, or optimization work.
+- SEO: auditing or diagnosing SEO issues.
+- Research: open-ended investigation or comparative analysis.
+
 ### Docs
 
+- Apply when writing or editing documentation.
 - @docs/index.md
 - @agents/docs.md
 
 ### Code
 
+- Apply when implementing or changing code.
 - @code/index.md
 - @rules/style.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node work.
@@ -33,10 +46,12 @@
 
 ### Code Quality
 
+- Apply when simplifying or refining code without changing behavior.
 - @agents/code-simplifier.md
 
 ### Review
 
+- Apply when reviewing code changes or giving feedback.
 - @review/index.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node review.
 - For UI/UX or frontend reviews, include @skills/code/accessibility.md.
@@ -44,18 +59,22 @@
 
 ### Debugging
 
+- Apply when diagnosing errors, test failures, or unexpected behavior.
 - @agents/debugger.md
 - @agents/error-detective.md
 
 ### Performance
 
+- Apply when optimizing performance, scalability, or observability.
 - @agents/performance-engineer.md
 
 ### SEO
 
+- Apply when auditing or diagnosing SEO issues.
 - @agents/seo-audit.md
 
 ### Research
 
+- Apply when doing exploratory or comparative research.
 - @research/index.md
 
