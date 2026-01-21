@@ -4,6 +4,26 @@
 - Mode: deliver output directly (draft/patch/review); read before editing; avoid drive-by changes.
 - Unknowns: do not guess; state uncertainty; ask only when blocked.
 
+## File Loading Protocol
+
+CRITICAL: This file references other instruction files using @ paths (e.g., @contexts/global.md).
+When you see a @ reference:
+1. Convert @path/to/file.md to path/to/file.md
+2. Resolve relative to this repo root (the directory containing AGENTS.md)
+3. Use Read to load files listed under Always Apply immediately
+4. Load routing-specific files only when their routing section applies
+
+Always Apply (Global) files to load immediately:
+- @contexts/global.md
+- @rules/security.md
+- @rules/git.md
+
+## Recommendation Prompt
+
+If the user's request suggests a new rule, agent, or skill would be appropriate,
+recommend adding it and provide a short example of the entry (name, purpose,
+and where it should be routed or referenced).
+
 ## Merge Semantics (Global + Local)
 
 - This repo is intended to be loaded globally.
