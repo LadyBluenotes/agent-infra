@@ -29,6 +29,7 @@
   - @skills/code/typescript-types.md
   - @skills/code/javascript-patterns.md
   - @skills/code/nodejs.md
+  - @skills/code/typescript/index.md
   - @skills/code/accessibility.md (frontend UI/UX only)
 
 ## Don't

@@ -6,6 +6,7 @@
 ## Do
 - Use the smallest workflow module that fits:
   - Implement/change: @skills/code/implement.md
+  - TypeScript deep dives: @skills/code/typescript/index.md
   - Performance work: @skills/code/performance.md
   - Validate (tests/build): @skills/code/validate.md
   - Communicate results: @skills/code/communicate.md
