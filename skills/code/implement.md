@@ -2,6 +2,7 @@
 
 ## Apply When
 - Making code changes.
+- Performance optimization work should also follow @skills/code/performance.md.
 
 ## Do
 - Read before editing; confirm entry points and constraints.

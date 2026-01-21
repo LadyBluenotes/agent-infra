@@ -43,6 +43,10 @@
 - @agents/debugger.md
 - @agents/error-detective.md
 
+### Performance
+
+- @agents/performance-engineer.md
+
 ### Research
 
 - @research/index.md

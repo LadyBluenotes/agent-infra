@@ -7,6 +7,7 @@
 - Explain intent (why), then list key changes (what) briefly.
 - Reference paths.
 - Provide verify steps.
+- For performance work, include baseline vs updated metrics from @skills/code/performance.md.
 - Suggest options for improvement.
 - Offer next steps, if appropriate.
 - 

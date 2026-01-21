@@ -2,6 +2,7 @@
 
 ## Apply When
 - After code changes.
+- After performance work, validate with before/after measurements per @skills/code/performance.md.
 
 ## Do
 - Run the narrowest relevant check (tests, typecheck, lint, build).
