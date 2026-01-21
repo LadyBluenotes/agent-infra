@@ -31,6 +31,10 @@
 - Use @agents/typescript.md for JavaScript/TypeScript/Node work.
 - For UI/UX or frontend tasks, also apply @skills/code/accessibility.md.
 
+### Code Quality
+
+- @agents/code-simplifier.md
+
 ### Review
 
 - @review/index.md
