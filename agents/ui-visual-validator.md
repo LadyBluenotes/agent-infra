@@ -20,3 +20,4 @@
 - Start with: "From the visual evidence, I observe..."
 - State whether goals are achieved, partially achieved, or not achieved.
 - Call out accessibility issues and remediation suggestions.
+- If accessibility issues are found, reference @skills/code/accessibility.md.

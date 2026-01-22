@@ -5,7 +5,7 @@
 
 ## Do
 - Keep token usage low: load the smallest applicable modules; do not restate modules.
-- Prefer @path references for modules (example: @docs/tutorial.md).
+- Prefer @path references for modules (example: @skills/docs/tutorial.md).
 - Prefer direct deliverables: patch, command, checklist, short plan.
 - Read before editing; change the smallest surface area that solves the problem.
 - Preserve existing project conventions (style, tooling, structure).

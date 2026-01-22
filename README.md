@@ -12,9 +12,9 @@ The structure is designed to be:
 
 1) The agent starts at `AGENTS.md`.
 2) `AGENTS.md` applies a small always-on set (contexts + rules).
-3) `AGENTS.md` routes the to an agent agent (agents/*) based on the current context.
-4) Each agent references skills (skills/*) for process and output format, each contains it's own routing logic, and is responsible for its own constraints.
-5) Skills all contain their `index.md` files that act as a router, referring to other modules depending on the current context.
+3) `AGENTS.md` routes to the smallest applicable skill(s) and optional domain agent(s).
+4) Domain agents (`agents/*`) provide heuristics (what to optimize for / avoid).
+5) Skills (`skills/*`) provide task playbooks (process + output format), often via `index.md` routers.
 
 ## Merge Model (Global + Local)
 
@@ -26,6 +26,7 @@ When working inside another repo, OpenCode should merge:
 Merge semantics:
 
 - Local overrides global on conflicts.
+- Local routing runs first; global routing is the fallback.
 - Local repos should add deltas only (repo facts + repo-specific rules), and avoid restating global defaults.
 
 See `templates/AGENTS.local.template.md` for a minimal local starting point.
@@ -39,9 +40,8 @@ The repo is split into layers with strict boundaries.
 - `AGENTS.md`: global router + merge semantics
 - `contexts/`: always-on defaults
 - `rules/`: constraints
-- `docs/`, `code/`, `review/`, `research/`: task playbooks
+- `skills/`: task playbooks
 - `agents/`: domain heuristics
-- `skills/`: tool compatibility wrappers
 - `templates/`: copy/paste starters for local repos
 
 #### Agents (Domain Heuristics)
@@ -60,6 +60,8 @@ The repo is split into layers with strict boundaries.
 - "Never/Always" behavior
 - Short, explicit, and testable
 
+Module authoring conventions live in `rules/format.md`.
+
 #### Contexts (Always-On Defaults)
 
 `contexts/` contains stable defaults and facts.
@@ -72,7 +74,14 @@ In this repo, `contexts/global.md` is intended to be always-on.
 
 #### Skills (Task Playbooks)
 
-Task playbooks live at the top level (for direct `@path` linking):
+Task playbooks live under `skills/` and are referenced via `@skills/...`.
+
+- `skills/docs/`
+- `skills/code/`
+- `skills/review/`
+- `skills/research/`
+- `skills/debug/`
+- `skills/seo/`
 
 These files describe:
 
@@ -81,10 +90,9 @@ These files describe:
 
 They are meant to be linked to by `AGENTS.md` and referenced by `agents/*`.
 
-### Skills (Compatibility)
+### Compatibility
 
-`skills/` contains thin wrappers around external tools that point to the new top-level playbooks.
-This keeps old references working while standardizing on `@docs/...`, `@code/...`, etc.
+This repo standardizes on `@skills/...` references so playbook paths stay stable.
 
 ## Extension Guidelines (Keep It Token-Cheap)
 

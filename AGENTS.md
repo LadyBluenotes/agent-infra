@@ -53,13 +53,13 @@ and where it should be routed or referenced).
 ### Docs
 
 - Apply when writing or editing documentation.
-- @docs/index.md
+- @skills/docs/index.md
 - @agents/docs.md
 
 ### Code
 
 - Apply when implementing or changing code.
-- @code/index.md
+- @skills/code/index.md
 - @rules/style.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node work.
 - For UI/UX or frontend tasks, also apply @skills/code/accessibility.md.
@@ -67,12 +67,13 @@ and where it should be routed or referenced).
 ### Code Quality
 
 - Apply when simplifying or refining code without changing behavior.
+- @skills/code/simplify.md
 - @agents/code-simplifier.md
 
 ### Review
 
 - Apply when reviewing code changes or giving feedback.
-- @review/index.md
+- @skills/review/index.md
 - Use @agents/typescript.md for JavaScript/TypeScript/Node review.
 - For UI/UX or frontend reviews, include @skills/code/accessibility.md.
 - For visual/UI validation, include @agents/ui-visual-validator.md.
@@ -80,21 +81,23 @@ and where it should be routed or referenced).
 ### Debugging
 
 - Apply when diagnosing errors, test failures, or unexpected behavior.
+- @skills/debug/index.md
 - @agents/debugger.md
 - @agents/error-detective.md
 
 ### Performance
 
 - Apply when optimizing performance, scalability, or observability.
+- @skills/code/performance.md
 - @agents/performance-engineer.md
 
 ### SEO
 
 - Apply when auditing or diagnosing SEO issues.
+- @skills/seo/audit.md
 - @agents/seo-audit.md
 
 ### Research
 
 - Apply when doing exploratory or comparative research.
-- @research/index.md
-
+- @skills/research/index.md
