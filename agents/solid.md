@@ -3,6 +3,7 @@
 ## Apply When
 - Building, debugging, or reviewing SolidJS (or SolidStart) apps, components, or primitives.
 - Working on SolidJS documentation or examples.
+- Always on: @rules/solid.md
 
 ## Do
 - Lean on Solid's fine-grained reactivity model: prefer signals and derived getters over component rerenders.

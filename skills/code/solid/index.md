@@ -10,8 +10,6 @@ description: Routing guide for SolidJS skill modules.
 
 ## Do
 - Pick the smallest Solid module that fits:
-  - Fundamentals (mental model, render-once, real DOM): @skills/code/solid/fundamentals.md
-  - Reactivity (tracking, batching, dependency rules): @skills/code/solid/reactivity.md
   - Reactive helpers (batch, untrack, selector patterns): @skills/code/solid/reactive-helpers.md
   - Signals (local reactive state and setters): @skills/code/solid/signals.md
   - Memos (pure derived values and caching): @skills/code/solid/memos.md
@@ -37,8 +35,6 @@ description: Routing guide for SolidJS skill modules.
   - Performance (reactive scope tuning, memoization): @skills/code/solid/performance.md
 
 ## Playbooks
-- Fundamentals: @skills/code/solid/fundamentals.md (mental model, render-once, real DOM updates)
-- Reactivity: @skills/code/solid/reactivity.md (tracking rules and dependency boundaries)
 - Reactive helpers: @skills/code/solid/reactive-helpers.md (batch/untrack/on/selectors)
 - Signals: @skills/code/solid/signals.md (local state with setters)
 - Memos: @skills/code/solid/memos.md (derived values and caching)
