@@ -5,7 +5,7 @@ resources:
   - https://diataxis.fr/tutorials/
 ---
 
-# Docs: Tutorial
+# Tutorial
 
 ## Apply When
 - Teaching a beginner to succeed end-to-end.

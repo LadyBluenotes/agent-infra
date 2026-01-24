@@ -5,7 +5,7 @@ resources:
   - https://diataxis.fr/how-to-guides/
 ---
 
-# Docs: How-to
+# How-to
 ## Apply When
 - Helping a user complete a specific task.
 

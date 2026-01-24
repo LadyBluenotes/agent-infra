@@ -1,11 +1,11 @@
 ---
-name: SolidJS Memos
+name: Memos
 description: Pure derived values with createMemo.
 resources:
   - https://docs.solidjs.com/reference/basic-reactivity/create-memo
 ---
 
-# Skill: SolidJS Memos
+# Memos
 
 ## Apply When
 - Deriving computed values or caching expensive calculations.

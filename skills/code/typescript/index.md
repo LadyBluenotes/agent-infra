@@ -1,29 +1,43 @@
 ---
-name: TypeScript
-description: TypeScript-specific workflow and best-practice router.
+name: Overview
+description: Router for TypeScript skill modules.
 resources:
   - https://www.typescriptlang.org/docs/handbook/intro.html
 ---
 
-# Code: TypeScript
+# Overview
 
 ## Apply When
-- Working in `.ts`, `.tsx`, or `.d.ts` files.
-- Configuring `tsconfig.json` or build tooling for TypeScript.
-- Fixing or preventing TypeScript errors (TS2322, TS2339, "is not assignable to").
-- Optimizing TypeScript compilation or type system performance.
+- Working in .ts, .tsx, or .d.ts files.
+- Configuring tsconfig or TypeScript build tooling.
 
 ## Do
-- Apply the curated TypeScript guidance when it is relevant: @skills/code/typescript/curated.md.
-- Prioritize correctness and clarity over clever type tricks.
-- Measure compile time or typecheck performance before and after optimizations.
-- Keep type changes localized and explicit; avoid sweeping type refactors unless requested.
+- Pick the smallest module that matches the task:
+  - Types and modeling: @skills/code/typescript/types.md
+  - Config and compiler flags: @skills/code/typescript/config.md
+  - Error diagnostics: @skills/code/typescript/errors.md
+  - Modules and exports: @skills/code/typescript/modules.md
+  - Performance and build time: @skills/code/typescript/performance.md
+  - Runtime boundaries: @skills/code/typescript/runtime.md
+  - API modeling: @skills/code/typescript/api-modeling.md
+  - JS interop and .d.ts: @skills/code/typescript/interop.md
+  - Testing patterns: @skills/code/typescript/testing.md
+  - Deep references: @skills/code/typescript/curated.md
+
+## Playbooks
+- Types: @skills/code/typescript/types.md (unions, generics, invariants)
+- Config: @skills/code/typescript/config.md (tsconfig flags and compiler setup)
+- Errors: @skills/code/typescript/errors.md (diagnostics, narrowing, fixes)
+- Modules: @skills/code/typescript/modules.md (type-only imports, public API surfaces)
+- Performance: @skills/code/typescript/performance.md (compile/typecheck tuning)
+- Runtime boundaries: @skills/code/typescript/runtime.md (validate unknown inputs)
+- API modeling: @skills/code/typescript/api-modeling.md (stable DTOs, discriminated unions)
+- Interop: @skills/code/typescript/interop.md (JS integration, declaration files)
+- Testing: @skills/code/typescript/testing.md (type-level checks, runtime tests)
+- Curated: @skills/code/typescript/curated.md (deep reference material)
 
 ## Don't
-- Don't apply TypeScript performance rules to non-TypeScript work.
-- Don't introduce complex types without clear benefit.
-- Don't claim performance improvements without data.
+- Don't apply TypeScript-specific rules to JS-only tasks.
 
 ## Output
-- Call out any TypeScript-specific tradeoffs and risks.
-- Include relevant configuration or type changes with paths.
+- Call out TypeScript-specific tradeoffs and boundary decisions.

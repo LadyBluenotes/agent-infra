@@ -1,11 +1,11 @@
 ---
-name: SolidJS Fundamentals
+name: Fundamentals
 description: Mental model, render-once components, and real DOM updates.
 resources:
   - https://docs.solidjs.com/concepts/intro-to-reactivity
 ---
 
-# Skill: SolidJS Fundamentals
+# Fundamentals
 
 ## Apply When
 - Establishing baseline patterns or teaching SolidJS usage.

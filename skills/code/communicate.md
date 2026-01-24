@@ -1,4 +1,4 @@
-# Code: Communicate
+# Communicate
 
 ## Apply When
 - Reporting completed work.

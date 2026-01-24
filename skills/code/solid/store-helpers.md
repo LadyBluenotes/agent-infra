@@ -1,11 +1,11 @@
 ---
-name: SolidJS Store Helpers
+name: Store Helpers
 description: produce/reconcile/unwrap helpers for store updates.
 resources:
   - https://docs.solidjs.com/reference/store-utilities/produce
 ---
 
-# Skill: SolidJS Store Helpers
+# Store Helpers
 
 ## Apply When
 - Using advanced store update helpers or normalization.

@@ -1,4 +1,4 @@
-# Code: Validate
+# Validate
 
 ## Apply When
 - After code changes.

@@ -1,11 +1,11 @@
 ---
-name: SolidJS Error Boundaries
+name: Error Boundaries
 description: Isolating failures and providing recovery UI.
 resources:
   - https://docs.solidjs.com/reference/components/error-boundary
 ---
 
-# Skill: SolidJS Error Boundaries
+# Error Boundaries
 
 ## Apply When
 - Guarding UI against runtime errors in subtrees.

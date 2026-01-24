@@ -6,7 +6,7 @@
 ## Do
 - Keep modules short and non-overlapping.
 - Use this standard Markdown shape:
-  - `# <Type>: <Name>`
+  - `# <Name>`
   - `## Apply When`
   - `## Do`
   - `## Don't`

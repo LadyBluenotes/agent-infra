@@ -1,11 +1,11 @@
 ---
-name: SolidJS DOM APIs
+name: DOM APIs
 description: Refs, class/style bindings, and attribute controls for DOM output.
 resources:
   - https://docs.solidjs.com/reference/jsx-attributes/ref
 ---
 
-# Skill: SolidJS DOM APIs
+# DOM APIs
 
 ## Apply When
 - Accessing DOM nodes, classes, styles, or attribute spreads.

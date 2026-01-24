@@ -1,4 +1,4 @@
-# Review: Checklist
+# Checklist
 
 ## Do
 - Correctness: behavior matches intent; edge cases handled.

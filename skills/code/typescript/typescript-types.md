@@ -1,11 +1,11 @@
 ---
-name: TypeScript Types
+name: Types
 description: Guidance for modeling and using TypeScript types safely.
 resources:
   - https://github.com/LadyBluenotes/agents/blob/main/plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md
 ---
 
-# Code: TypeScript Types
+# Types
 
 ## Apply When
 - Modeling data, APIs, and invariants with TypeScript types.

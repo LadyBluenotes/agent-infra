@@ -1,11 +1,11 @@
 ---
-name: SolidJS Components + JSX
+name: Components + JSX
 description: Component composition, props reactivity, JSX, and component APIs.
 resources:
   - https://docs.solidjs.com/concepts/components
 ---
 
-# Skill: SolidJS Components + JSX
+# Components + JSX
 
 ## Apply When
 - Writing or refactoring components, props, or JSX templates.

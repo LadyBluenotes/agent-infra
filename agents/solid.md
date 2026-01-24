@@ -21,13 +21,13 @@
   - @skills/code/validate.md
   - @skills/code/communicate.md
   - @skills/code/accessibility.md
-  - @skills/code/javascript-patterns.md
-  - @skills/code/nodejs.md
+  - @skills/code/javascript/index.md
+  - @skills/code/javascript/node.md
   - @skills/code/performance.md
   - @skills/code/simplify.md
   - @skills/code/typescript/index.md
   - @skills/code/typescript/curated.md
-  - @skills/code/typescript-types.md
+  - @skills/code/typescript/types.md
   - @skills/code/solid/index.md
   - @skills/review/index.md
   - @skills/review/checklist.md

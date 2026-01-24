@@ -1,11 +1,11 @@
 ---
-name: SolidJS Actions
+name: Actions
 description: `use:` directives for DOM behaviors and reusable actions.
 resources:
   - https://docs.solidjs.com/reference/jsx-attributes/use
 ---
 
-# Skill: SolidJS Actions
+# Actions
 
 ## Apply When
 - Attaching reusable behavior to DOM elements.

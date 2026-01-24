@@ -1,5 +1,5 @@
 ---
-name: TypeScript (Curated)
+name: Curated
 description: Curated TypeScript performance and best-practice references.
 resources:
   - https://github.com/microsoft/TypeScript/wiki/Performance
@@ -8,7 +8,7 @@ resources:
   - https://nodejs.org/en/learn/diagnostics/memory
 ---
 
-# Code: TypeScript (Curated)
+# Curated
 
 Comprehensive performance optimization guide for TypeScript applications. Contains 42 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.
 

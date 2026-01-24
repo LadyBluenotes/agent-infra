@@ -1,11 +1,11 @@
 ---
-name: SolidJS Effects
+name: Effects
 description: Side effects, subscriptions, and cleanup.
 resources:
   - https://docs.solidjs.com/reference/basic-reactivity/create-effect
 ---
 
-# Skill: SolidJS Effects
+# Effects
 
 ## Apply When
 - Handling subscriptions, DOM interactions, or other side effects.

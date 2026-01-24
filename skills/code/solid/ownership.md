@@ -1,11 +1,11 @@
 ---
-name: SolidJS Ownership
+name: Ownership
 description: Reactive roots, ownership boundaries, and disposal behavior.
 resources:
   - https://docs.solidjs.com/reference/reactive-utilities/create-root
 ---
 
-# Skill: SolidJS Ownership
+# Ownership
 
 ## Apply When
 - Managing reactive roots or cleanup boundaries.

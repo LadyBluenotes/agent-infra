@@ -1,4 +1,4 @@
-# Code: Performance
+# Performance
 
 ## Apply When
 - Optimizing performance, scalability, or observability.

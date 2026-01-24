@@ -1,11 +1,11 @@
 ---
-name: SolidJS Resources
+name: Resources
 description: createResource usage, refetching, and optimistic updates.
 resources:
   - https://docs.solidjs.com/reference/basic-reactivity/create-resource
 ---
 
-# Skill: SolidJS Resources
+# Resources
 
 ## Apply When
 - Using `createResource` or modeling async data dependencies.

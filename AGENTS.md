@@ -61,7 +61,8 @@ and where it should be routed or referenced).
 - Apply when implementing or changing code.
 - @skills/code/index.md
 - @rules/style.md
-- Use @agents/typescript.md for JavaScript/TypeScript/Node work.
+- Use @agents/typescript.md for TypeScript-heavy work.
+- Use @agents/javascript.md for JavaScript-only work.
 - Use @agents/solid.md for SolidJS/SolidStart work.
 - For UI/UX or frontend tasks, also apply @skills/code/accessibility.md.
 

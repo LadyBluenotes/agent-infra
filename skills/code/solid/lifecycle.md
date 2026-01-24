@@ -1,11 +1,11 @@
 ---
-name: SolidJS Lifecycle
+name: Lifecycle
 description: onMount/onCleanup and browser-only logic.
 resources:
   - https://docs.solidjs.com/reference/lifecycle/on-mount
 ---
 
-# Skill: SolidJS Lifecycle
+# Lifecycle
 
 ## Apply When
 - Handling mount/unmount behavior or DOM-dependent code.

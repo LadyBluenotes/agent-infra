@@ -1,11 +1,11 @@
 ---
-name: SolidJS Control Flow
+name: Control Flow
 description: Show/For/Index/Switch/Match patterns for conditional and list rendering.
 resources:
   - https://docs.solidjs.com/concepts/control-flow
 ---
 
-# Skill: SolidJS Control Flow
+# Control Flow
 
 ## Apply When
 - Handling conditional rendering or list rendering in JSX.

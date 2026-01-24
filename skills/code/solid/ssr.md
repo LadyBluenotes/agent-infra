@@ -1,11 +1,11 @@
 ---
-name: SolidJS SSR + Hydration
+name: SSR + Hydration
 description: SSR constraints, streaming, and hydration safety.
 resources:
   - https://docs.solidjs.com/reference/rendering/is-server
 ---
 
-# Skill: SolidJS SSR + Hydration
+# SSR + Hydration
 
 ## Apply When
 - Working on SSR, streaming, or hydration behavior.

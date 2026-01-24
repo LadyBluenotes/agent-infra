@@ -1,4 +1,4 @@
-# Research: Method
+# Method
 
 ## Do
 - Restate the question and constraints.

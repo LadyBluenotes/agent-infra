@@ -1,4 +1,4 @@
-# Skill: Debugging
+# Debugging
 
 ## Apply When
 - Diagnosing errors, test failures, or unexpected behavior.

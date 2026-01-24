@@ -5,7 +5,7 @@ resources:
   - https://diataxis.fr/explanation/
 ---
 
-# Docs: Explanation
+# Explanation
 
 ## Apply When
 - Building understanding: concepts, rationale, architecture.

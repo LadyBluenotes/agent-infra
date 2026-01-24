@@ -1,11 +1,11 @@
 ---
-name: SolidJS Events
+name: Events
 description: Event handlers, delegation, and cleanup.
 resources:
   - https://docs.solidjs.com/reference/jsx-attributes/on
 ---
 
-# Skill: SolidJS Events
+# Events
 
 ## Apply When
 - Wiring event handlers or custom event behavior.

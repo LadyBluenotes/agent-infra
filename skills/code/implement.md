@@ -1,4 +1,4 @@
-# Code: Implement
+# Implement
 
 ## Apply When
 - Making code changes.

@@ -1,11 +1,11 @@
 ---
-name: SolidJS Context
+name: Context
 description: Context providers and consumers for app-wide dependencies.
 resources:
   - https://docs.solidjs.com/concepts/context
 ---
 
-# Skill: SolidJS Context
+# Context
 
 ## Apply When
 - Sharing state or services across component subtrees.

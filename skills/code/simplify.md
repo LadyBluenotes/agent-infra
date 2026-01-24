@@ -1,4 +1,4 @@
-# Code: Simplify
+# Simplify
 
 ## Apply When
 - Simplifying or refining code without changing behavior.

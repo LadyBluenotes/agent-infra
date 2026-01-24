@@ -1,11 +1,11 @@
 ---
-name: SolidJS State Management
+name: State Management
 description: Choosing between signals, context, and stores.
 resources:
   - https://docs.solidjs.com/guides/state-management
 ---
 
-# Skill: SolidJS State Management
+# State Management
 
 ## Apply When
 - Choosing how to model local or shared state.

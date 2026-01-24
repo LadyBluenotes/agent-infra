@@ -1,11 +1,11 @@
 ---
-name: SolidJS Transitions
+name: Transitions
 description: Deferred updates and pending state.
 resources:
   - https://docs.solidjs.com/reference/reactive-utilities/start-transition
 ---
 
-# Skill: SolidJS Transitions
+# Transitions
 
 ## Apply When
 - Deferring non-urgent updates or coordinating async UI changes.

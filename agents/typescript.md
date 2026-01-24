@@ -11,7 +11,9 @@
 - Use these playbooks when relevant:
   - @skills/code/index.md
   - @skills/code/typescript/index.md
-  - @skills/code/typescript-types.md
+  - @skills/code/typescript/types.md
+  - @skills/code/typescript/config.md
+  - @skills/code/typescript/errors.md
 
 ## Don't
 - Don't add complex type-level programming unless it pays for itself.

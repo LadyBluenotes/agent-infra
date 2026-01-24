@@ -5,7 +5,7 @@ resources:
   - https://github.com/LadyBluenotes/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md
 ---
 
-# Code: Accessibility
+# Accessibility
 ## Apply When
 - Building or reviewing UI/UX, frontend components, or content-heavy pages.
 - Auditing interfaces for WCAG 2.2 compliance.

@@ -1,11 +1,11 @@
 ---
-name: SolidJS Rendering
+name: Rendering
 description: render/hydrate entrypoints.
 resources:
   - https://docs.solidjs.com/reference/rendering/render
 ---
 
-# Skill: SolidJS Rendering
+# Rendering
 
 ## Apply When
 - Using `render`/`hydrate` or building custom renderers.

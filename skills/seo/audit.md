@@ -5,7 +5,7 @@ resources:
   - https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 ---
 
-# Skill: SEO Audit
+# SEO Audit
 
 ## Apply When
 - Auditing or diagnosing SEO issues.

@@ -5,7 +5,7 @@ resources:
   - https://diataxis.fr/reference/
 ---
 
-# Docs: Reference
+# Reference
 ## Apply When
 - Documenting stable facts: APIs, flags, config, schemas.
 

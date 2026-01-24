@@ -1,11 +1,11 @@
 ---
-name: SolidJS Performance
+name: Performance
 description: Reactive scope tuning and memoization.
 resources:
   - https://docs.solidjs.com/advanced-concepts/fine-grained-reactivity
 ---
 
-# Skill: SolidJS Performance
+# Performance
 
 ## Apply When
 - Profiling or optimizing Solid apps.

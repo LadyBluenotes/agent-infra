@@ -1,11 +1,11 @@
 ---
-name: SolidJS Stores
+name: Stores
 description: Structured state updates with createStore.
 resources:
   - https://docs.solidjs.com/concepts/stores
 ---
 
-# Skill: SolidJS Stores
+# Stores
 
 ## Apply When
 - Managing nested or structured state.

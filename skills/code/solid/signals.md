@@ -1,11 +1,11 @@
 ---
-name: SolidJS Signals
+name: Signals
 description: createSignal patterns for local reactive state.
 resources:
   - https://docs.solidjs.com/reference/basic-reactivity/create-signal
 ---
 
-# Skill: SolidJS Signals
+# Signals
 
 ## Apply When
 - Creating or updating local reactive state with `createSignal`.

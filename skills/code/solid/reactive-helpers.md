@@ -1,10 +1,9 @@
 ---
-name: SolidJS Reactive Helpers
+name: Reactive Helpers
 description: batch/untrack/on helpers and selectors.
-resources: []
 ---
 
-# Skill: SolidJS Reactive Helpers
+# Reactive Helpers
 
 ## Apply When
 - Coordinating reactive timing or dependency control.

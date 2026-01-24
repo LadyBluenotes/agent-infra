@@ -1,11 +1,11 @@
 ---
-name: SolidJS Suspense
+name: Suspense
 description: Async boundaries and fallback UI.
 resources:
   - https://docs.solidjs.com/reference/components/suspense
 ---
 
-# Skill: SolidJS Suspense
+# Suspense
 
 ## Apply When
 - Handling loading states for async boundaries.

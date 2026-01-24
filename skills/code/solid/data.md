@@ -1,11 +1,11 @@
 ---
-name: SolidJS Data Fetching
+name: Data Fetching
 description: createResource patterns with loading/error UI.
 resources:
   - https://docs.solidjs.com/reference/basic-reactivity/create-resource
 ---
 
-# Skill: SolidJS Data Fetching
+# Data Fetching
 
 ## Apply When
 - Loading async data or integrating server resources.

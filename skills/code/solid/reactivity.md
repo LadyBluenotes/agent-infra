@@ -1,11 +1,11 @@
 ---
-name: SolidJS Reactivity
+name: Reactivity
 description: Dependency tracking, batching, and reactive boundaries.
 resources:
   - https://docs.solidjs.com/concepts/intro-to-reactivity
 ---
 
-# Skill: SolidJS Reactivity
+# Reactivity
 
 ## Apply When
 - Establishing reactive tracking rules or debugging dependency behavior.

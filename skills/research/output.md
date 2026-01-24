@@ -1,4 +1,4 @@
-# Research: Output
+# Output
 
 ## Output
 - Answer
