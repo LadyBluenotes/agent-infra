@@ -1,3 +1,10 @@
+---
+name: TypeScript Types
+description: Guidance for modeling and using TypeScript types safely.
+resources:
+  - https://github.com/LadyBluenotes/agents/blob/main/plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md
+---
+
 # Code: TypeScript Types
 
 ## Apply When
@@ -50,6 +57,3 @@ type Payload = AwaitedValue<Promise<{ id: string }>>;
 ## Output
 - Types should reduce runtime checks and increase correctness.
 - Explain non-obvious type utilities briefly when introducing them.
-
-## Resources
-- https://github.com/LadyBluenotes/agents/blob/main/plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md

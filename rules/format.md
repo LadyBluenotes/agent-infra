@@ -16,4 +16,4 @@
 
 ## Don't
 - Don't duplicate guidance across layers (`rules/` vs `contexts/` vs playbooks vs `agents/`).
-- Don't use YAML front matter in instruction files (keeps tokens low; avoids format drift).
+- Don't use YAML front matter in instruction files (keeps tokens low; avoids format drift) unless instructed to.

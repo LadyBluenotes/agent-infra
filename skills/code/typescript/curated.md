@@ -1,3 +1,13 @@
+---
+name: TypeScript (Curated)
+description: Curated TypeScript performance and best-practice references.
+resources:
+  - https://github.com/microsoft/TypeScript/wiki/Performance
+  - https://www.typescriptlang.org/docs/handbook/
+  - https://v8.dev/blog
+  - https://nodejs.org/en/learn/diagnostics/memory
+---
+
 # Code: TypeScript (Curated)
 
 Comprehensive performance optimization guide for TypeScript applications. Contains 42 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.
@@ -77,10 +87,3 @@ Reference these guidelines when:
    - 8.1 [Use Branded Types for Type-Safe IDs](https://github.com/pproenca/dot-skills/blob/master/skills/.curated/typescript/references/advanced-branded-types.md) - LOW (prevents mixing incompatible ID types)
    - 8.2 [Use satisfies for Type Validation with Inference](https://github.com/pproenca/dot-skills/blob/master/skills/.curated/typescript/references/advanced-satisfies-operator.md) - LOW (prevents property access errors, enables 100% autocomplete accuracy)
    - 8.3 [Use Template Literal Types for String Patterns](https://github.com/pproenca/dot-skills/blob/master/skills/.curated/typescript/references/advanced-template-literal-types.md) - LOW (prevents 100% of string format errors at compile time)
-
-## References
-
-1. https://github.com/microsoft/TypeScript/wiki/Performance
-2. https://www.typescriptlang.org/docs/handbook/
-3. https://v8.dev/blog
-4. https://nodejs.org/en/learn/diagnostics/memory

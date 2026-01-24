@@ -1,3 +1,10 @@
+---
+name: Explanation
+description: Conceptual guidance that builds understanding and rationale.
+resources:
+  - https://diataxis.fr/explanation/
+---
+
 # Docs: Explanation
 
 ## Apply When

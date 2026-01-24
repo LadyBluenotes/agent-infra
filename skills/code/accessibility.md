@@ -1,5 +1,11 @@
-# Code: Accessibility
+---
+name: Accessibility
+description: Checklist for accessible UI and WCAG-aligned audits.
+resources:
+  - https://github.com/LadyBluenotes/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md
+---
 
+# Code: Accessibility
 ## Apply When
 - Building or reviewing UI/UX, frontend components, or content-heavy pages.
 - Auditing interfaces for WCAG 2.2 compliance.
@@ -65,6 +71,3 @@ const trapFocus = (container) => {
 ## Output
 - UI work includes keyboard, contrast, and label coverage.
 - Audit results identify the impacted component and guideline category.
-
-## Resources
-- https://github.com/LadyBluenotes/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md

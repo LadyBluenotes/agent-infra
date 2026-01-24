@@ -1,5 +1,11 @@
-# Docs: Reference
+---
+name: Reference
+description: Precise documentation for stable facts and APIs.
+resources:
+  - https://diataxis.fr/reference/
+---
 
+# Docs: Reference
 ## Apply When
 - Documenting stable facts: APIs, flags, config, schemas.
 

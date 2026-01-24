@@ -1,3 +1,10 @@
+---
+name: TypeScript
+description: TypeScript-specific workflow and best-practice router.
+resources:
+  - https://www.typescriptlang.org/docs/handbook/intro.html
+---
+
 # Code: TypeScript
 
 ## Apply When
