@@ -1,8 +1,10 @@
 ---
-name: Reference
+name: skills/docs/reference
 description: Precise documentation for stable facts and APIs.
 resources:
   - https://diataxis.fr/reference/
+type: skill
+category: docs
 ---
 
 # Reference

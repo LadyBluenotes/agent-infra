@@ -1,3 +1,11 @@
+---
+name: agents/solid
+description: >-
+  SolidJS domain heuristics — reactivity model, fine-grained updates, SolidStart patterns.
+type: agent
+category: code
+---
+
 # Agent: SolidJS
 
 ## Apply When

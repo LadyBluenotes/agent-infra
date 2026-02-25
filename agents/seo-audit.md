@@ -1,3 +1,11 @@
+---
+name: agents/seo-audit
+description: >-
+  SEO audit heuristics — diagnosing crawlability, metadata, performance, and indexing issues.
+type: agent
+category: seo
+---
+
 # Agent: SEO Audit
 
 ## Apply When

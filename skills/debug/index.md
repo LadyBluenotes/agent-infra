@@ -1,3 +1,11 @@
+---
+name: skills/debug/index
+description: >-
+  Debug skill router — systematic debugging workflow for errors, test failures, and unexpected behavior.
+type: skill
+category: debug
+---
+
 # Debugging
 
 ## Apply When

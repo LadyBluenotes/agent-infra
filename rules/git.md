@@ -1,3 +1,11 @@
+---
+name: rules/git
+description: >-
+  Git safety constraints — branch protection, commit hygiene, destructive command prevention.
+type: rule
+category: safety
+---
+
 # Rules: Git
 
 ## Apply When

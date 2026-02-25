@@ -1,0 +1,65 @@
+status: draft
+library: typescript
+library_version: "5.9"
+sources:
+  - https://www.typescriptlang.org/docs/handbook/intro.html
+  - https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+  - https://www.typescriptlang.org/docs/handbook/2/narrowing.html
+  - https://www.typescriptlang.org/docs/handbook/2/generics.html
+  - https://www.typescriptlang.org/docs/handbook/2/modules.html
+  - https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+  - https://www.typescriptlang.org/docs/handbook/project-references.html
+  - https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
+  - https://www.typescriptlang.org/docs/handbook/utility-types.html
+domains:
+  - name: fundamentals
+    description: Everyday types, narrowing, and safe modeling basics.
+    tasks:
+      - Define and refine data shapes with unions and literals.
+      - Avoid unsafe any and handle null/undefined correctly.
+      - Use narrowing and predicates to make runtime checks visible to the type system.
+    skills:
+      - skills/typescript/types.md
+      - skills/typescript/errors.md
+      - skills/typescript/runtime.md
+  - name: project-config
+    description: Compiler configuration and project layout.
+    tasks:
+      - Configure tsconfig and project boundaries.
+      - Use build mode and project references for large repos.
+      - Tune compiler options for correctness and speed.
+    skills:
+      - skills/typescript/config.md
+      - skills/typescript/performance.md
+  - name: modules-and-interop
+    description: Module boundaries, JS interop, and declaration files.
+    tasks:
+      - Define public module surfaces and type-only exports.
+      - Interop with CommonJS/ESM and JS packages.
+      - Author or consume declaration files.
+    skills:
+      - skills/typescript/modules.md
+      - skills/typescript/interop.md
+  - name: api-modeling
+    description: Modeling stable APIs and contracts.
+    tasks:
+      - Build discriminated unions and DTOs.
+      - Encode invariants in types and avoid unsound assertions.
+      - Design versioned or extensible public types.
+    skills:
+      - skills/typescript/api-modeling.md
+  - name: testing-and-validation
+    description: Using tests to enforce typing expectations.
+    tasks:
+      - Validate type-level behavior with compile checks.
+      - Ensure runtime tests align with static types.
+    skills:
+      - skills/typescript/testing.md
+  - name: references
+    description: Deep references and precise type system tools.
+    tasks:
+      - Use advanced type operators and utility types safely.
+      - Find deep reference material for edge behavior.
+    skills:
+      - skills/typescript/typescript-types.md
+      - skills/typescript/curated.md

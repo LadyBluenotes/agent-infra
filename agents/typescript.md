@@ -1,3 +1,11 @@
+---
+name: agents/typescript
+description: >-
+  TypeScript domain heuristics — strict types, readable generics, runtime environment awareness.
+type: agent
+category: code
+---
+
 # Agent: TypeScript
 
 ## Apply When

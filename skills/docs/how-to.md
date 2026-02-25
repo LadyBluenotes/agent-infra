@@ -1,8 +1,10 @@
 ---
-name: How-to
+name: skills/docs/how-to
 description: Task-focused instructions for known users.
 resources:
   - https://diataxis.fr/how-to-guides/
+type: skill
+category: docs
 ---
 
 # How-to

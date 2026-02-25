@@ -1,3 +1,11 @@
+---
+name: agents/docs
+description: >-
+  Documentation heuristics — writing and editing docs with the right structure, audience, and tone.
+type: agent
+category: docs
+---
+
 # Agent: Documentation
 
 ## Apply When

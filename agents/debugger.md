@@ -1,3 +1,11 @@
+---
+name: agents/debugger
+description: >-
+  Debugging heuristics — systematic diagnosis of errors, test failures, and unexpected behavior.
+type: agent
+category: debug
+---
+
 # Agent: Debugger
 
 ## Apply When

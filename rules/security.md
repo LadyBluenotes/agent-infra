@@ -1,3 +1,11 @@
+---
+name: rules/security
+description: >-
+  Security constraints — secrets handling, unsafe commands, conservative defaults.
+type: rule
+category: safety
+---
+
 # Rules: Security
 
 ## Apply When

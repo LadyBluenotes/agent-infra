@@ -1,3 +1,11 @@
+---
+name: skills/research/method
+description: >-
+  Research methodology — structured investigation, source evaluation, evidence gathering.
+type: skill
+category: research
+---
+
 # Method
 
 ## Do

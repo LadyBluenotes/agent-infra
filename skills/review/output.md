@@ -1,3 +1,11 @@
+---
+name: skills/review/output
+description: >-
+  Code review output format — structured feedback, severity levels, actionable suggestions.
+type: skill
+category: review
+---
+
 # Output
 
 ## Output

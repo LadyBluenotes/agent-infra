@@ -1,3 +1,11 @@
+---
+name: rules/solid
+description: >-
+  SolidJS-specific constraints — reactivity rules, component patterns, SSR safety.
+type: rule
+category: code
+---
+
 # SolidJS Rules
 
 ## Apply When

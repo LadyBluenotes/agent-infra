@@ -1,3 +1,11 @@
+---
+name: skills/research/index
+description: >-
+  Research skill router — routes to method and output for exploratory or comparative research.
+type: skill
+category: research
+---
+
 # Research
 
 ## Apply When

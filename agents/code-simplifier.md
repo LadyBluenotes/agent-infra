@@ -1,3 +1,11 @@
+---
+name: agents/code-simplifier
+description: >-
+  Code simplification heuristics — readability-only refactors without behavior changes.
+type: agent
+category: code
+---
+
 # Agent: Code Simplifier
 
 ## Apply When

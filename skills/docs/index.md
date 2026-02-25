@@ -1,3 +1,11 @@
+---
+name: skills/docs/index
+description: >-
+  Docs skill router — routes to tutorial, how-to, reference, and explanation documentation types.
+type: skill
+category: docs
+---
+
 # Docs
 
 ## Apply When

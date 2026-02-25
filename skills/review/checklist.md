@@ -1,3 +1,11 @@
+---
+name: skills/review/checklist
+description: >-
+  Code review checklist — correctness, security, performance, readability verification.
+type: skill
+category: review
+---
+
 # Checklist
 
 ## Do

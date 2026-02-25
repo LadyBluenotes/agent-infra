@@ -1,0 +1,34 @@
+schema_version: 1
+
+registry:
+  name: agent-infra
+  version: "1.0.0"
+
+# Maps categories -> skill directories
+categories:
+  general: [skills/general]
+  typescript: [skills/typescript]
+  javascript: [skills/javascript]
+  frameworks: [skills/frameworks]
+  docs: [skills/docs]
+  debug: [skills/debug]
+  review: [skills/review]
+  performance: [skills/performance]
+  seo: [skills/seo]
+  research: [skills/research]
+
+# Maps agent names -> agent files
+agents:
+  typescript: agents/typescript.md
+  javascript: agents/javascript.md
+  solid: agents/solid.md
+  debugger: agents/debugger.md
+  error-detective: agents/error-detective.md
+  docs: agents/docs.md
+  code-simplifier: agents/code-simplifier.md
+  performance-engineer: agents/performance-engineer.md
+  seo-audit: agents/seo-audit.md
+  ui-visual-validator: agents/ui-visual-validator.md
+
+# Always loaded regardless of context
+always_include: []

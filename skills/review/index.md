@@ -1,8 +1,10 @@
 ---
-name: Review
+name: skills/review/index
 description: Workflow for structured code and change reviews.
 resources:
   - https://google.github.io/eng-practices/review/
+type: skill
+category: review
 ---
 
 # Review

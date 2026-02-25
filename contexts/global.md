@@ -1,3 +1,11 @@
+---
+name: contexts/global
+description: >-
+  Always-on personal defaults — output shape, interaction norms, token-efficiency preferences.
+type: context
+category: global
+---
+
 # Global Defaults (Personal)
 
 ## Apply When

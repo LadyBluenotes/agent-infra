@@ -1,3 +1,11 @@
+---
+name: agents/error-detective
+description: >-
+  Error investigation heuristics — tracing errors to root cause via logs, stack traces, and reproduction.
+type: agent
+category: debug
+---
+
 # Agent: Error Detective
 
 ## Apply When

@@ -1,3 +1,11 @@
+---
+name: rules/format
+description: >-
+  Module authoring format conventions — how to structure agent-infra files.
+type: rule
+category: authoring
+---
+
 # Rules: Module Format
 
 ## Apply When

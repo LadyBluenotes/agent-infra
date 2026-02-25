@@ -1,3 +1,11 @@
+---
+name: agents/ui-visual-validator
+description: >-
+  UI/UX visual validation heuristics — layout, responsiveness, accessibility, and visual consistency.
+type: agent
+category: code
+---
+
 # Agent: UI Visual Validator
 
 ## Apply When

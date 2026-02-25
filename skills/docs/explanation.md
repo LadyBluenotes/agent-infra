@@ -1,8 +1,10 @@
 ---
-name: Explanation
+name: skills/docs/explanation
 description: Conceptual guidance that builds understanding and rationale.
 resources:
   - https://diataxis.fr/explanation/
+type: skill
+category: docs
 ---
 
 # Explanation

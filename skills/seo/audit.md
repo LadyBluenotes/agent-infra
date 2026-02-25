@@ -1,8 +1,10 @@
 ---
-name: SEO Audit
+name: skills/seo/audit
 description: Checklist for diagnosing technical and on-page SEO issues.
 resources:
   - https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+type: skill
+category: seo
 ---
 
 # SEO Audit

@@ -1,0 +1,35 @@
+{
+  "name": "@ladybluenotes/agents",
+  "version": "1.0.0",
+  "description": "Personal AI coding agent skills, rules, and CLI toolkit",
+  "type": "module",
+  "bin": {
+    "ladybluenotes": "./src/cli.mjs"
+  },
+  "files": [
+    "skills",
+    "agents",
+    "rules",
+    "contexts",
+    "templates",
+    "meta",
+    "registry.yaml",
+    "src"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LadyBluenotes/agent-infra"
+  }
+}

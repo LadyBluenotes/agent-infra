@@ -1,3 +1,11 @@
+---
+name: agents/javascript
+description: >-
+  JavaScript domain heuristics — runtime patterns, async safety, module usage. Load for JS-only work.
+type: agent
+category: code
+---
+
 # Agent: JavaScript
 
 ## Apply When

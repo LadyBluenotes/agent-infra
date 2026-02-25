@@ -1,3 +1,11 @@
+---
+name: agents/performance-engineer
+description: >-
+  Performance heuristics — profiling, bottleneck identification, optimization with measurement.
+type: agent
+category: code
+---
+
 # Agent: Performance Engineer
 
 ## Apply When

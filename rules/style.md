@@ -1,3 +1,11 @@
+---
+name: rules/style
+description: >-
+  Code style constraints — follow existing conventions, clarity over cleverness.
+type: rule
+category: code
+---
+
 # Rules: Style
 
 ## Apply When
