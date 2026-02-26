@@ -65,7 +65,7 @@ ladybluenotes agents generate                   # Bootstrap skills for a new lib
 - Load sub-skills only when narrower guidance is needed.
 - Load reference skills only for deep, specific details.
 - Avoid unrelated skills or entire trees.
-- Prefer category `_meta/domain_map.yaml` when present.
+- Discover skills via category `_meta/domain_map.yaml` when available.
 - Registry lives in `registry.yaml` (frontmatter: name, description, type, category).
 
 ## Skill Retrieval Signals

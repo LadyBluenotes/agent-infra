@@ -23,6 +23,15 @@ Format:
 - Signals:
 - Redactions:
 
+- Date: 2026-02-26
+- Prompt: add brief note to AGENTS.md about _meta routing
+- Skills: @skills/general/skill-retrieval.md
+- Rationale: routing/logging update guidance
+- Outcome: updated AGENTS.md routing note
+- Success: unknown
+- Signals: agents.md, _meta, domain_map
+- Redactions: none
+
 ## Review Cadence
 
 Suggested cadence: monthly or after every 10 logged prompts (whichever comes first).
