@@ -17,6 +17,7 @@
     "src"
   ],
   "scripts": {
+    "gen:skill-meta": "node scripts/gen-skill-meta.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

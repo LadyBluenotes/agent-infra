@@ -1,0 +1,40 @@
+version: 1
+category: research
+generated_at: 2026-02-26T21:55:18.298Z
+skills:
+  - id: skills/research/method
+    path: skills/research/method.md
+    description: Structured research methodology with evidence and tradeoffs.
+    keywords:
+      - structured
+      - research
+      - methodology
+      - evidence
+      - tradeoffs
+      - method
+      - setup
+      - core
+      - patterns
+      - restate
+      - question
+      - separate
+    related: []
+    load_with: []
+  - id: skills/research/output
+    path: skills/research/output.md
+    description: Structured research deliverables and findings presentation.
+    keywords:
+      - structured
+      - research
+      - deliverables
+      - findings
+      - presentation
+      - output
+      - setup
+      - core
+      - patterns
+      - answer
+      - first
+      - tradeoffs
+    related: []
+    load_with: []

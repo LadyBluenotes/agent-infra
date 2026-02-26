@@ -1,0 +1,67 @@
+version: 1
+category: docs
+generated_at: 2026-02-26T21:55:18.266Z
+skills:
+  - id: skills/docs/explanation
+    path: skills/docs/explanation.md
+    description: Conceptual guidance that builds understanding and rationale.
+    keywords:
+      - conceptual
+      - guidance
+      - builds
+      - understanding
+      - rationale
+      - explanation
+      - apply
+      - do
+      - dont
+      - output
+    related: []
+    load_with: []
+  - id: skills/docs/how-to
+    path: skills/docs/how-to.md
+    description: Task-focused instructions for known users.
+    keywords:
+      - task-focused
+      - instructions
+      - known
+      - users
+      - how-to
+      - apply
+      - do
+      - dont
+      - output
+    related: []
+    load_with: []
+  - id: skills/docs/reference
+    path: skills/docs/reference.md
+    description: Precise documentation for stable facts and APIs.
+    keywords:
+      - precise
+      - documentation
+      - stable
+      - facts
+      - apis
+      - reference
+      - apply
+      - do
+      - dont
+      - output
+    related: []
+    load_with: []
+  - id: skills/docs/tutorial
+    path: skills/docs/tutorial.md
+    description: Step-by-step onboarding for beginners to complete a goal.
+    keywords:
+      - step-by-step
+      - onboarding
+      - beginners
+      - complete
+      - goal
+      - tutorial
+      - apply
+      - do
+      - dont
+      - output
+    related: []
+    load_with: []

@@ -1,0 +1,130 @@
+version: 1
+category: frameworks
+generated_at: 2026-02-26T21:55:18.279Z
+skills:
+  - id: skills/frameworks/react/async
+    path: skills/frameworks/react/async.md
+    description: Eliminate async waterfalls and improve async flow in React/Next.
+    keywords:
+      - eliminate
+      - async
+      - waterfalls
+      - improve
+      - flow
+      - reactnext
+      - setup
+      - core
+      - patterns
+      - defer
+      - awaits
+      - branch
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/bundle
+    path: skills/frameworks/react/bundle.md
+    description: Bundle size optimization for React and Next.js apps.
+    keywords:
+      - bundle
+      - size
+      - optimization
+      - react
+      - nextjs
+      - apps
+      - setup
+      - core
+      - patterns
+      - avoid
+      - barrel
+      - imports
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/client-data
+    path: skills/frameworks/react/client-data.md
+    description: Client-side data fetching patterns for React apps.
+    keywords:
+      - client-side
+      - data
+      - fetching
+      - patterns
+      - react
+      - apps
+      - client
+      - setup
+      - core
+      - deduplicate
+      - requests
+      - global
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/rendering
+    path: skills/frameworks/react/rendering.md
+    description: Rendering performance patterns for React and Next.js.
+    keywords:
+      - rendering
+      - performance
+      - patterns
+      - react
+      - nextjs
+      - setup
+      - core
+      - hoist
+      - static
+      - jsx
+      - content-visibility
+      - prefer
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/rerender
+    path: skills/frameworks/react/rerender.md
+    description: Re-render optimization patterns for React components.
+    keywords:
+      - re-render
+      - optimization
+      - patterns
+      - react
+      - components
+      - setup
+      - core
+      - avoid
+      - subscribing
+      - unused
+      - state
+      - memoize
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/server
+    path: skills/frameworks/react/server.md
+    description: Server-side performance patterns for React and Next.js.
+    keywords:
+      - server-side
+      - performance
+      - patterns
+      - react
+      - nextjs
+      - setup
+      - core
+      - authenticate
+      - server
+      - actions
+      - cache
+      - per-request
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/rules
+    path: skills/frameworks/solid/rules.md
+    description: SolidJS-specific rules and constraints to keep reactivity correct.
+    keywords:
+      - solidjs-specific
+      - rules
+      - constraints
+      - keep
+      - reactivity
+      - correct
+      - solidjs
+      - setup
+      - core
+      - patterns
+      - reactive
+      - reads
+    related: []
+    load_with: []

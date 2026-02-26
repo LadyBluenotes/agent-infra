@@ -5,9 +5,11 @@ Use this file to track prompt patterns and the skills chosen so routing improves
 ## Prompt Patterns
 
 Format:
-- Prompt: <short pattern>
+- Prompt: <short pattern, redacted>
 - Skills: <@skills/...>
 - Rationale: <why these skills>
+- Success: true | false | unknown
+- Signals: <keywords used>
 
 ## Session Log
 
@@ -17,6 +19,9 @@ Format:
 - Skills:
 - Rationale:
 - Outcome:
+- Success:
+- Signals:
+- Redactions:
 
 ## Review Cadence
 

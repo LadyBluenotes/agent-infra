@@ -18,8 +18,17 @@ Classify the request (code, docs, review, debug, performance, research, seo) bef
 ### Match the smallest skill
 Start with the most specific top-level skill, then load only the sub-skills needed.
 
+### Prefer _meta routing
+If `_meta/domain_map.yaml` exists for the category, use it as the routing source.
+
 ### Record the mapping
 Capture the prompt pattern, chosen skills, and rationale in `notes/skill-retrieval.md`.
+
+### Redact sensitive info
+Strip tokens, credentials, emails, full URLs with query params, and user identifiers before logging.
+
+### Track routing success
+Mark `success` as `true` only with explicit user confirmation, `false` with explicit correction, otherwise `unknown`.
 
 ### Avoid overloading
 Skip unrelated skills even if they are adjacent or familiar.
@@ -47,3 +56,14 @@ Correct
 "Added a brief prompt-to-skill note for future retrieval."
 ```
 Explanation: The log helps improve routing decisions over time.
+
+### Logging raw sensitive data
+Wrong
+```text
+"Customer email: jane@example.com"
+```
+Correct
+```text
+"Email redacted; used pattern: reset password flow"
+```
+Explanation: Logs should preserve routing signal without sensitive content.

@@ -1,0 +1,23 @@
+version: 1
+category: debug
+generated_at: 2026-02-26T21:55:18.256Z
+skills:
+  - id: skills/debug/workflow
+    path: skills/debug/workflow.md
+    description: A practical debugging workflow for errors, test failures, and
+      unexpected behavior.
+    keywords:
+      - practical
+      - debugging
+      - workflow
+      - errors
+      - test
+      - failures
+      - unexpected
+      - behavior
+      - setup
+      - core
+      - patterns
+      - capture
+    related: []
+    load_with: []

@@ -1,0 +1,40 @@
+version: 1
+category: review
+generated_at: 2026-02-26T21:55:18.300Z
+skills:
+  - id: skills/review/checklist
+    path: skills/review/checklist.md
+    description: Code review checklist for correctness, security, and quality.
+    keywords:
+      - code
+      - review
+      - checklist
+      - correctness
+      - security
+      - quality
+      - setup
+      - core
+      - patterns
+      - errors
+      - tests
+      - readability
+    related: []
+    load_with: []
+  - id: skills/review/output
+    path: skills/review/output.md
+    description: Structured review feedback with issues, suggestions, and questions.
+    keywords:
+      - structured
+      - review
+      - feedback
+      - issues
+      - suggestions
+      - questions
+      - output
+      - setup
+      - core
+      - patterns
+      - separate
+      - concerns
+    related: []
+    load_with: []

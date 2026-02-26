@@ -1,65 +1,201 @@
-status: draft
-library: typescript
-library_version: "5.9"
-sources:
-  - https://www.typescriptlang.org/docs/handbook/intro.html
-  - https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
-  - https://www.typescriptlang.org/docs/handbook/2/narrowing.html
-  - https://www.typescriptlang.org/docs/handbook/2/generics.html
-  - https://www.typescriptlang.org/docs/handbook/2/modules.html
-  - https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
-  - https://www.typescriptlang.org/docs/handbook/project-references.html
-  - https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
-  - https://www.typescriptlang.org/docs/handbook/utility-types.html
-domains:
-  - name: fundamentals
-    description: Everyday types, narrowing, and safe modeling basics.
-    tasks:
-      - Define and refine data shapes with unions and literals.
-      - Avoid unsafe any and handle null/undefined correctly.
-      - Use narrowing and predicates to make runtime checks visible to the type system.
-    skills:
-      - skills/typescript/types.md
-      - skills/typescript/errors.md
-      - skills/typescript/runtime.md
-  - name: project-config
-    description: Compiler configuration and project layout.
-    tasks:
-      - Configure tsconfig and project boundaries.
-      - Use build mode and project references for large repos.
-      - Tune compiler options for correctness and speed.
-    skills:
-      - skills/typescript/config.md
-      - skills/typescript/performance.md
-  - name: modules-and-interop
-    description: Module boundaries, JS interop, and declaration files.
-    tasks:
-      - Define public module surfaces and type-only exports.
-      - Interop with CommonJS/ESM and JS packages.
-      - Author or consume declaration files.
-    skills:
-      - skills/typescript/modules.md
-      - skills/typescript/interop.md
-  - name: api-modeling
-    description: Modeling stable APIs and contracts.
-    tasks:
-      - Build discriminated unions and DTOs.
-      - Encode invariants in types and avoid unsound assertions.
-      - Design versioned or extensible public types.
-    skills:
-      - skills/typescript/api-modeling.md
-  - name: testing-and-validation
-    description: Using tests to enforce typing expectations.
-    tasks:
-      - Validate type-level behavior with compile checks.
-      - Ensure runtime tests align with static types.
-    skills:
-      - skills/typescript/testing.md
-  - name: references
-    description: Deep references and precise type system tools.
-    tasks:
-      - Use advanced type operators and utility types safely.
-      - Find deep reference material for edge behavior.
-    skills:
-      - skills/typescript/typescript-types.md
-      - skills/typescript/curated.md
+version: 1
+category: typescript
+generated_at: 2026-02-26T21:55:18.308Z
+skills:
+  - id: skills/typescript/api-modeling
+    path: skills/typescript/api-modeling.md
+    description: Modeling public APIs with discriminants and stable DTOs.
+    keywords:
+      - modeling
+      - public
+      - apis
+      - discriminants
+      - stable
+      - dtos
+      - api
+      - setup
+      - core
+      - patterns
+      - discriminated
+      - unions
+    related: []
+    load_with: []
+  - id: skills/typescript/config
+    path: skills/typescript/config.md
+    description: tsconfig layout, compiler options, and project references.
+    keywords:
+      - tsconfig
+      - layout
+      - compiler
+      - options
+      - project
+      - references
+      - config
+      - setup
+      - core
+      - patterns
+      - multi-package
+      - repos
+    related: []
+    load_with: []
+  - id: skills/typescript/curated
+    path: skills/typescript/curated.md
+    description: Curated references, release notes, and deep behavior changes.
+    keywords:
+      - curated
+      - references
+      - release
+      - notes
+      - deep
+      - behavior
+      - changes
+      - primary
+      - behavioral
+      - "55"
+      - typescript
+    related: []
+    load_with: []
+  - id: skills/typescript/errors
+    path: skills/typescript/errors.md
+    description: Diagnostics workflow and common TypeScript error fixes.
+    keywords:
+      - diagnostics
+      - workflow
+      - common
+      - typescript
+      - error
+      - fixes
+      - errors
+      - setup
+      - core
+      - patterns
+      - read
+      - code
+    related: []
+    load_with: []
+  - id: skills/typescript/interop
+    path: skills/typescript/interop.md
+    description: JS interop and declaration file authoring.
+    keywords:
+      - js
+      - interop
+      - declaration
+      - file
+      - authoring
+      - setup
+      - core
+      - patterns
+      - type-only
+      - imports
+      - modules
+      - commonjs
+    related: []
+    load_with: []
+  - id: skills/typescript/modules
+    path: skills/typescript/modules.md
+    description: Module boundaries, type-only imports, and resolution behavior.
+    keywords:
+      - module
+      - boundaries
+      - type-only
+      - imports
+      - resolution
+      - behavior
+      - modules
+      - setup
+      - core
+      - patterns
+      - avoid
+      - runtime
+    related: []
+    load_with: []
+  - id: skills/typescript/performance
+    path: skills/typescript/performance.md
+    description: Build performance, incremental checks, and project references.
+    keywords:
+      - build
+      - performance
+      - incremental
+      - checks
+      - project
+      - references
+      - setup
+      - core
+      - patterns
+      - mode
+      - skip
+      - lib
+    related: []
+    load_with: []
+  - id: skills/typescript/runtime
+    path: skills/typescript/runtime.md
+    description: Runtime boundaries, unknown inputs, and safe type guards.
+    keywords:
+      - runtime
+      - boundaries
+      - unknown
+      - inputs
+      - safe
+      - type
+      - guards
+      - setup
+      - core
+      - patterns
+      - parse
+      - input
+    related: []
+    load_with: []
+  - id: skills/typescript/testing
+    path: skills/typescript/testing.md
+    description: Type-level tests and compile-time assertions.
+    keywords:
+      - type-level
+      - tests
+      - compile-time
+      - assertions
+      - testing
+      - setup
+      - core
+      - patterns
+      - ts-expect-error
+      - negative
+      - validate
+      - inference
+    related: []
+    load_with: []
+  - id: skills/typescript/types
+    path: skills/typescript/types.md
+    description: Everyday types, unions, narrowing, and generics.
+    keywords:
+      - everyday
+      - types
+      - unions
+      - narrowing
+      - generics
+      - setup
+      - core
+      - patterns
+      - discriminated
+      - variants
+      - literal
+      - preservation
+    related: []
+    load_with: []
+  - id: skills/typescript/typescript-types
+    path: skills/typescript/typescript-types.md
+    description: Utility types and type operators reference.
+    keywords:
+      - utility
+      - types
+      - type
+      - operators
+      - reference
+      - keyof
+      - indexed
+      - access
+      - typeof
+      - conditional
+      - mapped
+      - template
+    related: []
+    load_with: []

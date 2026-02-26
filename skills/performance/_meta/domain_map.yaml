@@ -1,0 +1,22 @@
+version: 1
+category: performance
+generated_at: 2026-02-26T21:55:18.296Z
+skills:
+  - id: skills/performance/optimize
+    path: skills/performance/optimize.md
+    description: Targeted performance improvements with before/after measurement.
+    keywords:
+      - targeted
+      - performance
+      - improvements
+      - beforeafter
+      - measurement
+      - optimize
+      - setup
+      - core
+      - patterns
+      - establish
+      - baseline
+      - identify
+    related: []
+    load_with: []

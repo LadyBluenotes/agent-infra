@@ -1,58 +1,202 @@
-status: draft
-library: javascript
-library_version: "ES2023"
-sources:
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
-  - https://javascript.info/
-  - https://javascript.info/async
-  - https://javascript.info/promise-basics
-  - https://javascript.info/modules
-  - https://javascript.info/error-handling
-  - https://javascript.info/array-methods
-  - https://javascript.info/object
-domains:
-  - name: async-and-concurrency
-    description: Promises, async/await, and scheduling.
-    tasks:
-      - Compose concurrent operations safely.
-      - Handle errors and cancellation paths.
-    skills:
-      - skills/javascript/async.md
-      - skills/javascript/errors.md
-  - name: modules-and-runtime
-    description: Module boundaries and runtime constraints.
-    tasks:
-      - Define module interfaces and dynamic loading.
-      - Validate unknown inputs at runtime boundaries.
-    skills:
-      - skills/javascript/modules.md
-      - skills/javascript/runtime.md
-  - name: data-and-collections
-    description: Core collections and data transforms.
-    tasks:
-      - Transform arrays and objects safely.
-      - Choose appropriate collection types.
-    skills:
-      - skills/javascript/data.md
-  - name: environment-specific
-    description: Browser and Node runtime practices.
-    tasks:
-      - Use browser APIs safely (DOM, fetch).
-      - Configure Node runtime and module system.
-    skills:
-      - skills/javascript/browser.md
-      - skills/javascript/node.md
-      - skills/javascript/nodejs.md
-  - name: quality-and-safety
-    description: Testing, security, and design patterns.
-    tasks:
-      - Test core behavior and error paths.
-      - Avoid injection and unsafe eval patterns.
-      - Apply stable composition patterns.
-    skills:
-      - skills/javascript/testing.md
-      - skills/javascript/security.md
-      - skills/javascript/javascript-patterns.md
+version: 1
+category: javascript
+generated_at: 2026-02-26T21:55:18.293Z
+skills:
+  - id: skills/javascript/async
+    path: skills/javascript/async.md
+    description: Promises, async/await, and concurrency patterns.
+    keywords:
+      - promises
+      - asyncawait
+      - concurrency
+      - patterns
+      - async
+      - setup
+      - core
+      - sequential
+      - vs
+      - concurrent
+      - ensure
+      - errors
+    related: []
+    load_with: []
+  - id: skills/javascript/browser
+    path: skills/javascript/browser.md
+    description: Browser APIs, DOM events, and fetch-based I/O.
+    keywords:
+      - browser
+      - apis
+      - dom
+      - events
+      - fetch-based
+      - io
+      - setup
+      - core
+      - patterns
+      - feature
+      - detection
+      - event
+    related: []
+    load_with: []
+  - id: skills/javascript/data
+    path: skills/javascript/data.md
+    description: Arrays, objects, and collection utilities.
+    keywords:
+      - arrays
+      - objects
+      - collection
+      - utilities
+      - data
+      - setup
+      - core
+      - patterns
+      - transform
+      - mapfilterreduce
+      - prefer
+      - mapset
+    related: []
+    load_with: []
+  - id: skills/javascript/errors
+    path: skills/javascript/errors.md
+    description: Error types, throwing, and recovery patterns.
+    keywords:
+      - error
+      - types
+      - throwing
+      - recovery
+      - patterns
+      - errors
+      - setup
+      - core
+      - preserve
+      - context
+      - cause
+      - normalize
+    related: []
+    load_with: []
+  - id: skills/javascript/javascript-patterns
+    path: skills/javascript/javascript-patterns.md
+    description: Common architecture and composition patterns.
+    keywords:
+      - common
+      - architecture
+      - composition
+      - patterns
+      - javascript
+      - setup
+      - core
+      - module
+      - pattern
+      - encapsulation
+      - over
+      - inheritance
+    related: []
+    load_with: []
+  - id: skills/javascript/modules
+    path: skills/javascript/modules.md
+    description: ES module syntax, static imports, and dynamic import.
+    keywords:
+      - es
+      - module
+      - syntax
+      - static
+      - imports
+      - dynamic
+      - import
+      - modules
+      - setup
+      - core
+      - patterns
+      - at
+    related: []
+    load_with: []
+  - id: skills/javascript/node
+    path: skills/javascript/node.md
+    description: Node runtime APIs and server-side patterns.
+    keywords:
+      - node
+      - runtime
+      - apis
+      - server-side
+      - patterns
+      - setup
+      - core
+      - specifiers
+      - built-ins
+      - normalize
+      - environment
+      - input
+    related: []
+    load_with: []
+  - id: skills/javascript/nodejs
+    path: skills/javascript/nodejs.md
+    description: Node project setup and module type configuration.
+    keywords:
+      - node
+      - project
+      - setup
+      - module
+      - type
+      - configuration
+      - core
+      - patterns
+      - explicit
+      - entry
+      - points
+      - esm
+    related: []
+    load_with: []
+  - id: skills/javascript/runtime
+    path: skills/javascript/runtime.md
+    description: Runtime type checks and boundary validation.
+    keywords:
+      - runtime
+      - type
+      - checks
+      - boundary
+      - validation
+      - setup
+      - core
+      - patterns
+      - guard
+      - unknown
+      - input
+      - nullish
+    related: []
+    load_with: []
+  - id: skills/javascript/security
+    path: skills/javascript/security.md
+    description: Safe handling of input, eval risks, and injection prevention.
+    keywords:
+      - safe
+      - handling
+      - input
+      - eval
+      - risks
+      - injection
+      - prevention
+      - security
+      - setup
+      - core
+      - patterns
+      - avoid
+    related: []
+    load_with: []
+  - id: skills/javascript/testing
+    path: skills/javascript/testing.md
+    description: Unit testing patterns and assertions.
+    keywords:
+      - unit
+      - testing
+      - patterns
+      - assertions
+      - setup
+      - core
+      - arrange
+      - act
+      - assert
+      - test
+      - error
+      - paths
+    related: []
+    load_with: []
