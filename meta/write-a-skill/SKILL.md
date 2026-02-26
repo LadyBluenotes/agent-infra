@@ -61,7 +61,7 @@ sources:
 [Minimum working example. Real imports. No placeholders.]
 
 ## Core Patterns
-[2–4 patterns. Each has a code block and 1–2 lines of explanation.]
+[2–4 patterns by default. Add as many as needed to make the guidance unambiguous. Each pattern has a code block and 1–2 lines of explanation.]
 
 ## Common Mistakes
 
@@ -75,7 +75,7 @@ sources:
 // Correct
 ```
 
-[1 sentence: what fails and why]
+[1 sentence: what fails and why. Add more examples if a single wrong/correct pair is not enough.]
 
 ## Tensions (optional)
 

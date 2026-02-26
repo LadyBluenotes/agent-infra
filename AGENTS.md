@@ -16,6 +16,7 @@
 - Ask questions only when blocked or when the answer materially changes the deliverable.
 - Default to concise, scannable bullets.
 - For code changes: explain intent, point to touched paths, list verification steps.
+- When writing or updating skills, reference `meta/write-a-skill/SKILL.md` in the response.
 
 ## Safety
 
@@ -46,8 +47,7 @@
 
 ## CLI
 
-This repo provides the `ladybluenotes` CLI. Use it to discover and load skills:
-
+- Commands:
 ```
 ladybluenotes playbook list                     # List available skills
 ladybluenotes agents show <name>                # Show full module content
@@ -59,17 +59,12 @@ ladybluenotes agents generate                   # Bootstrap skills for a new lib
 
 ## Skill Loading Protocol
 
-Use `ladybluenotes playbook list` to discover skills and their paths.
-
-Load the smallest set of skills needed for the current task:
-1. Start with the most relevant top-level skill.
-2. Load sub-skills only when the task needs narrower guidance.
-3. Load reference skills only when deep, specific details are required.
-
-Avoid loading unrelated skills or entire trees.
-
-The full module registry is in `registry.yaml`. All modules have YAML frontmatter
-with `name`, `description`, `type`, and `category` fields.
+- Discover skills via `ladybluenotes playbook list`.
+- Start with the most relevant top-level skill.
+- Load sub-skills only when narrower guidance is needed.
+- Load reference skills only for deep, specific details.
+- Avoid unrelated skills or entire trees.
+- Registry lives in `registry.yaml` (frontmatter: name, description, type, category).
 
 ## Skill Retrieval Signals
 
@@ -80,13 +75,11 @@ with `name`, `description`, `type`, and `category` fields.
 
 ## Recommendation Prompt
 
-If the user's request suggests a new rule, agent, or skill would be appropriate,
-recommend adding it and provide a short example of the entry (name, purpose,
-and where it should be routed or referenced).
-
-For bootstrapping skills for a new library, use the meta skills:
-- `meta/domain-discovery/SKILL.md` — analyze a library and build a domain map
-- `meta/tree-generator/SKILL.md` — generate SKILL.md files from a domain map
+- Recommend new rules/agents/skills when the request suggests it.
+- Provide a short example entry (name, purpose, routing/reference).
+- For new-library bootstraps, use:
+  - `meta/domain-discovery/SKILL.md`
+  - `meta/tree-generator/SKILL.md`
 
 ## Merge Semantics (Global + Local)
 
@@ -100,7 +93,7 @@ For bootstrapping skills for a new library, use the meta skills:
 ### Routing Guide
 
 - Use `ladybluenotes playbook list` to find the best top-level skill.
-- Then follow sub-skill and reference links for progressive disclosure.
+- Follow sub-skill and reference links for progressive disclosure.
 
 Top-level skill groups:
 - General
