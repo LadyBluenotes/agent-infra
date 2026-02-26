@@ -14,6 +14,7 @@ sources:
 
 | Area | Skill |
 | --- | --- |
+| Rules and constraints | @skills/frameworks/solid/rules.md |
 | Signals and reactive primitives | @skills/frameworks/solid/signals.md |
 | Derived state and memos | @skills/frameworks/solid/memos.md |
 | Effects and cleanup | @skills/frameworks/solid/effects.md |

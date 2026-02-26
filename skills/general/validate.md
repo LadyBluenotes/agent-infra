@@ -1,29 +1,46 @@
 ---
 name: skills/general/validate
-description: >-
-  Post-change validation — running tests, builds, and typechecks to verify correctness.
-type: skill
+description: Running tests, builds, and typechecks after changes.
+type: sub-skill
 category: general
 ---
 
 # Validate
 
-## Apply When
-- After code changes.
-- After performance work, validate with before/after measurements per @skills/performance/index.md.
+## Setup
+Use this after code changes or performance work.
 
-## Do
-- Run the narrowest relevant check (tests, typecheck, lint, build).
-- If you cannot run checks, say so and provide the command to run.
-- Report results clearly, referencing paths and commands used.
-- If all checks pass, say so.
-- If any check fails, say so and provide the command to run.
-- If any check fails, identify the offending file and line number.
-- If any check fails, explain why it failed, but do not assume the cause if you don't know.
+## Core Patterns
 
-## Don't
-- Don't claim tests passed if they were not run.
-- Don't claim lint passed if it was not run.
-- Don't claim build passed if it was not run.
-- Don't claim typecheck passed if it was not run.
-- Don't claim code formatting passed if it was not run.
+### Run the narrowest check
+Pick the smallest relevant command (test, typecheck, lint, build) to validate the change.
+
+### Report what ran
+State the command and outcome. If you did not run checks, say so and provide the command.
+
+### Surface failures
+If a check fails, include the error summary and the file or location involved.
+
+## Common Mistakes
+
+### Claiming unrun checks
+Wrong
+```text
+"All tests pass."
+```
+Correct
+```text
+"I did not run tests. You can verify with: npm test."
+```
+Explanation: Verification claims must match what was actually run.
+
+### Running overly broad commands
+Wrong
+```text
+"I ran the entire test suite when only one package changed."
+```
+Correct
+```text
+"I ran the package-level test that covers the change."
+```
+Explanation: Narrow checks provide fast, focused feedback.

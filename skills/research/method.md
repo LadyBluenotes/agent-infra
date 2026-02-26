@@ -1,18 +1,49 @@
 ---
 name: skills/research/method
-description: >-
-  Research methodology — structured investigation, source evaluation, evidence gathering.
-type: skill
+description: Structured research methodology with evidence and tradeoffs.
+type: sub-skill
 category: research
 ---
 
 # Method
 
-## Do
-- Restate the question and constraints.
-- Separate facts from assumptions.
-- Provide a recommendation with tradeoffs.
-- Track unknowns explicitly.
+## Setup
+Use this when doing exploratory or comparative research.
 
-## Don't
-- Don't present uncertain claims as facts.
+## Core Patterns
+
+### Restate the question
+Clarify the goal, constraints, and evaluation criteria before searching.
+
+### Separate facts and assumptions
+Label claims that are inferred or unverified.
+
+### Compare options
+Present tradeoffs and explain the recommendation.
+
+### Track unknowns
+List open questions and what evidence is needed to resolve them.
+
+## Common Mistakes
+
+### Treating assumptions as facts
+Wrong
+```text
+"This library is faster" (no benchmark or source).
+```
+Correct
+```text
+"Performance claims are based on a single benchmark; more data needed."
+```
+Explanation: Unverified claims should be clearly marked as assumptions.
+
+### Skipping constraints
+Wrong
+```text
+"Here are three options" (no mention of platform or licensing).
+```
+Correct
+```text
+"Options limited to MIT-licensed tools that run on Linux."
+```
+Explanation: Constraints determine which options are actually viable.

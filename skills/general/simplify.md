@@ -1,25 +1,51 @@
 ---
 name: skills/general/simplify
-description: >-
-  Readability-only refactors — simplifying code without changing behavior.
-type: skill
+description: Readability-only refactors that preserve behavior.
+type: sub-skill
 category: general
 ---
 
 # Simplify
 
-## Apply When
-- Simplifying or refining code without changing behavior.
+## Setup
+Use this when asked to improve readability or reduce complexity without changing behavior.
 
-## Do
-- Keep behavior identical; prefer refactors that are easy to verify.
-- Reduce nesting and incidental complexity.
-- Improve naming and structure where it reduces mental load.
-- Delete dead code and redundant abstractions when safe.
+## Core Patterns
 
-## Don't
-- Don't change public APIs unless requested.
-- Don't do repo-wide style churn.
+### Preserve behavior
+Identify the observable behavior and keep it identical. Favor refactors that are easy to reason about.
 
-## Output
-- Describe what was simplified and how you verified no behavior change.
+### Reduce nesting
+Use early returns or small helpers to flatten control flow and make intent clearer.
+
+### Remove dead code
+Delete unused branches, variables, or helpers once you confirm they are truly unused.
+
+## Common Mistakes
+
+### Removing guards
+Wrong
+```js
+function formatName(user) {
+  return user.name.trim();
+}
+```
+Correct
+```js
+function formatName(user) {
+  if (!user) return "Unknown";
+  return user.name.trim();
+}
+```
+Explanation: Dropping a null guard changes runtime behavior and can introduce crashes.
+
+### Broad style churn
+Wrong
+```text
+"I reformatted the whole file while refactoring a single function."
+```
+Correct
+```text
+"I limited changes to the targeted function and its immediate helpers."
+```
+Explanation: Large formatting diffs make reviews harder and hide unintended changes.

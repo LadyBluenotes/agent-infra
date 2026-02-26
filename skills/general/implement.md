@@ -1,26 +1,60 @@
 ---
 name: skills/general/implement
-description: >-
-  Making code changes — reading before editing, minimal reversible changes, following existing conventions.
-type: skill
+description: Making code changes with minimal, reversible edits.
+type: sub-skill
 category: general
 ---
 
 # Implement
 
-## Apply When
-- Making code changes.
-- Performance optimization work should also follow @skills/performance/index.md.
+## Setup
+Use this when making code changes for features, fixes, or refactors.
 
-## Do
-- Read before editing; confirm entry points and constraints.
-- Make a minimal, reversible change.
-- Keep changes localized; follow existing conventions.
-- Write tests.
-- Make sure code is clear and maintainable.
-- Make sure to follow things according to plan that was made.
+## Core Patterns
 
-## Don't
-- Don't invent APIs or repo conventions.
-- Do not make large, sweeping changes in one go.
-- Don't make changes without a plan.
+### Read before editing
+Confirm entry points, constraints, and existing conventions before changing code.
+
+### Minimal, reversible change
+Keep the change set small and local. Make it easy to roll back if needed.
+
+### Follow conventions
+Match existing structure, naming, and tooling rather than introducing new patterns.
+
+### Validate with tests
+Add or update tests when behavior changes and run the most relevant checks.
+
+## Common Mistakes
+
+### Changing code without a plan
+Wrong
+```text
+"I started editing before identifying the entry point."
+```
+Correct
+```text
+"I confirmed the entry point and constraints, then made a small, targeted change."
+```
+Explanation: A short plan reduces churn and prevents wrong-scope changes.
+
+### Large sweeping edits
+Wrong
+```text
+"I refactored the whole module while fixing a single bug."
+```
+Correct
+```text
+"I limited changes to the function involved in the bug."
+```
+Explanation: Large edits increase risk and make review harder.
+
+### Inventing new conventions
+Wrong
+```text
+"I introduced a new helper pattern that isn't used elsewhere."
+```
+Correct
+```text
+"I matched the existing helper pattern already used in this module."
+```
+Explanation: Consistency keeps the codebase predictable and maintainable.

@@ -1,36 +1,27 @@
 ---
 name: skills/general/accessibility
 description: Checklist for accessible UI and WCAG-aligned audits.
-resources:
-  - https://github.com/LadyBluenotes/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md
-type: skill
+type: sub-skill
 category: general
+sources:
+  - https://github.com/LadyBluenotes/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md
 ---
 
 # Accessibility
-## Apply When
-- Building or reviewing UI/UX, frontend components, or content-heavy pages.
-- Auditing interfaces for WCAG 2.2 compliance.
+## Setup
+Use this when building or reviewing UI/UX, frontend components, or content-heavy pages.
 
-## Do
-- Prefer semantic HTML before ARIA.
-- Ensure keyboard access and visible focus states.
-- Verify color contrast and non-color cues for meaning.
-- Provide text alternatives for non-text content.
-- Validate labels, headings, and landmarks.
+## Core Patterns
 
-## Examples
+### Prefer semantic HTML
+Use native elements before ARIA. Add ARIA only to clarify semantics that cannot be expressed otherwise.
 
 ```html
-<a href="#main" class="skip-link">Skip to main content</a>
-<main id="main">...</main>
+<button type="button">Save</button>
 ```
 
-```html
-<label for="email">Email</label>
-<input id="email" type="email" aria-describedby="email-help" />
-<p id="email-help">We will never share your email.</p>
-```
+### Keyboard and focus
+Ensure every interactive element is reachable and has a visible focus style.
 
 ```css
 :focus-visible {
@@ -39,37 +30,55 @@ category: general
 }
 ```
 
+### Labels and landmarks
+Provide explicit labels and meaningful landmarks so screen readers can navigate.
+
+```html
+<label for="email">Email</label>
+<input id="email" type="email" aria-describedby="email-help" />
+<p id="email-help">We will never share your email.</p>
+```
+
+### Non-text alternatives
+Use meaningful alt text for informative images and empty alt text for decorative images.
+
 ```html
 <img src="chart.png" alt="Q2 revenue up 18% from Q1" />
 <img src="divider.png" alt="" />
 ```
 
-```javascript
-const trapFocus = (container) => {
-  const items = container.querySelectorAll(
-    "a, button, input, select, textarea, [tabindex]:not([tabindex='-1'])",
-  );
-  const first = items[0];
-  const last = items[items.length - 1];
+## Common Mistakes
 
-  container.addEventListener("keydown", (event) => {
-    if (event.key !== "Tab") return;
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
-  });
-};
+### Clickable divs
+Wrong
+```html
+<div onclick="save()">Save</div>
 ```
+Correct
+```html
+<button type="button" onclick="save()">Save</button>
+```
+Explanation: Native controls provide keyboard support and correct semantics.
 
-## Don't
-- Don't hide focus outlines without providing a visible replacement.
-- Don't rely on color alone for status or instructions.
-- Don't use ARIA to replace native controls when native semantics exist.
+### Missing labels
+Wrong
+```html
+<input type="email" placeholder="Email" />
+```
+Correct
+```html
+<label for="email">Email</label>
+<input id="email" type="email" />
+```
+Explanation: Placeholders are not reliable labels for assistive technology.
 
-## Output
-- UI work includes keyboard, contrast, and label coverage.
-- Audit results identify the impacted component and guideline category.
+### Color-only meaning
+Wrong
+```html
+<span class="status-green">Active</span>
+```
+Correct
+```html
+<span class="status status--active" aria-label="Status: active">Active</span>
+```
+Explanation: Provide non-color cues so meaning is accessible to all users.
