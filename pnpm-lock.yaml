@@ -15,6 +15,9 @@ importers:
         specifier: ^2.8.2
         version: 2.8.2
     devDependencies:
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       vitest:
         specifier: ^3.2.4
         version: 3.2.4(yaml@2.8.2)
@@ -417,6 +420,11 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
@@ -852,6 +860,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  husky@9.1.7: {}
 
   js-tokens@9.0.1: {}
 

@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "gen:skill-meta": "node scripts/gen-skill-meta.mjs",
+    "prepare": "husky install",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -26,6 +27,7 @@
     "yaml": "^2.8.2"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "vitest": "^3.2.4"
   },
   "license": "MIT",

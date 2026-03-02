@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+pnpm run gen:skill-meta
+git add skills/**/_meta/domain_map.yaml
