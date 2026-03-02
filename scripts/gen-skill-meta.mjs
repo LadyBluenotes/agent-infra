@@ -154,6 +154,28 @@ const ensureMetaDir = async (categoryDir) => {
   return metaDir;
 };
 
+const readYamlIfExists = async (filePath) => {
+  try {
+    const content = await fs.readFile(filePath, "utf8");
+    return { content, data: YAML.parse(content) };
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
+};
+
+const readTextIfExists = async (filePath) => {
+  try {
+    const content = await fs.readFile(filePath, "utf8");
+    return { content };
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
+};
+
+const stableStringify = (value) => JSON.stringify(value);
+
 const categories = await fs.readdir(skillsRoot, { withFileTypes: true });
 
 for (const entry of categories) {
@@ -162,14 +184,36 @@ for (const entry of categories) {
   const categoryDir = path.join(skillsRoot, categoryName);
   const metaDir = await ensureMetaDir(categoryDir);
   const domainMap = await buildDomainMap(categoryDir, categoryName);
+  const domainMapPath = path.join(metaDir, "domain_map.yaml");
+  const existingDomainMap = await readYamlIfExists(domainMapPath);
 
-  await fs.writeFile(
-    path.join(metaDir, "domain_map.yaml"),
-    YAML.stringify(domainMap),
-    "utf8"
-  );
+  if (existingDomainMap?.data) {
+    const prevComparable = {
+      version: existingDomainMap.data.version,
+      category: existingDomainMap.data.category,
+      skills: existingDomainMap.data.skills,
+    };
+    const nextComparable = {
+      version: domainMap.version,
+      category: domainMap.category,
+      skills: domainMap.skills,
+    };
 
-  await fs.writeFile(path.join(metaDir, "skill_spec.md"), META_SPEC, "utf8");
+    if (stableStringify(prevComparable) === stableStringify(nextComparable)) {
+      domainMap.generated_at = existingDomainMap.data.generated_at;
+    }
+  }
+
+  const domainMapContent = YAML.stringify(domainMap);
+  if (existingDomainMap?.content !== domainMapContent) {
+    await fs.writeFile(domainMapPath, domainMapContent, "utf8");
+  }
+
+  const skillSpecPath = path.join(metaDir, "skill_spec.md");
+  const existingSpec = await readTextIfExists(skillSpecPath);
+  if (existingSpec?.content !== META_SPEC) {
+    await fs.writeFile(skillSpecPath, META_SPEC, "utf8");
+  }
 }
 
 console.log("Generated _meta domain maps.");
