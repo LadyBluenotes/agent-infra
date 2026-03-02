@@ -44,7 +44,7 @@ name: skills/[category]/[skill-name]
 description: >
   Dense, 1–2 sentence routing key. What this skill covers.
 type: [core | sub-skill | reference]
-category: [general | typescript | javascript | docs | debug | review | performance | seo | research]
+  category: [general | typescript | javascript | docs | debug | review | performance | seo | research | libraries]
 library: [optional]
 library_version: [optional]
 sources:
@@ -84,6 +84,8 @@ sources:
 ## References (optional)
 
 - @skills/[category]/[reference-skill].md
+
+Include this section whenever you add any references/ files.
 ```
 
 ### Core Index Skills (index.md)
@@ -143,6 +145,8 @@ requires:            # only for framework/composition skills
 
 ## References (optional)
 - references/[topic].md
+
+Include this section whenever you add any references/ files.
 ```
 
 Use meta/domain-discovery and meta/tree-generator to build these.
@@ -191,5 +195,5 @@ category: [language | framework | task]
 | Code blocks complete | Real imports, copy-pasteable |
 | No Apply/Do/Don’t | Use Setup/Core Patterns/Common Mistakes |
 | One concern per skill | Split to sub-skills if too broad |
-| References lean | Use references for deep detail |
+| References lean | Use references for deep detail; include References section when references/ exists |
 | Registered | registry.yaml updated |

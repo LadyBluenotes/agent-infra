@@ -15,43 +15,53 @@ program
   .description('Personal CLI toolkit')
   .version('1.0.0')
 
+const registerAgentsCommands = (parent) => {
+  parent
+    .command('list')
+    .description('List available skills, agents, rules, and contexts')
+    .option('-c, --category <category>', 'Filter by category (code, docs, review, debug, research, seo)')
+    .option('-t, --type <type>', 'Filter by type (skill, agent, rule, context)')
+    .option('--json', 'Output as JSON')
+    .action(cmdList)
+
+  parent
+    .command('show <name>')
+    .description('Show the full content of a module by name')
+    .action(cmdShow)
+
+  parent
+    .command('init')
+    .description('Add agent-infra prompt to agent config files in the current project')
+    .action(cmdInit)
+
+  parent
+    .command('install')
+    .description('Install skills and agents into a project')
+    .option('-c, --category <category>', 'Install only a specific category')
+    .option('-g, --global', 'Install to user-level agent directories')
+    .action(cmdInstall)
+
+  parent
+    .command('pull')
+    .description('Pull latest skills from the remote repo')
+    .action(cmdPull)
+
+  parent
+    .command('generate')
+    .description('Bootstrap a new skill using the meta skills')
+    .action(cmdGenerate)
+}
+
 const agents = program
   .command('agents')
   .description('Manage AI coding agent skills, rules, and agents')
 
-agents
-  .command('list')
-  .description('List available skills, agents, rules, and contexts')
-  .option('-c, --category <category>', 'Filter by category (code, docs, review, debug, research, seo)')
-  .option('-t, --type <type>', 'Filter by type (skill, agent, rule, context)')
-  .option('--json', 'Output as JSON')
-  .action(cmdList)
+registerAgentsCommands(agents)
 
-agents
-  .command('show <name>')
-  .description('Show the full content of a module by name')
-  .action(cmdShow)
+const playbook = program
+  .command('playbook')
+  .description('Alias for agents (backwards compatible)')
 
-agents
-  .command('init')
-  .description('Add agent-infra prompt to agent config files in the current project')
-  .action(cmdInit)
-
-agents
-  .command('install')
-  .description('Install skills and agents into a project')
-  .option('-c, --category <category>', 'Install only a specific category')
-  .option('-g, --global', 'Install to user-level agent directories')
-  .action(cmdInstall)
-
-agents
-  .command('pull')
-  .description('Pull latest skills from the remote repo')
-  .action(cmdPull)
-
-agents
-  .command('generate')
-  .description('Bootstrap a new skill using the meta skills')
-  .action(cmdGenerate)
+registerAgentsCommands(playbook)
 
 program.parse()

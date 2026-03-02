@@ -16,6 +16,7 @@ categories:
   performance: [skills/performance]
   seo: [skills/seo]
   research: [skills/research]
+  libraries: [skills/libraries]
 
 # Maps agent names -> agent files
 agents:

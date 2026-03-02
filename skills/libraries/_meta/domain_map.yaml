@@ -1,0 +1,121 @@
+version: 1
+category: libraries
+generated_at: 2026-03-02T18:52:47.547Z
+skills:
+  - id: skills/libraries/react-email/react-email
+    path: skills/libraries/react-email/react-email.md
+    description: Use when building or editing React Email templates with
+      @react-email/components and Tailwind in a Node.js/TypeScript project.
+    keywords:
+      - building
+      - editing
+      - react
+      - email
+      - templates
+      - react-emailcomponents
+      - tailwind
+      - nodejstypescript
+      - project
+      - setup
+      - core
+      - patterns
+    related: []
+    load_with: []
+  - id: skills/libraries/resend/agent-email-inbox
+    path: skills/libraries/resend/agent-email-inbox.md
+    description: Use when building a secure inbound email inbox for an AI agent
+      using Resend webhooks in a Node.js app.
+    keywords:
+      - building
+      - secure
+      - inbound
+      - email
+      - inbox
+      - ai
+      - agent
+      - resend
+      - webhooks
+      - nodejs
+      - app
+      - setup
+    related: []
+    load_with: []
+  - id: skills/libraries/resend/email-best-practices
+    path: skills/libraries/resend/email-best-practices.md
+    description: Use for email deliverability, compliance, capture, list hygiene,
+      reliability, and webhook best practices for product and marketing emails.
+    keywords:
+      - email
+      - deliverability
+      - compliance
+      - capture
+      - list
+      - hygiene
+      - reliability
+      - webhook
+      - best
+      - practices
+      - product
+      - marketing
+    related: []
+    load_with: []
+  - id: skills/libraries/resend/resend-inbound
+    path: skills/libraries/resend/resend-inbound.md
+    description: Use when receiving inbound email with Resend webhooks and fetching
+      email content or attachments via the Resend Node.js SDK.
+    keywords:
+      - receiving
+      - inbound
+      - email
+      - resend
+      - webhooks
+      - fetching
+      - content
+      - attachments
+      - via
+      - nodejs
+      - sdk
+      - setup
+    related: []
+    load_with: []
+  - id: skills/libraries/resend/send-email
+    path: skills/libraries/resend/send-email.md
+    description: Use when sending transactional emails (welcome messages, order
+      confirmations, password resets, receipts), notifications, or bulk emails
+      via Resend API.
+    keywords:
+      - sending
+      - transactional
+      - emails
+      - welcome
+      - messages
+      - order
+      - confirmations
+      - password
+      - resets
+      - receipts
+      - notifications
+      - bulk
+    related: []
+    load_with: []
+  - id: skills/libraries/resend/templates
+    path: skills/libraries/resend/templates.md
+    description: Use when creating, updating, publishing, deleting, or listing
+      Resend email templates via the API, or when defining template variables,
+      understanding draft vs published state, or managing template lifecycle
+      programmatically.
+    keywords:
+      - creating
+      - updating
+      - publishing
+      - deleting
+      - listing
+      - resend
+      - email
+      - templates
+      - via
+      - api
+      - defining
+      - template
+    related: []
+    load_with: []
