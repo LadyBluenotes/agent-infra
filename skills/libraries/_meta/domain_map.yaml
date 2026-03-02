@@ -1,7 +1,289 @@
 version: 1
 category: libraries
-generated_at: 2026-03-02T19:22:43.850Z
+generated_at: 2026-03-02T20:06:45.496Z
 skills:
+  - id: skills/libraries/openrouter/common-errors
+    path: skills/libraries/openrouter/common-errors.md
+    description: Diagnose common OpenRouter errors in TypeScript apps.
+    keywords:
+      - diagnose
+      - common
+      - openrouter
+      - errors
+      - typescript
+      - apps
+      - setup
+      - core
+      - patterns
+      - map
+      - status
+      - codes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/context-optimization
+    path: skills/libraries/openrouter/context-optimization.md
+    description: Optimize context length and prompt content for OpenRouter models.
+    keywords:
+      - optimize
+      - context
+      - length
+      - prompt
+      - content
+      - openrouter
+      - models
+      - optimization
+      - setup
+      - core
+      - patterns
+      - common
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/function-calling
+    path: skills/libraries/openrouter/function-calling.md
+    description: Use tool/function calling patterns with OpenRouter models.
+    keywords:
+      - toolfunction
+      - calling
+      - patterns
+      - openrouter
+      - models
+      - function
+      - setup
+      - core
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/hello-world
+    path: skills/libraries/openrouter/hello-world.md
+    description: Send a basic chat completion with the OpenRouter TypeScript SDK.
+    keywords:
+      - send
+      - basic
+      - chat
+      - completion
+      - openrouter
+      - typescript
+      - sdk
+      - hello
+      - world
+      - setup
+      - core
+      - patterns
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/install-auth
+    path: skills/libraries/openrouter/install-auth.md
+    description: Install the OpenRouter SDK and authenticate with an API key in a
+      TypeScript project.
+    keywords:
+      - install
+      - openrouter
+      - sdk
+      - authenticate
+      - api
+      - key
+      - typescript
+      - project
+      - setup
+      - core
+      - patterns
+      - initialize
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/known-pitfalls
+    path: skills/libraries/openrouter/known-pitfalls.md
+    description: Known OpenRouter integration pitfalls and how to avoid them.
+    keywords:
+      - known
+      - openrouter
+      - integration
+      - pitfalls
+      - avoid
+      - them
+      - setup
+      - core
+      - patterns
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/model-catalog
+    path: skills/libraries/openrouter/model-catalog.md
+    description: Discover and choose OpenRouter model ids for chat completions in TS.
+    keywords:
+      - discover
+      - choose
+      - openrouter
+      - model
+      - ids
+      - chat
+      - completions
+      - ts
+      - catalog
+      - setup
+      - core
+      - patterns
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/model-routing
+    path: skills/libraries/openrouter/model-routing.md
+    description: Route requests to different OpenRouter models based on task needs.
+    keywords:
+      - route
+      - requests
+      - different
+      - openrouter
+      - models
+      - based
+      - task
+      - needs
+      - model
+      - routing
+      - setup
+      - core
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/multi-provider
+    path: skills/libraries/openrouter/multi-provider.md
+    description: Use multiple providers through OpenRouter with a single integration.
+    keywords:
+      - multiple
+      - providers
+      - through
+      - openrouter
+      - single
+      - integration
+      - multi-provider
+      - setup
+      - core
+      - patterns
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/openai-compat
+    path: skills/libraries/openrouter/openai-compat.md
+    description: Optional OpenAI-compatible usage notes for OpenRouter (only if required).
+    keywords:
+      - optional
+      - openai-compatible
+      - usage
+      - notes
+      - openrouter
+      - only
+      - if
+      - required
+      - openai
+      - compatibility
+      - setup
+      - core
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/performance-tuning
+    path: skills/libraries/openrouter/performance-tuning.md
+    description: Improve latency and throughput for OpenRouter requests in TS.
+    keywords:
+      - improve
+      - latency
+      - throughput
+      - openrouter
+      - requests
+      - ts
+      - performance
+      - tuning
+      - setup
+      - core
+      - patterns
+      - common
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/pricing-basics
+    path: skills/libraries/openrouter/pricing-basics.md
+    description: Understand OpenRouter pricing basics and how model choice impacts cost.
+    keywords:
+      - understand
+      - openrouter
+      - pricing
+      - basics
+      - model
+      - choice
+      - impacts
+      - cost
+      - setup
+      - core
+      - patterns
+      - make
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/prod-checklist
+    path: skills/libraries/openrouter/prod-checklist.md
+    description: Production checklist for OpenRouter usage in TypeScript apps.
+    keywords:
+      - production
+      - checklist
+      - openrouter
+      - usage
+      - typescript
+      - apps
+      - setup
+      - core
+      - patterns
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/sdk-patterns
+    path: skills/libraries/openrouter/sdk-patterns.md
+    description: Reusable TypeScript patterns for calling OpenRouter with the SDK.
+    keywords:
+      - reusable
+      - typescript
+      - patterns
+      - calling
+      - openrouter
+      - sdk
+      - setup
+      - core
+      - create
+      - typed
+      - helper
+      - add
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/streaming-setup
+    path: skills/libraries/openrouter/streaming-setup.md
+    description: Stream OpenRouter responses in a Node.js/TypeScript app.
+    keywords:
+      - stream
+      - openrouter
+      - responses
+      - nodejstypescript
+      - app
+      - streaming
+      - setup
+      - core
+      - patterns
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/libraries/openrouter/team-setup
+    path: skills/libraries/openrouter/team-setup.md
+    description: Team setup considerations for OpenRouter in a TS codebase.
+    keywords:
+      - team
+      - setup
+      - considerations
+      - openrouter
+      - ts
+      - codebase
+      - core
+      - patterns
+      - common
+      - mistakes
+    related: []
+    load_with: []
   - id: skills/libraries/react-email/react-email
     path: skills/libraries/react-email/react-email.md
     description: Use when building or editing React Email templates with

@@ -15,3 +15,4 @@ category: libraries
 | Resend agent inbox | @skills/libraries/resend/agent-email-inbox.md |
 | Resend email best practices | @skills/libraries/resend/email-best-practices.md |
 | React Email | @skills/libraries/react-email/react-email.md |
+| OpenRouter | @skills/libraries/openrouter/install-auth.md |
