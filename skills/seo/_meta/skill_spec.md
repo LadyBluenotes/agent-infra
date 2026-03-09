@@ -1,3 +1,9 @@
+---
+name: skills/seo/_meta/skill_spec
+description: Generated skill meta spec for the Seo category.
+type: context
+category: seo
+---
 # Skill Meta Spec
 
 This directory is generated. Do not edit by hand.

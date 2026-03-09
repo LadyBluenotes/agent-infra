@@ -1,6 +1,6 @@
 version: 1
 category: frameworks
-generated_at: 2026-03-02T20:06:45.453Z
+generated_at: 2026-03-09T22:41:34.081Z
 skills:
   - id: skills/frameworks/react/async
     path: skills/frameworks/react/async.md
@@ -110,6 +110,294 @@ skills:
       - per-request
     related: []
     load_with: []
+  - id: skills/frameworks/solid/actions
+    path: skills/frameworks/solid/actions.md
+    description: Action patterns and side-effect workflows.
+    keywords:
+      - action
+      - patterns
+      - side-effect
+      - workflows
+      - actions
+      - setup
+      - core
+      - track
+      - pending
+      - state
+      - signals
+      - common
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/components
+    path: skills/frameworks/solid/components.md
+    description: Components, props, and composition patterns.
+    keywords:
+      - components
+      - props
+      - composition
+      - patterns
+      - setup
+      - core
+      - preserve
+      - reactivity
+      - accessors
+      - split
+      - ergonomic
+      - apis
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/context
+    path: skills/frameworks/solid/context.md
+    description: Context creation and provider usage.
+    keywords:
+      - context
+      - creation
+      - provider
+      - usage
+      - setup
+      - core
+      - patterns
+      - provide
+      - typed
+      - defaults
+      - small
+      - providers
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/control-flow
+    path: skills/frameworks/solid/control-flow.md
+    description: Show, For, Switch, and other control-flow components.
+    keywords:
+      - show
+      - switch
+      - other
+      - control-flow
+      - components
+      - control
+      - flow
+      - setup
+      - core
+      - patterns
+      - conditional
+      - ui
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/data
+    path: skills/frameworks/solid/data.md
+    description: Data loading and state wiring patterns.
+    keywords:
+      - data
+      - loading
+      - state
+      - wiring
+      - patterns
+      - setup
+      - core
+      - resources
+      - async
+      - normalize
+      - fast
+      - lookup
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/dom
+    path: skills/frameworks/solid/dom.md
+    description: DOM refs and direct DOM access.
+    keywords:
+      - dom
+      - refs
+      - direct
+      - access
+      - setup
+      - core
+      - patterns
+      - imperative
+      - actions
+      - common
+      - mistakes
+      - medium
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/effects
+    path: skills/frameworks/solid/effects.md
+    description: Side effects, cleanup, and external subscriptions.
+    keywords:
+      - side
+      - effects
+      - cleanup
+      - external
+      - subscriptions
+      - setup
+      - core
+      - patterns
+      - io
+      - common
+      - mistakes
+      - high
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/error-boundary
+    path: skills/frameworks/solid/error-boundary.md
+    description: ErrorBoundary usage and fallback UIs.
+    keywords:
+      - errorboundary
+      - usage
+      - fallback
+      - uis
+      - error
+      - boundary
+      - setup
+      - core
+      - patterns
+      - keep
+      - fallbacks
+      - minimal
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/events
+    path: skills/frameworks/solid/events.md
+    description: Event handling and delegation patterns.
+    keywords:
+      - event
+      - handling
+      - delegation
+      - patterns
+      - events
+      - setup
+      - core
+      - handlers
+      - inline
+      - extracted
+      - prefer
+      - lists
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/lifecycle
+    path: skills/frameworks/solid/lifecycle.md
+    description: Lifecycle hooks and mount/cleanup behavior.
+    keywords:
+      - lifecycle
+      - hooks
+      - mountcleanup
+      - behavior
+      - setup
+      - core
+      - patterns
+      - onmount
+      - dom
+      - browser-only
+      - work
+      - always
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/memos
+    path: skills/frameworks/solid/memos.md
+    description: Derived state with createMemo.
+    keywords:
+      - derived
+      - state
+      - creatememo
+      - memos
+      - setup
+      - core
+      - patterns
+      - values
+      - common
+      - mistakes
+      - high
+      - effects
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/ownership
+    path: skills/frameworks/solid/ownership.md
+    description: Ownership and cleanup of reactive roots.
+    keywords:
+      - ownership
+      - cleanup
+      - reactive
+      - roots
+      - setup
+      - core
+      - patterns
+      - dispose
+      - created
+      - outside
+      - components
+      - common
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/performance
+    path: skills/frameworks/solid/performance.md
+    description: Performance patterns and reactive boundaries.
+    keywords:
+      - performance
+      - patterns
+      - reactive
+      - boundaries
+      - setup
+      - core
+      - minimize
+      - signal
+      - reads
+      - hot
+      - paths
+      - memoized
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/reactive-helpers
+    path: skills/frameworks/solid/reactive-helpers.md
+    description: Helper utilities for reactive graph control.
+    keywords:
+      - helper
+      - utilities
+      - reactive
+      - graph
+      - control
+      - helpers
+      - setup
+      - core
+      - patterns
+      - targeted
+      - dependencies
+      - untrack
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/rendering
+    path: skills/frameworks/solid/rendering.md
+    description: Rendering, hydration, and client entry points.
+    keywords:
+      - rendering
+      - hydration
+      - client
+      - entry
+      - points
+      - setup
+      - core
+      - patterns
+      - keep
+      - render
+      - root
+      - stable
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/resources
+    path: skills/frameworks/solid/resources.md
+    description: Async data with createResource and caching.
+    keywords:
+      - async
+      - data
+      - createresource
+      - caching
+      - resources
+      - setup
+      - core
+      - patterns
+      - key
+      - reactive
+      - source
+      - handle
+    related: []
+    load_with: []
   - id: skills/frameworks/solid/rules
     path: skills/frameworks/solid/rules.md
     description: SolidJS-specific rules and constraints to keep reactivity correct.
@@ -126,5 +414,131 @@ skills:
       - patterns
       - reactive
       - reads
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/signals
+    path: skills/frameworks/solid/signals.md
+    description: Signals and fine-grained reactivity.
+    keywords:
+      - signals
+      - fine-grained
+      - reactivity
+      - setup
+      - core
+      - patterns
+      - setters
+      - updates
+      - read
+      - inside
+      - reactive
+      - scopes
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/ssr
+    path: skills/frameworks/solid/ssr.md
+    description: Server-side rendering constraints and hydration safety.
+    keywords:
+      - server-side
+      - rendering
+      - constraints
+      - hydration
+      - safety
+      - ssr
+      - setup
+      - core
+      - patterns
+      - guard
+      - browser-only
+      - apis
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/state
+    path: skills/frameworks/solid/state.md
+    description: Local component state patterns.
+    keywords:
+      - local
+      - component
+      - state
+      - patterns
+      - setup
+      - core
+      - keep
+      - minimal
+      - derived
+      - elsewhere
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/store-helpers
+    path: skills/frameworks/solid/store-helpers.md
+    description: Store helpers and reconciliation utilities.
+    keywords:
+      - store
+      - helpers
+      - reconciliation
+      - utilities
+      - setup
+      - core
+      - patterns
+      - reconcile
+      - large
+      - updates
+      - produce
+      - local
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/stores
+    path: skills/frameworks/solid/stores.md
+    description: Store state with createStore and immutable updates.
+    keywords:
+      - store
+      - state
+      - createstore
+      - immutable
+      - updates
+      - stores
+      - setup
+      - core
+      - patterns
+      - nested
+      - path
+      - setters
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/suspense
+    path: skills/frameworks/solid/suspense.md
+    description: Suspense boundaries for async rendering.
+    keywords:
+      - suspense
+      - boundaries
+      - async
+      - rendering
+      - setup
+      - core
+      - patterns
+      - wrap
+      - resource-driven
+      - components
+      - common
+      - mistakes
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/transitions
+    path: skills/frameworks/solid/transitions.md
+    description: Transitions for non-blocking updates.
+    keywords:
+      - transitions
+      - non-blocking
+      - updates
+      - setup
+      - core
+      - patterns
+      - wrap
+      - expensive
+      - common
+      - mistakes
+      - medium
+      - small
     related: []
     load_with: []

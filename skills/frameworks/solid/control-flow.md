@@ -8,7 +8,8 @@ library_version: "1.8"
 sources:
   - https://docs.solidjs.com/concepts/control-flow/conditional-rendering
   - https://docs.solidjs.com/concepts/control-flow/list-rendering
-  - https://docs.solidjs.com/concepts/control-flow/dynamic---
+  - https://docs.solidjs.com/concepts/control-flow/dynamic
+---
 
 # Control Flow
 

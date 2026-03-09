@@ -13,6 +13,15 @@ import { parse as parseYaml } from 'yaml'
  * Returns { basePath, mode } or null.
  */
 export function resolveRepoRoot(startDir = process.cwd()) {
+  // Check for global skills install (~/.agents/skills)
+  const homeDir = process.env.HOME || process.env.USERPROFILE
+  if (homeDir) {
+    const globalPath = path.join(homeDir, '.agents', 'skills')
+    if (fs.existsSync(path.join(globalPath, 'registry.yaml'))) {
+      return { basePath: globalPath, mode: 'global' }
+    }
+  }
+
   // Check for installed mode (node_modules)
   const installedPath = path.resolve(startDir, 'node_modules', '@ladybluenotes', 'agents')
   if (fs.existsSync(path.join(installedPath, 'registry.yaml'))) {

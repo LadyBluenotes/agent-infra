@@ -6,7 +6,8 @@ category: frameworks
 library: solidjs
 library_version: "1.8"
 sources:
-  - https://docs.solidjs.com/guides/complex-state-management---
+  - https://docs.solidjs.com/guides/complex-state-management
+---
 
 # Performance
 

@@ -6,7 +6,8 @@ category: frameworks
 library: solidjs
 library_version: "1.8"
 sources:
-  - https://docs.solidjs.com/concepts/stores---
+  - https://docs.solidjs.com/concepts/stores
+---
 
 # Store Helpers
 

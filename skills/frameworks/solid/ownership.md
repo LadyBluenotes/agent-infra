@@ -6,7 +6,8 @@ category: frameworks
 library: solidjs
 library_version: "1.8"
 sources:
-  - https://docs.solidjs.com/concepts/intro-to-reactivity---
+  - https://docs.solidjs.com/concepts/intro-to-reactivity
+---
 
 # Ownership
 
