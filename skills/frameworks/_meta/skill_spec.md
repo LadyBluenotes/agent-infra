@@ -1,9 +1,3 @@
----
-name: skills/frameworks/_meta/skill_spec
-description: Generated skill meta spec for the Frameworks category.
-type: context
-category: frameworks
----
 # Skill Meta Spec
 
 This directory is generated. Do not edit by hand.

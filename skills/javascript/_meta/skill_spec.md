@@ -1,9 +1,3 @@
----
-name: skills/javascript/_meta/skill_spec
-description: Generated skill meta spec for the Javascript category.
-type: context
-category: javascript
----
 # Skill Meta Spec
 
 This directory is generated. Do not edit by hand.

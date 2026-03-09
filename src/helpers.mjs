@@ -98,6 +98,7 @@ export async function findMarkdownFiles(dir) {
   for (const entry of await fsp.readdir(dir, { withFileTypes: true })) {
     const fullPath = path.join(dir, entry.name)
     if (entry.isDirectory()) {
+      if (entry.name === '_meta') continue
       files.push(...await findMarkdownFiles(fullPath))
     } else if (entry.name.endsWith('.md')) {
       files.push(fullPath)
