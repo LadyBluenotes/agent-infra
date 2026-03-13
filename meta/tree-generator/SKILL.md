@@ -129,7 +129,7 @@ is independently discoverable.
 ```
 skills/
 ├── [lib]-core/                   # Core skill for the library
-│   ├── SKILL.md                  # Core overview + sub-skill registry
+│   ├── SKILL.md                  # Core overview
 │   ├── [domain-1]/
 │   │   └── SKILL.md             # Core sub-skill
 │   ├── [domain-2]/
@@ -137,7 +137,7 @@ skills/
 │   └── references/              # Optional overflow content
 │       └── options.md
 ├── react-[lib]/                  # React framework skill
-│   ├── SKILL.md                  # React overview + sub-skill registry
+│   ├── SKILL.md                  # React overview
 │   ├── [domain-1]/
 │   │   └── SKILL.md             # React-specific sub-skill
 │   └── references/
@@ -167,12 +167,8 @@ skills/
 │   └── SKILL.md
 ```
 
-**Router skill:** A router skill (lightweight entry point with a decision
-table) is optional. If the playbook CLI provides `list` and `show`
-commands, agents can discover skills directly without a router. Only
-create a router skill if the skill set is large enough (15+) that
-browsing the list is insufficient, or if the nested structure needs
-an entry point to guide agents to the right sub-skill.
+Do not create router or category index skills in this repo. Skills are
+discovered directly through the playbook CLI and category metadata.
 
 **Source repository layout for npm distribution:**
 
@@ -209,8 +205,9 @@ skill files are included in the published npm tarball:
 
 ### Step 2 — Write the core skill
 
-The core skill is the foundational overview for the library. It covers
-framework-agnostic concepts and contains the sub-skill registry.
+The core skill is the foundational overview for the library when the domain
+map actually includes a framework-agnostic core. It does not exist just to
+act as an index.
 
 **Frontmatter:**
 
@@ -234,19 +231,6 @@ library_version: "[version this targets]"
 
 [One paragraph: what this library is, what problem it solves. Factual,
 not promotional. Framework-agnostic.]
-
-## Sub-Skills
-
-| Need to... | Read |
-|------------|------|
-| [task 1] | [lib]-core/[domain-1]/SKILL.md |
-| [task 2] | [lib]-core/[domain-2]/SKILL.md |
-
-## Quick Decision Tree
-
-- Setting up for the first time? → [lib]-core/[setup-domain]
-- Working with [concept]? → [lib]-core/[concept-domain]
-- Debugging [issue]? → [lib]-core/[domain] § Common Mistakes
 
 ## Version
 
@@ -360,6 +344,9 @@ Create reference files when any of these apply — not just length overflow:
   or option shapes that agents need for implementation. Move the full
   reference to `references/` and keep only the most common 2–3 in the
   SKILL.md
+- **Deeper optional detail:** The topic benefits from extra specificity or
+  source-backed nuance, but that detail should stay optional so the main
+  skill remains concise and easy to route
 - **Deep validation/schema patterns:** If the library has schema
   validation, type transforms (TInput/TOutput), or similar deep
   configuration surfaces, give them a dedicated reference file even if
@@ -667,8 +654,8 @@ current_skills:
 **ADDITIVE changes:**
 1. Evaluate if new feature belongs in existing domain or needs a new skill
 2. If existing: add to Core Patterns or references/
-3. If new skill needed: create it and update the parent skill's sub-skill
-   registry
+3. If new skill needed: create it and update category metadata or adjacent
+   references as needed
 4. Bump `library_version`
 
 ### Step 3 — Produce a changelog entry
@@ -735,14 +722,12 @@ Output is consumed by all major AI coding agents. To ensure consistency:
 
 When generating a complete skill tree:
 
-1. Core overview SKILL.md — entry point for the library
-2. Core sub-skills in domain order
-3. Framework overview SKILL.md for each framework
-4. Framework sub-skills
-5. Composition skills (if applicable)
-6. Security skills (if applicable)
-7. references/ files for any skill that needs them
-8. CHANGELOG.md entry
+1. Core skills in domain order
+2. Framework skills in domain order
+3. Composition skills (if applicable)
+4. Security skills (if applicable)
+5. references/ files for any skill that needs them
+6. CHANGELOG.md entry
 
 When updating:
 

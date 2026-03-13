@@ -1,7 +1,112 @@
 version: 1
 category: performance
-generated_at: 2026-03-02T20:06:45.502Z
+generated_at: 2026-03-13T16:46:39.002Z
 skills:
+  - id: skills/performance/css
+    path: skills/performance/css.md
+    description: >
+      CSS delivery and stylesheet hygiene for front-end performance. Use when
+      reducing CSS bytes, blocking behavior, unused selectors, or critical-path
+      style work.
+    keywords:
+      - css
+      - delivery
+      - stylesheet
+      - hygiene
+      - front-end
+      - performance
+      - reducing
+      - bytes
+      - blocking
+      - behavior
+      - unused
+      - selectors
+    related: []
+    load_with: []
+  - id: skills/performance/fonts
+    path: skills/performance/fonts.md
+    description: >
+      Webfont loading guidance for payload size, connection setup, and readable
+      rendering. Use when tuning WOFF2 delivery, preconnect hints, variant
+      count, or `font-display` strategy.
+    keywords:
+      - webfont
+      - loading
+      - guidance
+      - payload
+      - size
+      - connection
+      - setup
+      - readable
+      - rendering
+      - tuning
+      - woff2
+      - delivery
+    related: []
+    load_with: []
+  - id: skills/performance/html
+    path: skills/performance/html.md
+    description: >
+      Front-end HTML loading patterns for render path performance. Use when
+      reviewing document order, iframes, resource hints, and production HTML
+      output.
+    keywords:
+      - front-end
+      - html
+      - loading
+      - patterns
+      - render
+      - path
+      - performance
+      - reviewing
+      - document
+      - order
+      - iframes
+      - resource
+    related: []
+    load_with: []
+  - id: skills/performance/images
+    path: skills/performance/images.md
+    description: >
+      Image delivery guidance for compression, format selection, responsive
+      sources, explicit dimensions, and offscreen loading. Use when image bytes
+      or layout shifts dominate front-end performance.
+    keywords:
+      - image
+      - delivery
+      - guidance
+      - compression
+      - format
+      - selection
+      - responsive
+      - sources
+      - explicit
+      - dimensions
+      - offscreen
+      - loading
+    related: []
+    load_with: []
+  - id: skills/performance/javascript
+    path: skills/performance/javascript.md
+    description: >
+      JavaScript delivery and runtime audit guidance for front-end performance.
+      Use when reducing shipped JS, choosing `async` or `defer`, profiling
+      execution, or controlling dependency bloat.
+    keywords:
+      - javascript
+      - delivery
+      - runtime
+      - audit
+      - guidance
+      - front-end
+      - performance
+      - reducing
+      - shipped
+      - js
+      - choosing
+      - async
+    related: []
+    load_with: []
   - id: skills/performance/optimize
     path: skills/performance/optimize.md
     description: Targeted performance improvements with before/after measurement.
@@ -18,5 +123,148 @@ skills:
       - establish
       - baseline
       - identify
+    related: []
+    load_with: []
+  - id: skills/performance/references/budgets
+    path: skills/performance/references/budgets.md
+    description: >
+      Reference for front-end performance budgets and regression guardrails. Use
+      when the main tools skill needs more detail on budget shape or
+      enforcement.
+    keywords:
+      - reference
+      - front-end
+      - performance
+      - budgets
+      - regression
+      - guardrails
+      - main
+      - tools
+      - skill
+      - needs
+      - more
+      - detail
+    related: []
+    load_with: []
+  - id: skills/performance/references/css-delivery
+    path: skills/performance/references/css-delivery.md
+    description: >
+      Deeper CSS delivery reference for critical CSS, split versus concatenated
+      files, and non-blocking stylesheet tradeoffs.
+    keywords:
+      - deeper
+      - css
+      - delivery
+      - reference
+      - critical
+      - split
+      - versus
+      - concatenated
+      - files
+      - non-blocking
+      - stylesheet
+      - tradeoffs
+    related: []
+    load_with: []
+  - id: skills/performance/references/font-loading
+    path: skills/performance/references/font-loading.md
+    description: >
+      Deeper webfont loading reference for FOIT, FOUT, FOFT, selective preload,
+      and variant management tradeoffs.
+    keywords:
+      - deeper
+      - webfont
+      - loading
+      - reference
+      - foit
+      - fout
+      - foft
+      - selective
+      - preload
+      - variant
+      - management
+      - tradeoffs
+    related: []
+    load_with: []
+  - id: skills/performance/references/javascript-delivery
+    path: skills/performance/references/javascript-delivery.md
+    description: >
+      Deeper JavaScript delivery reference for script loading attributes,
+      third-party cost review, and dependency budget enforcement.
+    keywords:
+      - deeper
+      - javascript
+      - delivery
+      - reference
+      - script
+      - loading
+      - attributes
+      - third-party
+      - cost
+      - review
+      - dependency
+      - budget
+    related: []
+    load_with: []
+  - id: skills/performance/references/loading
+    path: skills/performance/references/loading.md
+    description: >
+      Resource hint reference for HTML loading decisions. Use when the main HTML
+      skill needs more detail on `preload`, `prefetch`, `preconnect`, or
+      `dns-prefetch` tradeoffs.
+    keywords:
+      - resource
+      - hint
+      - reference
+      - html
+      - loading
+      - decisions
+      - main
+      - skill
+      - needs
+      - more
+      - detail
+      - preload
+    related: []
+    load_with: []
+  - id: skills/performance/references/responsive-images
+    path: skills/performance/references/responsive-images.md
+    description: >
+      Deeper responsive-image reference for `srcset`, `sizes`, density
+      descriptors, and art-direction patterns with `<picture>`.
+    keywords:
+      - deeper
+      - responsive-image
+      - reference
+      - srcset
+      - sizes
+      - density
+      - descriptors
+      - art-direction
+      - patterns
+      - picture
+      - responsive
+      - image
+    related: []
+    load_with: []
+  - id: skills/performance/tools
+    path: skills/performance/tools.md
+    description: >
+      Measurement, budgets, and monitoring guidance for front-end performance.
+      Use when establishing a baseline, selecting Lighthouse or WebPageTest
+      style tools, or turning findings into regression guards.
+    keywords:
+      - measurement
+      - budgets
+      - monitoring
+      - guidance
+      - front-end
+      - performance
+      - establishing
+      - baseline
+      - selecting
+      - lighthouse
+      - webpagetest
+      - style
     related: []
     load_with: []

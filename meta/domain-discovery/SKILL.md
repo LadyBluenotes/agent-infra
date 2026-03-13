@@ -236,9 +236,11 @@ or providers with distinct configuration surfaces?" If yes, list them
 as `subsystems`. These tell the skill-tree-generator to produce
 per-subsystem reference files.
 
-Also flag dense API surfaces — if a topic has >10 distinct operators,
-option shapes, or patterns (e.g. query operators, schema validation
-rules), note it as a `reference_candidates` entry.
+Also flag `reference_candidates` when either of these apply:
+- A topic has >10 distinct operators, option shapes, or patterns and would
+  bloat the main skill
+- A topic needs deeper source-backed detail that should stay optional and
+  only load when an agent needs more specificity
 
 ### 3d — Extract failure modes
 
@@ -494,9 +496,9 @@ skills:
       - name: "[adapter/backend name]"
         package: "[npm package if separate]"
         config_surface: "[brief description of unique config]"
-    reference_candidates:          # omit if no dense API surfaces
+    reference_candidates:          # omit if no overflow or deeper-detail topics
       - topic: "[e.g. query operators, schema validation]"
-        reason: "[e.g. >10 distinct operators with signatures]"
+        reason: "[e.g. >10 distinct operators with signatures, or a deeper topic that should stay optional]"
     failure_modes:
       - mistake: "[5-10 word phrase]"
         mechanism: "[one sentence]"
@@ -580,8 +582,8 @@ not promotional.]
 - **Framework skills:** [list per-framework skills needed]
 - **Lifecycle skills:** [list journey/lifecycle skills if applicable]
 - **Composition skills:** [list integration seams needing composition skills]
-- **Reference files:** [list skills needing references/ based on subsystems
-  or dense API surfaces]
+- **Reference files:** [list skills needing references/ because of subsystem
+  diversity, overflow, or deeper optional detail]
 
 ## Composition Opportunities
 
@@ -612,7 +614,7 @@ not promotional.]
 | Cross-skill failure modes tagged | Failure modes spanning skills list all relevant slugs |
 | Tensions identified | 2–4 cross-skill tensions; if none found, revisit skill boundaries |
 | Subsystems flagged | Skills with 3+ adapters/backends list them as subsystems |
-| Dense surfaces flagged | Topics with >10 patterns noted as reference_candidates |
+| Reference candidates flagged | Dense or deeper-detail topics noted as reference_candidates |
 | Lifecycle skills considered | Suggest journey skills when docs have the material |
 
 ---

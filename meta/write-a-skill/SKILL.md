@@ -9,7 +9,6 @@ metadata:
   category: meta-tooling
   output_artifacts:
     - skill_file.md
-    - skill_index.md
   skills:
     - domain-discovery
     - tree-generator
@@ -88,30 +87,6 @@ sources:
 Include this section whenever you add any references/ files.
 ```
 
-### Core Index Skills (index.md)
-
-Use a short index instead of Apply/Do/Don’t.
-
-```markdown
----
-name: skills/[category]/index
-description: Entry point and index for [category] skills.
-type: core
-category: [category]
----
-
-# [Category]
-
-| Area | Skill |
-| --- | --- |
-| [Topic] | @skills/[category]/[skill].md |
-
-## References
-- @skills/[category]/[reference].md
-```
-
----
-
 ## Library Skills (generated)
 
 Library-specific skills should follow the tree-generator format:
@@ -180,9 +155,9 @@ category: [language | framework | task]
 
 ## Registration
 
-1) Add skill paths to `registry.yaml` under the correct category.
+1) Add skill paths to `registry.yaml` under the correct category when the registry structure requires it.
 2) Ensure the skill is discoverable via `ladybluenotes playbook list`.
-3) Update the parent index.md (if adding a new skill).
+3) Update category metadata such as `domain_map.yaml` when the category uses generated discovery data.
 
 ---
 
@@ -195,5 +170,5 @@ category: [language | framework | task]
 | Code blocks complete | Real imports, copy-pasteable |
 | No Apply/Do/Don’t | Use Setup/Core Patterns/Common Mistakes |
 | One concern per skill | Split to sub-skills if too broad |
-| References lean | Use references for deep detail; include References section when references/ exists |
+| References lean | Use references for overflow or deeper optional detail; include References section when references/ exists |
 | Registered | registry.yaml updated |
