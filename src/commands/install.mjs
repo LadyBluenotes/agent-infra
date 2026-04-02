@@ -40,6 +40,12 @@ async function copyDir(src, dest) {
   }
 }
 
+async function copyFileIfExists(src, dest) {
+  if (!fs.existsSync(src)) return
+  await fsp.mkdir(path.dirname(dest), { recursive: true })
+  await fsp.copyFile(src, dest)
+}
+
 export async function cmdInstall(options) {
   const root = resolveRepoRoot()
   if (!root) {
@@ -108,6 +114,10 @@ export async function cmdInstall(options) {
       await copyDir(src, dest)
       totalFiles++
     }
+    await copyFileIfExists(
+      path.join(basePath, 'registry.yaml'),
+      path.join(target, 'registry.yaml'),
+    )
     console.log(`✓ Installed to ${path.relative(cwd, target) || target}`)
   }
 
