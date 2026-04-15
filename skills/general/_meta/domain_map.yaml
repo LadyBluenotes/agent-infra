@@ -172,7 +172,7 @@ skills:
   - id: skills/general/work-log
     path: skills/general/work-log.md
     description: Create or update requested cumulative work logs under
-      notes/work-log, with checkbox plans, plan notes, source links, tradeoffs,
+      @notes/work-log, with checkbox plans, plan notes, source links, tradeoffs,
       tests, and verification.
     keywords:
       - create

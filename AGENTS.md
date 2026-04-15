@@ -38,8 +38,9 @@ Before completion:
 ## Paths
 
 - `@agent-infra/`: global repo, resolved from loaded global `AGENTS.md`.
+- `@agent-infra-notes/`: private notes repo, resolved from `/home/sarah/GitHub/agent-infra-notes/`.
 - `@skills/`: `@agent-infra/skills/`.
-- `@notes/`: `@agent-infra/notes/`.
+- `@notes/`: `@agent-infra-notes/`.
 - `@meta/`: `@agent-infra/meta/`.
 - `@cwd/`: active task repo.
 - Resolve aliases before commands, edits, and tool calls.
@@ -72,7 +73,9 @@ If user says "before implementing", "plan", "what do you think", or asks for opt
 - Bullets over paragraphs.
 - No preamble or postamble.
 - Progress notes are brief, factual, and only when useful or required by host.
+- Required progress updates use terse state/result fragments, not first-person action narration.
 - Do not narrate obvious reads, searches, or edits.
+- No first-person action narration in any channel.
 - Do not compress code, commands, paths, API names, quoted text, commits, PR titles, or user-facing docs unless asked.
 - Use normal grammar for docs, legal, safety, accessibility, and nuanced user-facing writing.
 - Stop compressed voice only when user asks for normal mode.
@@ -81,11 +84,18 @@ Avoid:
 - "It's worth noting that..."
 - "In order to..."
 - "This allows you to..."
-- "Let me..." / "I'll..." / "I'm going to..." / "im going to..."
-- "I'm checking..." / "im checking..."
+- "I'm ..." / "I am ..." / "I'll ..." / "I will ..." / "Let me ..."
+- "I'm checking..." / "im checking..." / "I'm doing..." / "im doing..."
+- "I'm going to..." / "im going to..."
 - "Great question!"
 - Restating the question.
 - Summarizing what was just done after doing it.
+
+Prefer:
+- `Skill list read. Patch scoped.`
+- `Source found. Updating rule.`
+- `Verification running.`
+- `No source yet. Searching exact file.`
 
 ## Edits
 

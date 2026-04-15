@@ -29,12 +29,12 @@ Capture the repo id, prompt pattern, chosen skills, and rationale in `@notes/ski
 
 Use the path after `/GitHub/` as the repo id: `agent-infra`, `tanstack/tanstack.com`, `solid-docs`. If the repo is not under `/GitHub/`, use the shortest unique repo path available.
 
-### Use the global log only
+### Use the private notes log only
 Always append skill retrieval entries to `@notes/skill-retrieval.md`, even when working in another repo.
 
-Do not create or update repo-local `notes/skill-retrieval.md` files outside `@agent-infra/`. If one exists, read it only when useful and write new entries to the global log.
+Do not create or update repo-local `notes/skill-retrieval.md` files outside the private `@notes/` root. If one exists elsewhere, read it only when useful and write new entries to the private log.
 
-If the global log path is unavailable, state that logging was skipped. Do not fall back to a repo-local log.
+If the private log path is unavailable, state that logging was skipped. Do not fall back to a repo-local log.
 
 Include repo id, prompt pattern, skills, rationale, outcome, success, signals, and redactions.
 

@@ -1,6 +1,6 @@
 ---
 name: skills/general/work-log
-description: Create or update requested cumulative work logs under notes/work-log, with checkbox plans, plan notes, source links, tradeoffs, tests, and verification.
+description: Create or update requested cumulative work logs under @notes/work-log, with checkbox plans, plan notes, source links, tradeoffs, tests, and verification.
 type: sub-skill
 category: general
 ---
@@ -12,7 +12,7 @@ Use this when the user asks to log, preserve, resume, or summarize task context.
 Before substantial work, check for likely logs and ask whether to update or create one.
 
 ```text
-Found notes/work-log/<repo-id>/<task-slug>.md. Update it for this work?
+Found @notes/work-log/<repo-id>/<task-slug>.md. Update it for this work?
 ```
 
 If no likely log exists:
@@ -24,16 +24,16 @@ Do you want a work-log for this task?
 ## Core Patterns
 
 ### Store cumulative task logs
-Use one Markdown file per repo task.
+Use one Markdown file per repo task in the private notes repo.
 
 ```text
-notes/work-log/<repo-id>/<task-slug>.md
+@notes/work-log/<repo-id>/<task-slug>.md
 ```
 
 Append to the existing file. Do not create per-chat files unless the task is chat-scoped.
 
 ### Match existing logs first
-Before asking, search `notes/work-log/<repo-id>/` for likely matches.
+Before asking, search `@notes/work-log/<repo-id>/` for likely matches.
 
 Match by:
 - task slug words
@@ -121,12 +121,12 @@ Explanation: Work logs are user-controlled context, not automatic noise.
 ### Splitting one task across chats
 Wrong
 ```text
-notes/work-log/<repo-id>/chat-1.md
-notes/work-log/<repo-id>/chat-2.md
+@notes/work-log/<repo-id>/chat-1.md
+@notes/work-log/<repo-id>/chat-2.md
 ```
 Correct
 ```text
-notes/work-log/<repo-id>/<task-slug>.md
+@notes/work-log/<repo-id>/<task-slug>.md
 ```
 Explanation: The file is cumulative by task, so context survives chat boundaries.
 
