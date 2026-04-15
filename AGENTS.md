@@ -13,8 +13,8 @@
 ## Hard Gates
 
 Before substantial work:
-- Skill check: run `ladybluenotes playbook list`, or use skills already listed in context.
-- Skill guidance: if a skill fits, load it with `ladybluenotes agents show <skill-name>`.
+- Skill check: run `ladybluenotes skills list`, or use skills already listed in context.
+- Skill guidance: if a skill fits, load it with `ladybluenotes skills show <skill-name>`.
 - Skill log: record useful routing patterns in `@notes/skill-retrieval.md`.
 
 Before factual claims:
@@ -80,7 +80,8 @@ Avoid:
 - "It's worth noting that..."
 - "In order to..."
 - "This allows you to..."
-- "Let me..." / "I'll..." / "I'm going to..."
+- "Let me..." / "I'll..." / "I'm going to..." / "im going to..."
+- "I'm checking..." / "im checking..."
 - "Great question!"
 - Restating the question.
 - Summarizing what was just done after doing it.
@@ -101,6 +102,13 @@ Avoid:
 - Match verification to claim.
 - If unchecked, say `Not verified` and give the exact command.
 - Completion claims need fresh evidence.
+
+## Process Hygiene
+
+- Use `@skills/general/process-hygiene.md` for long-running processes and temp/cache cleanup.
+- Stop task-owned processes before completion unless the user asked to keep them running.
+- Clean only task-owned temp/cache paths.
+- Use `ladybluenotes skills clean --yes` for LadyBluenotes-owned cleanup.
 
 ## Skills
 
@@ -163,6 +171,6 @@ Avoid:
 
 ## CLI
 
-- Skill list: `ladybluenotes playbook list`
-- Skill content: `ladybluenotes agents show <name>`
+- Skill list: `ladybluenotes skills list`
+- Skill content: `ladybluenotes skills show <name>`
 - Install, update, and generation commands exist; use them only when requested.

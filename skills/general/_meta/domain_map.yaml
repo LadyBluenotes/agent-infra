@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-04-15T16:51:26.325Z
+generated_at: 2026-04-15T17:24:44.918Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -54,6 +54,26 @@ skills:
       - patterns
       - read
       - editing
+    related: []
+    load_with: []
+  - id: skills/general/process-hygiene
+    path: skills/general/process-hygiene.md
+    description: >
+      Stop task-owned long-running processes and clean only task-owned
+      temp/cache files so agent work does not leave waste on the system.
+    keywords:
+      - stop
+      - task-owned
+      - long-running
+      - processes
+      - clean
+      - only
+      - tempcache
+      - files
+      - so
+      - agent
+      - work
+      - does
     related: []
     load_with: []
   - id: skills/general/simplify

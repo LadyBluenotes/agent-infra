@@ -19,7 +19,7 @@
   "scripts": {
     "gen:skill-meta": "node scripts/gen-skill-meta.mjs",
     "prepare": "husky install",
-    "test": "vitest run",
+    "test": "TMPDIR=/tmp vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {

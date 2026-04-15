@@ -14,6 +14,7 @@ const BASE_DIR = join(__dirname, '..')
 const REGISTRY_PATH = join(BASE_DIR, 'registry.yaml')
 const MAX_LINES = 500
 const DIRS_TO_SCAN = ['skills', 'agents', 'rules', 'contexts']
+const VALID_TYPES = ['skill', 'sub-skill', 'reference', 'agent', 'rule', 'context']
 
 function findMarkdownFiles(dir) {
   const files = []
@@ -23,6 +24,7 @@ function findMarkdownFiles(dir) {
     const fullPath = join(dir, entry)
     const stat = statSync(fullPath)
     if (stat.isDirectory()) {
+      if (entry === '_meta') continue
       files.push(...findMarkdownFiles(fullPath))
     } else if (entry.endsWith('.md')) {
       files.push(fullPath)
@@ -46,6 +48,7 @@ function extractFrontmatter(content) {
 function moduleNameFromFile(filePath) {
   return relative(BASE_DIR, filePath)
     .replace(/\.md$/, '')
+    .replace(/\/SKILL$/, '')
     .split(sep)
     .join('/')
 }
@@ -93,7 +96,7 @@ describe('frontmatter', () => {
 
       it('should have a type', () => {
         expect(frontmatter.type).toBeTruthy()
-        expect(['skill', 'agent', 'rule', 'context']).toContain(frontmatter.type)
+        expect(VALID_TYPES).toContain(frontmatter.type)
       })
 
       it('should have name matching file path', () => {
@@ -166,21 +169,21 @@ describe('registry.yaml', () => {
   describe('agent references', () => {
     registry = parseYaml(content)
 
-    for (const [name, filePath] of Object.entries(registry.agents ?? {})) {
-      it(`agent "${name}" should point to existing file`, () => {
+    it('should point to existing files', () => {
+      for (const [name, filePath] of Object.entries(registry.agents ?? {})) {
         expect(existsSync(join(BASE_DIR, filePath))).toBe(true)
-      })
-    }
+      }
+    })
   })
 
   describe('always_include references', () => {
     registry = parseYaml(content)
 
-    for (const filePath of registry.always_include ?? []) {
-      it(`"${filePath}" should exist`, () => {
+    it('should point to existing files', () => {
+      for (const filePath of registry.always_include ?? []) {
         expect(existsSync(join(BASE_DIR, filePath))).toBe(true)
-      })
-    }
+      }
+    })
   })
 
   describe('category references', () => {

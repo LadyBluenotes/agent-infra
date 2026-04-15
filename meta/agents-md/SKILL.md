@@ -20,7 +20,7 @@ Use this when creating or updating `AGENTS.md`, `CLAUDE.md`, or similar agent in
 - Enumerate local skills and indexes before writing.
 
 ```bash
-ladybluenotes playbook list
+ladybluenotes skills list
 ```
 
 ## Core Patterns

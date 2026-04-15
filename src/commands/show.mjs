@@ -21,7 +21,7 @@ export async function cmdShow(name) {
 
   if (!match) {
     console.error(`Error: No module found matching "${name}".`)
-    console.error('Run "ladybluenotes agents list" to see available modules.')
+    console.error('Run "ladybluenotes skills list" to see available modules.')
     process.exit(1)
   }
 

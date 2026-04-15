@@ -19,17 +19,7 @@ categories:
   libraries: [skills/libraries]
 
 # Maps agent names -> agent files
-agents:
-  typescript: agents/typescript.md
-  javascript: agents/javascript.md
-  solid: agents/solid.md
-  debugger: agents/debugger.md
-  error-detective: agents/error-detective.md
-  docs: agents/docs.md
-  code-simplifier: agents/code-simplifier.md
-  performance-engineer: agents/performance-engineer.md
-  seo-audit: agents/seo-audit.md
-  ui-visual-validator: agents/ui-visual-validator.md
+agents: {}
 
 # Always loaded regardless of context
 always_include: []

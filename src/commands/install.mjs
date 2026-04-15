@@ -124,5 +124,5 @@ export async function cmdInstall(options) {
   console.log()
   console.log(`Installed ${filteredDirs.length} module group(s) to ${targets.length} target(s).`)
   console.log()
-  console.log('Run "ladybluenotes agents init" to add the prompt block to your agent config files.')
+  console.log('Run "ladybluenotes skills init" to add the prompt block to your agent config files.')
 }

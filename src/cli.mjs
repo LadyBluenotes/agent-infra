@@ -7,6 +7,7 @@ import { cmdInit } from './commands/init.mjs'
 import { cmdInstall } from './commands/install.mjs'
 import { cmdPull } from './commands/pull.mjs'
 import { cmdGenerate } from './commands/generate.mjs'
+import { cmdClean } from './commands/clean.mjs'
 
 const program = new Command()
 
@@ -15,7 +16,7 @@ program
   .description('Personal CLI toolkit')
   .version('1.0.0')
 
-const registerAgentsCommands = (parent) => {
+const registerModuleCommands = (parent) => {
   parent
     .command('list')
     .description('List available skills, agents, rules, and contexts')
@@ -50,18 +51,26 @@ const registerAgentsCommands = (parent) => {
     .command('generate')
     .description('Bootstrap a new skill using the meta skills')
     .action(cmdGenerate)
+
+  parent
+    .command('clean')
+    .description('Clean LadyBluenotes-owned temp/cache files and tracked processes')
+    .option('--yes', 'Actually clean files and stop tracked processes')
+    .option('-g, --global', 'Include user-level .agents temp/cache/process records')
+    .option('--path <path...>', 'Clean additional LadyBluenotes-owned paths')
+    .action(cmdClean)
 }
 
 const agents = program
   .command('agents')
   .description('Manage AI coding agent skills, rules, and agents')
 
-registerAgentsCommands(agents)
+registerModuleCommands(agents)
 
-const playbook = program
-  .command('playbook')
-  .description('Alias for agents (backwards compatible)')
+const skills = program
+  .command('skills')
+  .description('Manage AI coding agent skills')
 
-registerAgentsCommands(playbook)
+registerModuleCommands(skills)
 
 program.parse()

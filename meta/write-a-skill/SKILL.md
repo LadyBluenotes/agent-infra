@@ -156,7 +156,7 @@ category: [language | framework | task]
 ## Registration
 
 1) Add skill paths to `registry.yaml` under the correct category when the registry structure requires it.
-2) Ensure the skill is discoverable via `ladybluenotes playbook list`.
+2) Ensure the skill is discoverable via `ladybluenotes skills list`.
 3) Update category metadata such as `domain_map.yaml` when the category uses generated discovery data.
 
 ---

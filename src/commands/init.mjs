@@ -9,13 +9,13 @@ const PROMPT_BLOCK = `## Agent Infrastructure
 This project uses @ladybluenotes/agents for AI coding agent skills.
 At the start of each session, run:
 
-  ladybluenotes agents list
+  ladybluenotes skills list
 
 This returns available skills with descriptions grouped by type.
 Use skill names to decide which to load for the current task.
 View full skill content with:
 
-  ladybluenotes agents show <name>`
+  ladybluenotes skills show <name>`
 
 function prompt(question) {
   const rl = readline.createInterface({
