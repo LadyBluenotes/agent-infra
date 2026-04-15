@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-03-02T20:06:45.460Z
+generated_at: 2026-04-15T16:51:26.325Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -76,7 +76,8 @@ skills:
     load_with: []
   - id: skills/general/skill-retrieval
     path: skills/general/skill-retrieval.md
-    description: Mapping prompts to skills and recording retrieval rationale.
+    description: Mapping prompts to skills and recording retrieval rationale in the
+      global agent-infra log.
     keywords:
       - mapping
       - prompts
@@ -84,12 +85,32 @@ skills:
       - recording
       - retrieval
       - rationale
+      - global
+      - agent-infra
+      - log
       - skill
       - setup
       - core
-      - patterns
-      - identify
-      - intent
+    related: []
+    load_with: []
+  - id: skills/general/source-of-truth
+    path: skills/general/source-of-truth.md
+    description: Prevent unsupported factual claims by requiring source-backed,
+      verified, inferred, or unknown claim handling across code, research, docs,
+      and current facts.
+    keywords:
+      - prevent
+      - unsupported
+      - factual
+      - claims
+      - requiring
+      - source-backed
+      - verified
+      - inferred
+      - unknown
+      - claim
+      - handling
+      - across
     related: []
     load_with: []
   - id: skills/general/validate
