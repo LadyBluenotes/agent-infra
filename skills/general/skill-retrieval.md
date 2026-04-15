@@ -25,7 +25,7 @@ If `_meta/domain_map.yaml` exists for the category, use it as the routing source
 Search skills for code changes, refactors, tests, debugging, docs, tutorials, references, explanations, reviews, PRs, issues, CI failures, TypeScript, JavaScript, React, Solid, Vitest, performance, accessibility, SEO, security, agent rules, skills, routing, prompt behavior, and repeated workflow patterns worth capturing.
 
 ### Record the mapping
-Capture the repo id, prompt pattern, chosen skills, and rationale in `@notes/skill-retrieval.md`.
+Capture the repo id, prompt pattern, chosen skills, and rationale in `@notes/skill-retrieval.md` by default when task-relevant skills are loaded.
 
 Use the path after `/GitHub/` as the repo id: `agent-infra`, `tanstack/tanstack.com`, `solid-docs`. If the repo is not under `/GitHub/`, use the shortest unique repo path available.
 
@@ -38,9 +38,9 @@ If the private log path is unavailable, state that logging was skipped. Do not f
 
 Include repo id, prompt pattern, skills, rationale, outcome, success, signals, and redactions.
 
-List task-relevant skills only. Omit routine process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
+List task-relevant domain skills and skills that are the subject of the request. Omit common process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
 
-If no log entry is needed, do not update the log. State the no-log rationale in the final response.
+If no log entry is needed because only common process skills were used and no reusable routing signal exists, do not update the log. State the no-log rationale in the final response.
 
 ### Redact sensitive info
 Strip tokens, credentials, emails, full URLs with query params, and user identifiers before logging.
@@ -52,10 +52,10 @@ Mark `success` as `true` only with explicit user confirmation, `false` with expl
 Skip unrelated skills even if they are adjacent or familiar.
 
 ### Keep skill lists meaningful
-Log the routing decision, not the routing mechanism. Routine process skills should not hide the domain skill choice.
+Log the task-relevant skill choice, not the routing mechanism. Common process skills should not hide the domain skill choice.
 
 ### Avoid unnecessary log entries
-Skip logging when the task creates no useful routing signal. Say why no entry was needed.
+Skip logging only when the task creates no skill-use signal beyond common process skills. Say why no entry was needed.
 
 ## Common Mistakes
 

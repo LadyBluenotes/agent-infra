@@ -15,7 +15,7 @@
 Before substantial work:
 - Skill check: run `ladybluenotes skills list`, or use skills already listed in context.
 - Skill guidance: if a skill fits, load it with `ladybluenotes skills show <skill-name>`.
-- Skill log: record useful routing patterns in `@notes/skill-retrieval.md`.
+- Skill log: record task-relevant skill use in `@notes/skill-retrieval.md` by default, excluding common process skills.
 - Work log: check `@notes/work-log/<repo-id>/` and ask whether to update or create a work-log.
 
 Before factual claims:
@@ -134,13 +134,13 @@ Prefer:
 
 ## Skill Log
 
-- Log useful routing patterns only to `@notes/skill-retrieval.md`.
+- Log task-relevant skill use to `@notes/skill-retrieval.md` by default.
 - Never write repo-local skill retrieval logs.
 - Include repo id, prompt pattern, skills, rationale, outcome, success, signals, and redactions.
-- Skills list should include task-relevant skills only.
-- Omit routine process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
+- Skills list should include task-relevant domain skills and skills that are the subject of the request.
+- Omit common process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
 - Say "Skill retrieval log updated." when updated.
-- If no log entry is needed, do not update the log; state the no-log rationale in the final response.
+- If no log entry is needed because only common process skills were used and no reusable routing signal exists, do not update the log; state the no-log rationale in the final response.
 
 ## Work Log
 
@@ -189,8 +189,11 @@ Prefer:
 
 - This repo is intended to be loaded globally.
 - If a local repo has its own `AGENTS.md`, merge it with this one.
-- Local instructions override global instructions on conflicts.
-- Local routing runs first.
+- This file remains the baseline for voice, logging, safety, verification, git rules, and process hygiene.
+- Treat local `AGENTS.md` files as project-specific supplements to consult for stack, commands, repo conventions, and topic guides.
+- Local instructions override this file only for project-specific technical details.
+- If local voice, logging, safety, verification, git, or process rules conflict with this file, follow this file unless the user explicitly says otherwise.
+- Local routing runs first for project-specific skill choice; global routing still governs fallback behavior.
 - De-dup: local files should add repo-specific deltas, not restate global rules.
 
 ## CLI
