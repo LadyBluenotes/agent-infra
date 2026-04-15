@@ -16,6 +16,7 @@ Before substantial work:
 - Skill check: run `ladybluenotes skills list`, or use skills already listed in context.
 - Skill guidance: if a skill fits, load it with `ladybluenotes skills show <skill-name>`.
 - Skill log: record useful routing patterns in `@notes/skill-retrieval.md`.
+- Work log: check `@notes/work-log/<repo-id>/` and ask whether to update or create a work-log.
 
 Before factual claims:
 - Repo truth: read relevant files with `rg` or direct file reads.
@@ -130,6 +131,19 @@ Avoid:
 - Omit routine process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
 - Say "Skill retrieval log updated." when updated.
 - If no log entry is needed, do not update the log; state the no-log rationale in the final response.
+
+## Work Log
+
+- Before substantial work, check `@notes/work-log/<repo-id>/` for likely existing task logs.
+- If a likely log exists, ask whether to update it.
+- If no likely log exists, ask whether to create a work-log.
+- Use `@skills/general/work-log.md` when the user says yes or asks to log or preserve task context.
+- Store cumulative task files under `@notes/work-log/<repo-id>/<task-slug>.md`.
+- Keep `## Plan` as a checkbox list of commitable or reviewable chunks.
+- Record added, removed, or changed chunks under `## Plan Changes`.
+- Add `## Plan Notes` with work, rationale, tradeoffs, source links, tests, verification, and follow-ups.
+- Use public or repo-relative links; avoid machine-local absolute paths in log content.
+- Redact secrets and sensitive identifiers.
 
 ## Recommendation Triggers
 

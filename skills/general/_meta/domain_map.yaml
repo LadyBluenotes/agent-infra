@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-04-15T17:24:44.918Z
+generated_at: 2026-04-15T17:32:05.364Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -167,5 +167,25 @@ skills:
       - patterns
       - identify
       - proving
+    related: []
+    load_with: []
+  - id: skills/general/work-log
+    path: skills/general/work-log.md
+    description: Create or update requested cumulative work logs under
+      notes/work-log, with checkbox plans, plan notes, source links, tradeoffs,
+      tests, and verification.
+    keywords:
+      - create
+      - update
+      - requested
+      - cumulative
+      - work
+      - logs
+      - under
+      - noteswork-log
+      - checkbox
+      - plans
+      - plan
+      - notes
     related: []
     load_with: []
