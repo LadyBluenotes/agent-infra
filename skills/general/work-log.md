@@ -100,6 +100,16 @@ Avoid machine-local absolute paths in log content.
 ### Keep entries short and useful
 Summarize what was done and why. Do not paste transcripts or long command output.
 Include commands by name, exit status, and important result.
+Put separate points on separate lines.
+Use bullets for multiple facts under a field instead of packing them into a sentence block.
+
+```md
+- Work:
+  - Changed parser normalization.
+  - Added invalid config coverage.
+- Verification:
+  - `pnpm test parser` exit 0.
+```
 
 ## References
 
@@ -158,3 +168,20 @@ Correct
 - Verification: `pnpm test` exit 0.
 ```
 Explanation: Plan items and notes should map to the same reviewable chunk.
+
+### Packing many points into one paragraph
+Wrong
+```md
+- Work: Changed parser normalization, added invalid config coverage, and updated docs.
+- Verification: Ran `pnpm test parser` and it passed with exit 0.
+```
+Correct
+```md
+- Work:
+  - Changed parser normalization.
+  - Added invalid config coverage.
+  - Updated docs.
+- Verification:
+  - `pnpm test parser` exit 0.
+```
+Explanation: Separate lines make logs easier to scan and update.

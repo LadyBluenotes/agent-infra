@@ -152,6 +152,7 @@ Prefer:
 - Keep `## Plan` as a checkbox list of commitable or reviewable chunks.
 - Record added, removed, or changed chunks under `## Plan Changes`.
 - Add `## Plan Notes` with work, rationale, tradeoffs, source links, tests, verification, and follow-ups.
+- Put separate points on separate lines; use bullets instead of sentence blocks.
 - Use public or repo-relative links; avoid machine-local absolute paths in log content.
 - Redact secrets and sensitive identifiers.
 
