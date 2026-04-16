@@ -1,6 +1,6 @@
 version: 1
 category: tooling
-generated_at: 2026-04-16T19:39:45.872Z
+generated_at: 2026-04-16T20:14:21.008Z
 skills:
   - id: skills/tooling/cli/skill-discovery
     path: skills/tooling/cli/skill-discovery.md
@@ -21,6 +21,27 @@ skills:
       - refs
       - compact
       - mappings
+    related: []
+    load_with: []
+  - id: skills/tooling/package-manager-diagnostics
+    path: skills/tooling/package-manager-diagnostics.md
+    description: >
+      Package manager diagnostics for npm, pnpm, Yarn, and Bun install failures,
+      lockfile conflicts, workspace resolution, node_modules layout, and frozen
+      installs.
+    keywords:
+      - package
+      - manager
+      - diagnostics
+      - npm
+      - pnpm
+      - yarn
+      - bun
+      - install
+      - failures
+      - lockfile
+      - conflicts
+      - workspace
     related: []
     load_with: []
   - id: skills/tooling/pnpm/basics

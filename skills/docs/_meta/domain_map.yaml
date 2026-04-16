@@ -1,6 +1,6 @@
 version: 1
 category: docs
-generated_at: 2026-04-16T19:39:45.729Z
+generated_at: 2026-04-16T20:14:20.884Z
 skills:
   - id: skills/docs/explanation
     path: skills/docs/explanation.md
@@ -88,6 +88,27 @@ skills:
       - do
       - dont
       - output
+    related: []
+    load_with: []
+  - id: skills/docs/source-audit
+    path: skills/docs/source-audit.md
+    description: >
+      Source audit workflow for docs and skills where every factual claim must
+      map to code truth, command truth, official docs, primary sources,
+      inference, or Unknown.
+    keywords:
+      - source
+      - audit
+      - workflow
+      - docs
+      - skills
+      - where
+      - every
+      - factual
+      - claim
+      - must
+      - map
+      - code
     related: []
     load_with: []
   - id: skills/docs/tutorial

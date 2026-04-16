@@ -1,7 +1,28 @@
 version: 1
 category: performance
-generated_at: 2026-04-16T19:43:11.367Z
+generated_at: 2026-04-16T20:14:20.970Z
 skills:
+  - id: skills/performance/benchmark-design
+    path: skills/performance/benchmark-design.md
+    description: >
+      Benchmark design workflow for choosing stable targets, separating
+      profiling from regression benchmarks, using Vitest bench, and adding
+      CodSpeed only after local stability.
+    keywords:
+      - benchmark
+      - design
+      - workflow
+      - choosing
+      - stable
+      - targets
+      - separating
+      - profiling
+      - regression
+      - benchmarks
+      - vitest
+      - bench
+    related: []
+    load_with: []
   - id: skills/performance/css
     path: skills/performance/css.md
     description: >

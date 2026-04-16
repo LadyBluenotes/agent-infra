@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-04-15T17:32:05.364Z
+generated_at: 2026-04-16T20:14:20.944Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -74,6 +74,27 @@ skills:
       - agent
       - work
       - does
+    related: []
+    load_with: []
+  - id: skills/general/release-smoke
+    path: skills/general/release-smoke.md
+    description: >
+      Release smoke workflow for final package checks, script lifecycle
+      awareness, pack previews, CI evidence, and publish-readiness notes without
+      making registry claims.
+    keywords:
+      - release
+      - smoke
+      - workflow
+      - final
+      - package
+      - checks
+      - script
+      - lifecycle
+      - awareness
+      - pack
+      - previews
+      - ci
     related: []
     load_with: []
   - id: skills/general/simplify

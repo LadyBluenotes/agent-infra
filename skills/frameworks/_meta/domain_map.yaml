@@ -1,6 +1,6 @@
 version: 1
 category: frameworks
-generated_at: 2026-04-16T19:39:45.765Z
+generated_at: 2026-04-16T20:14:20.917Z
 skills:
   - id: skills/frameworks/react/async
     path: skills/frameworks/react/async.md
@@ -75,6 +75,27 @@ skills:
       - rscclient
       - boundaries
       - dom
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/markdown-rendering
+    path: skills/frameworks/react/markdown-rendering.md
+    description: >
+      React markdown rendering guidance for SSR/RSC boundaries, react-markdown,
+      raw HTML handling, sanitization, hydration safety, and bundle-aware
+      choices.
+    keywords:
+      - react
+      - markdown
+      - rendering
+      - guidance
+      - ssrrsc
+      - boundaries
+      - react-markdown
+      - raw
+      - html
+      - handling
+      - sanitization
+      - hydration
     related: []
     load_with: []
   - id: skills/frameworks/react/ref/rsc-markdown

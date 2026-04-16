@@ -1,6 +1,6 @@
 version: 1
 category: review
-generated_at: 2026-03-02T20:06:45.506Z
+generated_at: 2026-04-16T20:14:20.992Z
 skills:
   - id: skills/review/checklist
     path: skills/review/checklist.md
@@ -36,5 +36,25 @@ skills:
       - patterns
       - separate
       - concerns
+    related: []
+    load_with: []
+  - id: skills/review/pr-closeout
+    path: skills/review/pr-closeout.md
+    description: >
+      PR closeout workflow for final diff review, CI state, unresolved feedback,
+      issue links, draft readiness, merge readiness, and concise handoff notes.
+    keywords:
+      - pr
+      - closeout
+      - workflow
+      - final
+      - diff
+      - review
+      - ci
+      - state
+      - unresolved
+      - feedback
+      - issue
+      - links
     related: []
     load_with: []

@@ -1,7 +1,27 @@
 version: 1
 category: debug
-generated_at: 2026-03-02T20:06:45.429Z
+generated_at: 2026-04-16T20:14:20.870Z
 skills:
+  - id: skills/debug/local-environment
+    path: skills/debug/local-environment.md
+    description: >
+      Local environment debugging workflow for Node, package-manager, PATH,
+      lockfile, install-layout, cache, and CI-vs-local mismatches.
+    keywords:
+      - local
+      - environment
+      - debugging
+      - workflow
+      - node
+      - package-manager
+      - path
+      - lockfile
+      - install-layout
+      - cache
+      - ci-vs-local
+      - mismatches
+    related: []
+    load_with: []
   - id: skills/debug/workflow
     path: skills/debug/workflow.md
     description: A practical debugging workflow for errors, test failures, and
