@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/async
-description: Promises, async/await, and concurrency patterns.
+description: >
+  JavaScript async guidance for Promises, async/await, concurrency limits,
+  cancellation, retries, sequencing, parallel work, and error propagation.
 type: sub-skill
 category: javascript
 library: javascript

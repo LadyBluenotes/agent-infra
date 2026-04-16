@@ -1,59 +1,67 @@
 version: 1
 category: general
-generated_at: 2026-04-16T20:14:20.944Z
+generated_at: 2026-04-16T20:53:39.441Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
-    description: Checklist for accessible UI and WCAG-aligned audits.
+    description: >
+      Accessibility guidance for UI audits, WCAG-aligned checks, keyboard flow,
+      focus management, labels, semantic HTML, color contrast, and screen
+      readers.
     keywords:
-      - checklist
-      - accessible
-      - ui
-      - wcag-aligned
-      - audits
       - accessibility
-      - setup
-      - core
-      - patterns
-      - prefer
+      - guidance
+      - ui
+      - audits
+      - wcag-aligned
+      - checks
+      - keyboard
+      - flow
+      - focus
+      - management
+      - labels
       - semantic
-      - html
     related: []
     load_with: []
   - id: skills/general/communicate
     path: skills/general/communicate.md
-    description: Reporting changes, touched paths, and verification steps.
+    description: >
+      Communication guidance for concise task updates, final summaries, touched
+      paths, verification evidence, unchecked work, blockers, and residual risk.
     keywords:
-      - reporting
-      - changes
+      - communication
+      - guidance
+      - concise
+      - task
+      - updates
+      - final
+      - summaries
       - touched
       - paths
       - verification
-      - steps
-      - communicate
-      - setup
-      - core
-      - patterns
-      - intent
-      - reference
+      - evidence
+      - unchecked
     related: []
     load_with: []
   - id: skills/general/implement
     path: skills/general/implement.md
-    description: Making code changes with minimal, reversible edits.
+    description: >
+      Implementation guidance for scoped code changes, read-before-edit
+      workflow, minimal reversible patches, convention matching, and focused
+      validation.
     keywords:
-      - making
+      - implementation
+      - guidance
+      - scoped
       - code
       - changes
+      - read-before-edit
+      - workflow
       - minimal
       - reversible
-      - edits
-      - implement
-      - setup
-      - core
-      - patterns
-      - read
-      - editing
+      - patches
+      - convention
+      - matching
     related: []
     load_with: []
   - id: skills/general/process-hygiene
@@ -99,39 +107,44 @@ skills:
     load_with: []
   - id: skills/general/simplify
     path: skills/general/simplify.md
-    description: Readability-only refactors that preserve behavior.
+    description: >
+      Simplification guidance for readability-only refactors,
+      behavior-preserving cleanup, reducing duplication, and avoiding drive-by
+      design changes.
     keywords:
+      - simplification
+      - guidance
       - readability-only
       - refactors
-      - preserve
-      - behavior
-      - simplify
-      - setup
-      - core
-      - patterns
-      - reduce
-      - nesting
-      - remove
-      - dead
+      - behavior-preserving
+      - cleanup
+      - reducing
+      - duplication
+      - avoiding
+      - drive-by
+      - design
+      - changes
     related: []
     load_with: []
   - id: skills/general/skill-retrieval
     path: skills/general/skill-retrieval.md
-    description: Mapping prompts to skills and recording retrieval rationale in the
-      global agent-infra log.
+    description: >
+      Skill routing guidance for matching prompts to task-relevant domain
+      skills, logging canonical `@skills/...` IDs, and omitting routine process
+      skills.
     keywords:
-      - mapping
-      - prompts
-      - skills
-      - recording
-      - retrieval
-      - rationale
-      - global
-      - agent-infra
-      - log
       - skill
-      - setup
-      - core
+      - routing
+      - guidance
+      - matching
+      - prompts
+      - task-relevant
+      - domain
+      - skills
+      - logging
+      - canonical
+      - ids
+      - omitting
     related: []
     load_with: []
   - id: skills/general/source-of-truth
@@ -156,38 +169,43 @@ skills:
     load_with: []
   - id: skills/general/validate
     path: skills/general/validate.md
-    description: Running tests, builds, and typechecks after changes.
+    description: >
+      Validation guidance for choosing and running tests, builds, typechecks,
+      lint, smoke checks, and reporting exact verification commands.
     keywords:
+      - validation
+      - guidance
+      - choosing
       - running
       - tests
       - builds
       - typechecks
-      - changes
-      - validate
-      - setup
-      - core
-      - patterns
-      - run
-      - narrowest
-      - check
+      - lint
+      - smoke
+      - checks
+      - reporting
+      - exact
     related: []
     load_with: []
   - id: skills/general/verification-before-completion
     path: skills/general/verification-before-completion.md
-    description: Require fresh verification evidence before any completion claim.
+    description: >
+      Completion-verification guidance for matching success claims to fresh
+      command output, diff checks, tests, builds, typechecks, and explicit Not
+      verified notes.
     keywords:
-      - require
+      - completion-verification
+      - guidance
+      - matching
+      - success
+      - claims
       - fresh
-      - verification
-      - evidence
-      - any
-      - completion
-      - claim
-      - setup
-      - core
-      - patterns
-      - identify
-      - proving
+      - command
+      - output
+      - diff
+      - checks
+      - tests
+      - builds
     related: []
     load_with: []
   - id: skills/general/work-log

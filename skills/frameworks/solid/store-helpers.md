@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/store-helpers
-description: Store helpers and reconciliation utilities.
+description: >
+  Solid store-helper guidance for produce, reconcile, unwrap, path updates,
+  immutable interop, and preserving nested reactivity.
 type: sub-skill
 category: frameworks
 library: solidjs

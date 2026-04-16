@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/events
-description: Event handling and delegation patterns.
+description: >
+  Solid event guidance for delegated handlers, native listeners, custom events,
+  cleanup, event target typing, and avoiding stale closures.
 type: sub-skill
 category: frameworks
 library: solidjs

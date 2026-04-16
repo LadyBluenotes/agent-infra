@@ -1,22 +1,25 @@
 version: 1
 category: seo
-generated_at: 2026-03-02T20:06:45.508Z
+generated_at: 2026-04-16T20:53:39.492Z
 skills:
   - id: skills/seo/audit
     path: skills/seo/audit.md
-    description: Checklist for diagnosing technical and on-page SEO issues.
+    description: >
+      SEO audit guidance for technical and on-page checks, crawlability,
+      metadata, canonical links, structured data, performance signals, and
+      content risks.
     keywords:
-      - checklist
-      - diagnosing
+      - seo
+      - audit
+      - guidance
       - technical
       - on-page
-      - seo
-      - issues
-      - audit
-      - setup
-      - core
-      - patterns
-      - confirm
-      - scope
+      - checks
+      - crawlability
+      - metadata
+      - canonical
+      - links
+      - structured
+      - data
     related: []
     load_with: []

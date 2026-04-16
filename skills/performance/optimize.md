@@ -1,6 +1,8 @@
 ---
 name: skills/performance/optimize
-description: Targeted performance improvements with before/after measurement.
+description: >
+  Performance optimization guidance for targeted before/after measurement,
+  bottleneck isolation, small fixes, regression checks, and evidence-based tradeoffs.
 type: sub-skill
 category: performance
 ---

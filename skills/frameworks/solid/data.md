@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/data
-description: Data loading and state wiring patterns.
+description: >
+  Solid data-loading guidance for wiring route data, resources, stores, cache
+  state, pending UI, and mutation-driven refreshes.
 type: sub-skill
 category: frameworks
 library: solidjs

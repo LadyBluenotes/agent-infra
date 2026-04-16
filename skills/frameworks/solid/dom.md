@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/dom
-description: DOM refs and direct DOM access.
+description: >
+  Solid DOM guidance for refs, direct element access, imperative browser APIs,
+  focus/measurement work, and cleanup around external DOM libraries.
 type: sub-skill
 category: frameworks
 library: solidjs

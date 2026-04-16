@@ -1,6 +1,8 @@
 ---
 name: skills/research/method
-description: Structured research methodology with evidence and tradeoffs.
+description: >
+  Research-method guidance for gathering primary sources, comparing evidence,
+  separating facts from inference, handling uncertainty, and evaluating tradeoffs.
 type: sub-skill
 category: research
 ---

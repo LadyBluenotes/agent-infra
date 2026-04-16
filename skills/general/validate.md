@@ -1,6 +1,8 @@
 ---
 name: skills/general/validate
-description: Running tests, builds, and typechecks after changes.
+description: >
+  Validation guidance for choosing and running tests, builds, typechecks, lint,
+  smoke checks, and reporting exact verification commands.
 type: sub-skill
 category: general
 ---

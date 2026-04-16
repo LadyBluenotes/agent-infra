@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/performance
-description: Performance patterns and reactive boundaries.
+description: >
+  Solid performance guidance for reactive boundaries, list updates, memoization,
+  store granularity, DOM churn, and measuring fine-grained updates.
 type: sub-skill
 category: frameworks
 library: solidjs

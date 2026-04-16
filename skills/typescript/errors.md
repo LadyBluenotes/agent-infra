@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/errors
-description: Diagnostics workflow and common TypeScript error fixes.
+description: >
+  TypeScript diagnostics guidance for reading compiler errors, narrowing root
+  causes, fixing type mismatches, generics, modules, declarations, and strictness.
 type: sub-skill
 category: typescript
 library: typescript

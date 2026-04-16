@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/stores
-description: Store state with createStore and immutable updates.
+description: >
+  Solid store guidance for createStore, setStore path syntax, nested state,
+  list updates, immutable data, and granular subscriptions.
 type: sub-skill
 category: frameworks
 library: solidjs

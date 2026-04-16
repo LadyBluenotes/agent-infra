@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/rendering
-description: Rendering performance patterns for React and Next.js.
+description: >
+  React rendering performance guidance for expensive renders, memoization,
+  component boundaries, hydration cost, and Next.js client/server placement.
 type: sub-skill
 category: frameworks
 library: react

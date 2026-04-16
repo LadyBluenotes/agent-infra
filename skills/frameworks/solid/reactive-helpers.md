@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/reactive-helpers
-description: Helper utilities for reactive graph control.
+description: >
+  Solid reactive-helper guidance for untrack, batch, on, createReaction,
+  observable interop, and controlling dependency collection.
 type: sub-skill
 category: frameworks
 library: solidjs

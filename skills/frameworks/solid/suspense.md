@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/suspense
-description: Suspense boundaries for async rendering.
+description: >
+  Solid Suspense guidance for async boundaries, nested fallback UI, resources,
+  transitions, streaming SSR, and preventing loading-state churn.
 type: sub-skill
 category: frameworks
 library: solidjs

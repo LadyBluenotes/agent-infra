@@ -1,6 +1,8 @@
 ---
 name: skills/docs/how-to
-description: Task-focused instructions for known users.
+description: >
+  How-to documentation guidance for task-focused instructions, recipes,
+  procedural docs, and experienced-user workflows with a clear end state.
 resources:
   - https://diataxis.fr/how-to-guides/
 type: skill

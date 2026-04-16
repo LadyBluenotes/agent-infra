@@ -1,6 +1,8 @@
 ---
 name: skills/general/accessibility
-description: Checklist for accessible UI and WCAG-aligned audits.
+description: >
+  Accessibility guidance for UI audits, WCAG-aligned checks, keyboard flow,
+  focus management, labels, semantic HTML, color contrast, and screen readers.
 type: sub-skill
 category: general
 sources:

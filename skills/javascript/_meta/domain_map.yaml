@@ -1,202 +1,227 @@
 version: 1
 category: javascript
-generated_at: 2026-03-02T20:06:45.470Z
+generated_at: 2026-04-16T20:53:39.453Z
 skills:
   - id: skills/javascript/async
     path: skills/javascript/async.md
-    description: Promises, async/await, and concurrency patterns.
+    description: >
+      JavaScript async guidance for Promises, async/await, concurrency limits,
+      cancellation, retries, sequencing, parallel work, and error propagation.
     keywords:
+      - javascript
+      - async
+      - guidance
       - promises
       - asyncawait
       - concurrency
-      - patterns
-      - async
-      - setup
-      - core
-      - sequential
-      - vs
-      - concurrent
-      - ensure
-      - errors
+      - limits
+      - cancellation
+      - retries
+      - sequencing
+      - parallel
+      - work
     related: []
     load_with: []
   - id: skills/javascript/browser
     path: skills/javascript/browser.md
-    description: Browser APIs, DOM events, and fetch-based I/O.
+    description: >
+      Browser JavaScript guidance for DOM APIs, events, fetch, storage,
+      URL/location, timers, observers, and client-side platform behavior.
     keywords:
       - browser
-      - apis
+      - javascript
+      - guidance
       - dom
+      - apis
       - events
-      - fetch-based
-      - io
-      - setup
-      - core
-      - patterns
-      - feature
-      - detection
-      - event
+      - fetch
+      - storage
+      - urllocation
+      - timers
+      - observers
+      - client-side
     related: []
     load_with: []
   - id: skills/javascript/data
     path: skills/javascript/data.md
-    description: Arrays, objects, and collection utilities.
+    description: >
+      JavaScript data guidance for arrays, objects, Map/Set, iteration,
+      transforms, grouping, cloning, equality, and collection utility patterns.
     keywords:
+      - javascript
+      - data
+      - guidance
       - arrays
       - objects
-      - collection
-      - utilities
-      - data
-      - setup
-      - core
-      - patterns
-      - transform
-      - mapfilterreduce
-      - prefer
       - mapset
+      - iteration
+      - transforms
+      - grouping
+      - cloning
+      - equality
+      - collection
     related: []
     load_with: []
   - id: skills/javascript/errors
     path: skills/javascript/errors.md
-    description: Error types, throwing, and recovery patterns.
+    description: >
+      JavaScript error guidance for Error types, throwing, catching, causes,
+      recovery, result boundaries, async failures, and user-safe messages.
     keywords:
+      - javascript
       - error
+      - guidance
       - types
       - throwing
+      - catching
+      - causes
       - recovery
-      - patterns
-      - errors
-      - setup
-      - core
-      - preserve
-      - context
-      - cause
-      - normalize
+      - result
+      - boundaries
+      - async
+      - failures
     related: []
     load_with: []
   - id: skills/javascript/javascript-patterns
     path: skills/javascript/javascript-patterns.md
-    description: Common architecture and composition patterns.
+    description: >
+      JavaScript pattern guidance for module design, composition, dependency
+      boundaries, data flow, small abstractions, and organizing behavior without
+      frameworks.
     keywords:
-      - common
-      - architecture
-      - composition
-      - patterns
       - javascript
-      - setup
-      - core
-      - module
       - pattern
-      - encapsulation
-      - over
-      - inheritance
+      - guidance
+      - module
+      - design
+      - composition
+      - dependency
+      - boundaries
+      - data
+      - flow
+      - small
+      - abstractions
     related: []
     load_with: []
   - id: skills/javascript/modules
     path: skills/javascript/modules.md
-    description: ES module syntax, static imports, and dynamic import.
+    description: >
+      JavaScript module guidance for ESM syntax, static and dynamic imports,
+      exports, circular dependencies, package boundaries, and import ordering.
     keywords:
-      - es
+      - javascript
       - module
+      - guidance
+      - esm
       - syntax
       - static
-      - imports
       - dynamic
-      - import
-      - modules
-      - setup
-      - core
-      - patterns
-      - at
+      - imports
+      - exports
+      - circular
+      - dependencies
+      - package
     related: []
     load_with: []
   - id: skills/javascript/node
     path: skills/javascript/node.md
-    description: Node runtime APIs and server-side patterns.
+    description: >
+      Node.js runtime guidance for fs/path/process APIs, streams, child
+      processes, server-side scripts, environment boundaries, and platform
+      behavior.
     keywords:
-      - node
+      - nodejs
       - runtime
+      - guidance
+      - fspathprocess
       - apis
+      - streams
+      - child
+      - processes
       - server-side
-      - patterns
-      - setup
-      - core
-      - specifiers
-      - built-ins
-      - normalize
+      - scripts
       - environment
-      - input
+      - boundaries
     related: []
     load_with: []
   - id: skills/javascript/nodejs
     path: skills/javascript/nodejs.md
-    description: Node project setup and module type configuration.
+    description: >
+      Node.js project setup guidance for package.json type, module format,
+      entrypoints, scripts, engines, package exports, and runtime configuration.
     keywords:
-      - node
+      - nodejs
       - project
       - setup
-      - module
+      - guidance
+      - packagejson
       - type
-      - configuration
-      - core
-      - patterns
-      - explicit
-      - entry
-      - points
-      - esm
+      - module
+      - format
+      - entrypoints
+      - scripts
+      - engines
+      - package
     related: []
     load_with: []
   - id: skills/javascript/runtime
     path: skills/javascript/runtime.md
-    description: Runtime type checks and boundary validation.
+    description: >
+      JavaScript runtime validation guidance for unknown inputs, guards,
+      assertions, schema boundaries, parsing external data, and defensive
+      checks.
     keywords:
+      - javascript
       - runtime
-      - type
-      - checks
-      - boundary
       - validation
-      - setup
-      - core
-      - patterns
-      - guard
+      - guidance
       - unknown
-      - input
-      - nullish
+      - inputs
+      - guards
+      - assertions
+      - schema
+      - boundaries
+      - parsing
+      - external
     related: []
     load_with: []
   - id: skills/javascript/security
     path: skills/javascript/security.md
-    description: Safe handling of input, eval risks, and injection prevention.
+    description: >
+      JavaScript security guidance for untrusted input, injection, eval/function
+      constructors, XSS-prone DOM writes, path traversal, and safe parsing.
     keywords:
-      - safe
-      - handling
-      - input
-      - eval
-      - risks
-      - injection
-      - prevention
+      - javascript
       - security
-      - setup
-      - core
-      - patterns
-      - avoid
+      - guidance
+      - untrusted
+      - input
+      - injection
+      - evalfunction
+      - constructors
+      - xss-prone
+      - dom
+      - writes
+      - path
     related: []
     load_with: []
   - id: skills/javascript/testing
     path: skills/javascript/testing.md
-    description: Unit testing patterns and assertions.
+    description: >
+      JavaScript testing guidance for unit tests, assertions, fixtures, async
+      tests, mocks, regression coverage, and behavior-focused test structure.
     keywords:
-      - unit
+      - javascript
       - testing
-      - patterns
+      - guidance
+      - unit
+      - tests
       - assertions
-      - setup
-      - core
-      - arrange
-      - act
-      - assert
-      - test
-      - error
-      - paths
+      - fixtures
+      - async
+      - mocks
+      - regression
+      - coverage
+      - behavior-focused
     related: []
     load_with: []

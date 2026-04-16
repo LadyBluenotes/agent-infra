@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/interop
-description: JS interop and declaration file authoring.
+description: >
+  TypeScript interop guidance for JavaScript packages, declaration files,
+  ambient types, module augmentation, default exports, and mixed JS/TS projects.
 type: sub-skill
 category: typescript
 library: typescript

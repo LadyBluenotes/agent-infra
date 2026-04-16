@@ -1,6 +1,8 @@
 ---
 name: skills/review/checklist
-description: Code review checklist for correctness, security, and quality.
+description: >
+  Code-review checklist for finding correctness bugs, regressions, security
+  risks, missing tests, edge cases, and maintainability issues.
 type: sub-skill
 category: review
 ---

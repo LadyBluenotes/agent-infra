@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/ref/typescript-types
-description: Utility types and type operators reference.
+description: >
+  TypeScript type-system reference for utility types, conditional types,
+  mapped types, indexed access, keyof, infer, satisfies, and type operators.
 type: reference
 category: typescript
 library: typescript

@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/node
-description: Node runtime APIs and server-side patterns.
+description: >
+  Node.js runtime guidance for fs/path/process APIs, streams, child processes,
+  server-side scripts, environment boundaries, and platform behavior.
 type: sub-skill
 category: javascript
 library: javascript

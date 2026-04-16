@@ -1,6 +1,8 @@
 ---
 name: skills/general/skill-retrieval
-description: Mapping prompts to skills and recording retrieval rationale in the global agent-infra log.
+description: >
+  Skill routing guidance for matching prompts to task-relevant domain skills,
+  logging canonical `@skills/...` IDs, and omitting routine process skills.
 type: sub-skill
 category: general
 ---
@@ -38,12 +40,17 @@ If the private log path is unavailable, state that logging was skipped. Do not f
 
 Include repo id, prompt pattern, skills, rationale, outcome, success, signals, and redactions.
 
-List task-relevant domain skills and skills that are the subject of the request. Omit common process skills unless the request is about that process: `@skills/general/skill-retrieval.md`, `@skills/general/verification-before-completion.md`, `@skills/general/implement.md`.
+List task-relevant domain skills and skills that are the subject of the request.
+Omit routine process skills that are loaded because standing instructions require them:
+`@skills/general/skill-retrieval`, `@skills/general/verification-before-completion`,
+`@skills/general/implement`, and `@skills/general/process-hygiene`.
+Do not log the retrieval skill merely because it was used to decide routing.
 
 If no log entry is needed because only common process skills were used and no reusable routing signal exists, do not update the log. State the no-log rationale in the final response.
 
 ### Use canonical skill ids in logs
 Write local skill ids without the `.md` suffix and with the leading `@skills/` alias.
+Normalize bare local ids such as `skills/docs/reference` to `@skills/docs/reference`.
 
 ```text
 @skills/tooling/vitest/testing-patterns
@@ -51,7 +58,9 @@ Write local skill ids without the `.md` suffix and with the leading `@skills/` a
 @skills/frameworks/react/hydration
 ```
 
-Plugin skills keep their plugin prefix, such as `github:github`. If a useful skill is repo-local, missing, or not installed globally, record the exact observed id and note the gap in the outcome.
+Plugin skills keep their plugin prefix, such as `github:github`. Meta skills keep their
+`@meta/...` alias. If a useful skill is repo-local, missing, or not installed globally,
+record the exact observed id and note the gap in the outcome.
 
 ### Inventory repeated signals
 Review `@notes/skill-retrieval.md` monthly or after about 10 new logged prompts, whichever comes first.
@@ -75,7 +84,9 @@ Mark `success` as `true` only with explicit user confirmation, `false` with expl
 Skip unrelated skills even if they are adjacent or familiar.
 
 ### Keep skill lists meaningful
-Log the task-relevant skill choice, not the routing mechanism. Common process skills should not hide the domain skill choice.
+Log the task-relevant skill choice, not the routing mechanism. Routine process
+skills should not hide the domain skill choice or appear just because they are
+required by standing instructions.
 
 ### Avoid unnecessary log entries
 Skip logging only when the task creates no skill-use signal beyond common process skills. Say why no entry was needed.

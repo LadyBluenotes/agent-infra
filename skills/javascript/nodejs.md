@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/nodejs
-description: Node project setup and module type configuration.
+description: >
+  Node.js project setup guidance for package.json type, module format,
+  entrypoints, scripts, engines, package exports, and runtime configuration.
 type: sub-skill
 category: javascript
 library: javascript

@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/error-boundary
-description: ErrorBoundary usage and fallback UIs.
+description: >
+  Solid ErrorBoundary guidance for fallback UI, error recovery, async failure
+  boundaries, reset behavior, and isolating failing subtrees.
 type: sub-skill
 category: frameworks
 library: solidjs

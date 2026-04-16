@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/ssr
-description: Server-side rendering constraints and hydration safety.
+description: >
+  Solid SSR guidance for server rendering, hydration safety, browser API guards,
+  deterministic markup, streaming constraints, and client/server boundaries.
 type: sub-skill
 category: frameworks
 library: solidjs

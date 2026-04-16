@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/bundle
-description: Bundle size optimization for React and Next.js apps.
+description: >
+  React and Next.js bundle-size guidance for code splitting, dependency audits,
+  lazy loading, server/client boundaries, and reducing shipped JavaScript.
 type: sub-skill
 category: frameworks
 library: react

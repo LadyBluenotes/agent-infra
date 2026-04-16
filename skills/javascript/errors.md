@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/errors
-description: Error types, throwing, and recovery patterns.
+description: >
+  JavaScript error guidance for Error types, throwing, catching, causes,
+  recovery, result boundaries, async failures, and user-safe messages.
 type: sub-skill
 category: javascript
 library: javascript

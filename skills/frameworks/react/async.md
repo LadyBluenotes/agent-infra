@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/async
-description: Eliminate async waterfalls and improve async flow in React/Next.
+description: >
+  React and Next.js async flow guidance for eliminating request waterfalls,
+  colocating data dependencies, coordinating Suspense, and avoiding blocked renders.
 type: sub-skill
 category: frameworks
 library: react

@@ -1,6 +1,8 @@
 ---
 name: skills/docs/tutorial
-description: Step-by-step onboarding for beginners to complete a goal.
+description: >
+  Tutorial documentation guidance for beginner onboarding, guided lessons,
+  first-success walkthroughs, and step-by-step learning paths.
 resources:
   - https://diataxis.fr/tutorials/
 type: skill

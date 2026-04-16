@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/signals
-description: Signals and fine-grained reactivity.
+description: >
+  Solid signal guidance for createSignal, accessors/setters, derived reads,
+  fine-grained updates, batching, and avoiding lost reactivity.
 type: sub-skill
 category: frameworks
 library: solidjs

@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/api-modeling
-description: Modeling public APIs with discriminants and stable DTOs.
+description: >
+  TypeScript API modeling guidance for public DTOs, discriminated unions,
+  versioned shapes, stable contracts, validation boundaries, and exhaustiveness.
 type: sub-skill
 category: typescript
 library: typescript

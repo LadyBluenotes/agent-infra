@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/ref/curated
-description: Curated references, release notes, and deep behavior changes.
+description: >
+  TypeScript curated-reference page for official docs, release notes, deep
+  compiler behavior, type-system changes, and source links used by TS skills.
 type: reference
 category: typescript
 library: typescript

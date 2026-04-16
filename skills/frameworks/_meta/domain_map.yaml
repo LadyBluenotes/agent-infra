@@ -1,59 +1,67 @@
 version: 1
 category: frameworks
-generated_at: 2026-04-16T20:14:20.917Z
+generated_at: 2026-04-16T20:53:39.414Z
 skills:
   - id: skills/frameworks/react/async
     path: skills/frameworks/react/async.md
-    description: Eliminate async waterfalls and improve async flow in React/Next.
+    description: >
+      React and Next.js async flow guidance for eliminating request waterfalls,
+      colocating data dependencies, coordinating Suspense, and avoiding blocked
+      renders.
     keywords:
-      - eliminate
+      - react
+      - nextjs
       - async
-      - waterfalls
-      - improve
       - flow
-      - reactnext
-      - setup
-      - core
-      - patterns
-      - defer
-      - awaits
-      - branch
+      - guidance
+      - eliminating
+      - request
+      - waterfalls
+      - colocating
+      - data
+      - dependencies
+      - coordinating
     related: []
     load_with: []
   - id: skills/frameworks/react/bundle
     path: skills/frameworks/react/bundle.md
-    description: Bundle size optimization for React and Next.js apps.
+    description: >
+      React and Next.js bundle-size guidance for code splitting, dependency
+      audits, lazy loading, server/client boundaries, and reducing shipped
+      JavaScript.
     keywords:
-      - bundle
-      - size
-      - optimization
       - react
       - nextjs
-      - apps
-      - setup
-      - core
-      - patterns
-      - avoid
-      - barrel
-      - imports
+      - bundle-size
+      - guidance
+      - code
+      - splitting
+      - dependency
+      - audits
+      - lazy
+      - loading
+      - serverclient
+      - boundaries
     related: []
     load_with: []
   - id: skills/frameworks/react/client-data
     path: skills/frameworks/react/client-data.md
-    description: Client-side data fetching patterns for React apps.
+    description: >
+      React client-data guidance for browser-side fetching, cache state, loading
+      and error UI, abort handling, and avoiding duplicated network requests.
     keywords:
-      - client-side
-      - data
-      - fetching
-      - patterns
       - react
-      - apps
-      - client
-      - setup
-      - core
-      - deduplicate
-      - requests
-      - global
+      - client-data
+      - guidance
+      - browser-side
+      - fetching
+      - cache
+      - state
+      - loading
+      - error
+      - ui
+      - abort
+      - handling
     related: []
     load_with: []
   - id: skills/frameworks/react/hydration
@@ -120,344 +128,386 @@ skills:
     load_with: []
   - id: skills/frameworks/react/rendering
     path: skills/frameworks/react/rendering.md
-    description: Rendering performance patterns for React and Next.js.
+    description: >
+      React rendering performance guidance for expensive renders, memoization,
+      component boundaries, hydration cost, and Next.js client/server placement.
     keywords:
+      - react
       - rendering
       - performance
-      - patterns
-      - react
+      - guidance
+      - expensive
+      - renders
+      - memoization
+      - component
+      - boundaries
+      - hydration
+      - cost
       - nextjs
-      - setup
-      - core
-      - hoist
-      - static
-      - jsx
-      - content-visibility
-      - prefer
     related: []
     load_with: []
   - id: skills/frameworks/react/rerender
     path: skills/frameworks/react/rerender.md
-    description: Re-render optimization patterns for React components.
+    description: >
+      React re-render guidance for unstable props, context churn,
+      memo/useMemo/useCallback, derived state, and measuring unnecessary
+      component updates.
     keywords:
-      - re-render
-      - optimization
-      - patterns
       - react
-      - components
-      - setup
-      - core
-      - avoid
-      - subscribing
-      - unused
+      - re-render
+      - guidance
+      - unstable
+      - props
+      - context
+      - churn
+      - memousememousecallback
+      - derived
       - state
-      - memoize
+      - measuring
+      - unnecessary
     related: []
     load_with: []
   - id: skills/frameworks/react/server
     path: skills/frameworks/react/server.md
-    description: Server-side performance patterns for React and Next.js.
+    description: >
+      React and Next.js server performance guidance for RSC, SSR, streaming,
+      route handlers, server data fetching, caching, and backend render
+      bottlenecks.
     keywords:
-      - server-side
-      - performance
-      - patterns
       - react
       - nextjs
-      - setup
-      - core
-      - authenticate
       - server
-      - actions
-      - cache
-      - per-request
+      - performance
+      - guidance
+      - rsc
+      - ssr
+      - streaming
+      - route
+      - handlers
+      - data
+      - fetching
     related: []
     load_with: []
   - id: skills/frameworks/solid/actions
     path: skills/frameworks/solid/actions.md
-    description: Action patterns and side-effect workflows.
+    description: >
+      Solid action guidance for form submissions, mutations, server/client side
+      effects, pending states, invalidation, and event-triggered workflows.
     keywords:
+      - solid
       - action
-      - patterns
-      - side-effect
-      - workflows
-      - actions
-      - setup
-      - core
-      - track
+      - guidance
+      - form
+      - submissions
+      - mutations
+      - serverclient
+      - side
+      - effects
       - pending
-      - state
-      - signals
-      - common
+      - states
+      - invalidation
     related: []
     load_with: []
   - id: skills/frameworks/solid/components
     path: skills/frameworks/solid/components.md
-    description: Components, props, and composition patterns.
+    description: >
+      Solid component guidance for props, children, splitProps, composition, JSX
+      patterns, and component API shape.
     keywords:
-      - components
+      - solid
+      - component
+      - guidance
       - props
+      - children
+      - splitprops
       - composition
+      - jsx
       - patterns
-      - setup
-      - core
-      - preserve
-      - reactivity
-      - accessors
-      - split
-      - ergonomic
-      - apis
+      - api
+      - shape
+      - components
     related: []
     load_with: []
   - id: skills/frameworks/solid/context
     path: skills/frameworks/solid/context.md
-    description: Context creation and provider usage.
+    description: >
+      Solid context guidance for createContext, providers, useContext,
+      dependency injection, owner scope, and avoiding global singleton state.
     keywords:
+      - solid
       - context
-      - creation
-      - provider
-      - usage
-      - setup
-      - core
-      - patterns
-      - provide
-      - typed
-      - defaults
-      - small
+      - guidance
+      - createcontext
       - providers
+      - usecontext
+      - dependency
+      - injection
+      - owner
+      - scope
+      - avoiding
+      - global
     related: []
     load_with: []
   - id: skills/frameworks/solid/control-flow
     path: skills/frameworks/solid/control-flow.md
-    description: Show, For, Switch, and other control-flow components.
+    description: >
+      Solid control-flow guidance for Show, For, Index, Switch/Match, keyed
+      updates, conditional rendering, and list rendering behavior.
     keywords:
-      - show
-      - switch
-      - other
+      - solid
       - control-flow
-      - components
-      - control
-      - flow
-      - setup
-      - core
-      - patterns
+      - guidance
+      - show
+      - index
+      - switchmatch
+      - keyed
+      - updates
       - conditional
-      - ui
+      - rendering
+      - list
+      - behavior
     related: []
     load_with: []
   - id: skills/frameworks/solid/data
     path: skills/frameworks/solid/data.md
-    description: Data loading and state wiring patterns.
+    description: >
+      Solid data-loading guidance for wiring route data, resources, stores,
+      cache state, pending UI, and mutation-driven refreshes.
     keywords:
-      - data
-      - loading
-      - state
+      - solid
+      - data-loading
+      - guidance
       - wiring
-      - patterns
-      - setup
-      - core
+      - route
+      - data
       - resources
-      - async
-      - normalize
-      - fast
-      - lookup
+      - stores
+      - cache
+      - state
+      - pending
+      - ui
     related: []
     load_with: []
   - id: skills/frameworks/solid/dom
     path: skills/frameworks/solid/dom.md
-    description: DOM refs and direct DOM access.
+    description: >
+      Solid DOM guidance for refs, direct element access, imperative browser
+      APIs, focus/measurement work, and cleanup around external DOM libraries.
     keywords:
+      - solid
       - dom
+      - guidance
       - refs
       - direct
+      - element
       - access
-      - setup
-      - core
-      - patterns
       - imperative
-      - actions
-      - common
-      - mistakes
-      - medium
+      - browser
+      - apis
+      - focusmeasurement
+      - work
     related: []
     load_with: []
   - id: skills/frameworks/solid/effects
     path: skills/frameworks/solid/effects.md
-    description: Side effects, cleanup, and external subscriptions.
+    description: >
+      Solid effect guidance for createEffect, on, onCleanup, subscriptions,
+      external systems, dependency tracking, and avoiding accidental loops.
     keywords:
-      - side
-      - effects
-      - cleanup
-      - external
+      - solid
+      - effect
+      - guidance
+      - createeffect
+      - oncleanup
       - subscriptions
-      - setup
-      - core
-      - patterns
-      - io
-      - common
-      - mistakes
-      - high
+      - external
+      - systems
+      - dependency
+      - tracking
+      - avoiding
+      - accidental
     related: []
     load_with: []
   - id: skills/frameworks/solid/error-boundary
     path: skills/frameworks/solid/error-boundary.md
-    description: ErrorBoundary usage and fallback UIs.
+    description: >
+      Solid ErrorBoundary guidance for fallback UI, error recovery, async
+      failure boundaries, reset behavior, and isolating failing subtrees.
     keywords:
+      - solid
       - errorboundary
-      - usage
+      - guidance
       - fallback
-      - uis
+      - ui
       - error
-      - boundary
-      - setup
-      - core
-      - patterns
-      - keep
-      - fallbacks
-      - minimal
+      - recovery
+      - async
+      - failure
+      - boundaries
+      - reset
+      - behavior
     related: []
     load_with: []
   - id: skills/frameworks/solid/events
     path: skills/frameworks/solid/events.md
-    description: Event handling and delegation patterns.
+    description: >
+      Solid event guidance for delegated handlers, native listeners, custom
+      events, cleanup, event target typing, and avoiding stale closures.
     keywords:
+      - solid
       - event
-      - handling
-      - delegation
-      - patterns
-      - events
-      - setup
-      - core
+      - guidance
+      - delegated
       - handlers
-      - inline
-      - extracted
-      - prefer
-      - lists
+      - native
+      - listeners
+      - custom
+      - events
+      - cleanup
+      - target
+      - typing
     related: []
     load_with: []
   - id: skills/frameworks/solid/lifecycle
     path: skills/frameworks/solid/lifecycle.md
-    description: Lifecycle hooks and mount/cleanup behavior.
+    description: >
+      Solid lifecycle guidance for onMount, onCleanup, owner lifetime,
+      client-only work, subscriptions, timers, and browser API setup.
     keywords:
+      - solid
       - lifecycle
-      - hooks
-      - mountcleanup
-      - behavior
-      - setup
-      - core
-      - patterns
+      - guidance
       - onmount
-      - dom
-      - browser-only
+      - oncleanup
+      - owner
+      - lifetime
+      - client-only
       - work
-      - always
+      - subscriptions
+      - timers
+      - browser
     related: []
     load_with: []
   - id: skills/frameworks/solid/memos
     path: skills/frameworks/solid/memos.md
-    description: Derived state with createMemo.
+    description: >
+      Solid memo guidance for createMemo, derived state, expensive computations,
+      equality behavior, dependency tracking, and avoiding side effects in
+      memos.
     keywords:
+      - solid
+      - memo
+      - guidance
+      - creatememo
       - derived
       - state
-      - creatememo
-      - memos
-      - setup
-      - core
-      - patterns
-      - values
-      - common
-      - mistakes
-      - high
-      - effects
+      - expensive
+      - computations
+      - equality
+      - behavior
+      - dependency
+      - tracking
     related: []
     load_with: []
   - id: skills/frameworks/solid/ownership
     path: skills/frameworks/solid/ownership.md
-    description: Ownership and cleanup of reactive roots.
+    description: >
+      Solid ownership guidance for reactive roots, owner scope, cleanup timing,
+      runWithOwner, createRoot, and avoiding orphaned computations.
     keywords:
+      - solid
       - ownership
-      - cleanup
+      - guidance
       - reactive
       - roots
-      - setup
-      - core
-      - patterns
-      - dispose
-      - created
-      - outside
-      - components
-      - common
+      - owner
+      - scope
+      - cleanup
+      - timing
+      - runwithowner
+      - createroot
+      - avoiding
     related: []
     load_with: []
   - id: skills/frameworks/solid/performance
     path: skills/frameworks/solid/performance.md
-    description: Performance patterns and reactive boundaries.
+    description: >
+      Solid performance guidance for reactive boundaries, list updates,
+      memoization, store granularity, DOM churn, and measuring fine-grained
+      updates.
     keywords:
+      - solid
       - performance
-      - patterns
+      - guidance
       - reactive
       - boundaries
-      - setup
-      - core
-      - minimize
-      - signal
-      - reads
-      - hot
-      - paths
-      - memoized
+      - list
+      - updates
+      - memoization
+      - store
+      - granularity
+      - dom
+      - churn
     related: []
     load_with: []
   - id: skills/frameworks/solid/reactive-helpers
     path: skills/frameworks/solid/reactive-helpers.md
-    description: Helper utilities for reactive graph control.
+    description: >
+      Solid reactive-helper guidance for untrack, batch, on, createReaction,
+      observable interop, and controlling dependency collection.
     keywords:
-      - helper
-      - utilities
-      - reactive
-      - graph
-      - control
-      - helpers
-      - setup
-      - core
-      - patterns
-      - targeted
-      - dependencies
+      - solid
+      - reactive-helper
+      - guidance
       - untrack
+      - batch
+      - createreaction
+      - observable
+      - interop
+      - controlling
+      - dependency
+      - collection
+      - reactive
     related: []
     load_with: []
   - id: skills/frameworks/solid/rendering
     path: skills/frameworks/solid/rendering.md
-    description: Rendering, hydration, and client entry points.
+    description: >
+      Solid rendering guidance for render/hydrate entry points, SSR hydration,
+      client bootstrapping, browser-only code, and markup consistency.
     keywords:
+      - solid
       - rendering
-      - hydration
-      - client
+      - guidance
+      - renderhydrate
       - entry
       - points
-      - setup
-      - core
-      - patterns
-      - keep
-      - render
-      - root
-      - stable
+      - ssr
+      - hydration
+      - client
+      - bootstrapping
+      - browser-only
+      - code
     related: []
     load_with: []
   - id: skills/frameworks/solid/resources
     path: skills/frameworks/solid/resources.md
-    description: Async data with createResource and caching.
+    description: >
+      Solid resource guidance for createResource, async loading, refetching,
+      cache keys, Suspense integration, and pending/error states.
     keywords:
-      - async
-      - data
+      - solid
+      - resource
+      - guidance
       - createresource
-      - caching
-      - resources
-      - setup
-      - core
-      - patterns
-      - key
-      - reactive
-      - source
-      - handle
+      - async
+      - loading
+      - refetching
+      - cache
+      - keys
+      - suspense
+      - integration
+      - pendingerror
     related: []
     load_with: []
   - id: skills/frameworks/solid/rules
@@ -480,127 +530,143 @@ skills:
     load_with: []
   - id: skills/frameworks/solid/signals
     path: skills/frameworks/solid/signals.md
-    description: Signals and fine-grained reactivity.
+    description: >
+      Solid signal guidance for createSignal, accessors/setters, derived reads,
+      fine-grained updates, batching, and avoiding lost reactivity.
     keywords:
-      - signals
+      - solid
+      - signal
+      - guidance
+      - createsignal
+      - accessorssetters
+      - derived
+      - reads
       - fine-grained
-      - reactivity
-      - setup
-      - core
-      - patterns
-      - setters
       - updates
-      - read
-      - inside
-      - reactive
-      - scopes
+      - batching
+      - avoiding
+      - lost
     related: []
     load_with: []
   - id: skills/frameworks/solid/ssr
     path: skills/frameworks/solid/ssr.md
-    description: Server-side rendering constraints and hydration safety.
+    description: >
+      Solid SSR guidance for server rendering, hydration safety, browser API
+      guards, deterministic markup, streaming constraints, and client/server
+      boundaries.
     keywords:
-      - server-side
+      - solid
+      - ssr
+      - guidance
+      - server
       - rendering
-      - constraints
       - hydration
       - safety
-      - ssr
-      - setup
-      - core
-      - patterns
-      - guard
-      - browser-only
-      - apis
+      - browser
+      - api
+      - guards
+      - deterministic
+      - markup
     related: []
     load_with: []
   - id: skills/frameworks/solid/state
     path: skills/frameworks/solid/state.md
-    description: Local component state patterns.
+    description: >
+      Solid local-state guidance for choosing signals, stores, memos, resources,
+      component-owned state, and avoiding unnecessary global state.
     keywords:
-      - local
-      - component
+      - solid
+      - local-state
+      - guidance
+      - choosing
+      - signals
+      - stores
+      - memos
+      - resources
+      - component-owned
       - state
-      - patterns
-      - setup
-      - core
-      - keep
-      - minimal
-      - derived
-      - elsewhere
-      - common
-      - mistakes
+      - avoiding
+      - unnecessary
     related: []
     load_with: []
   - id: skills/frameworks/solid/store-helpers
     path: skills/frameworks/solid/store-helpers.md
-    description: Store helpers and reconciliation utilities.
+    description: >
+      Solid store-helper guidance for produce, reconcile, unwrap, path updates,
+      immutable interop, and preserving nested reactivity.
     keywords:
-      - store
-      - helpers
-      - reconciliation
-      - utilities
-      - setup
-      - core
-      - patterns
-      - reconcile
-      - large
-      - updates
+      - solid
+      - store-helper
+      - guidance
       - produce
-      - local
+      - reconcile
+      - unwrap
+      - path
+      - updates
+      - immutable
+      - interop
+      - preserving
+      - nested
     related: []
     load_with: []
   - id: skills/frameworks/solid/stores
     path: skills/frameworks/solid/stores.md
-    description: Store state with createStore and immutable updates.
+    description: >
+      Solid store guidance for createStore, setStore path syntax, nested state,
+      list updates, immutable data, and granular subscriptions.
     keywords:
+      - solid
       - store
-      - state
+      - guidance
       - createstore
-      - immutable
-      - updates
-      - stores
-      - setup
-      - core
-      - patterns
-      - nested
+      - setstore
       - path
-      - setters
+      - syntax
+      - nested
+      - state
+      - list
+      - updates
+      - immutable
     related: []
     load_with: []
   - id: skills/frameworks/solid/suspense
     path: skills/frameworks/solid/suspense.md
-    description: Suspense boundaries for async rendering.
+    description: >
+      Solid Suspense guidance for async boundaries, nested fallback UI,
+      resources, transitions, streaming SSR, and preventing loading-state churn.
     keywords:
+      - solid
       - suspense
-      - boundaries
+      - guidance
       - async
-      - rendering
-      - setup
-      - core
-      - patterns
-      - wrap
-      - resource-driven
-      - components
-      - common
-      - mistakes
+      - boundaries
+      - nested
+      - fallback
+      - ui
+      - resources
+      - transitions
+      - streaming
+      - ssr
     related: []
     load_with: []
   - id: skills/frameworks/solid/transitions
     path: skills/frameworks/solid/transitions.md
-    description: Transitions for non-blocking updates.
+    description: >
+      Solid transition guidance for startTransition/useTransition, non-blocking
+      updates, pending indicators, async resource refreshes, and UI
+      responsiveness.
     keywords:
-      - transitions
+      - solid
+      - transition
+      - guidance
+      - starttransitionusetransition
       - non-blocking
       - updates
-      - setup
-      - core
-      - patterns
-      - wrap
-      - expensive
-      - common
-      - mistakes
-      - medium
-      - small
+      - pending
+      - indicators
+      - async
+      - resource
+      - refreshes
+      - ui
     related: []
     load_with: []

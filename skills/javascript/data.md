@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/data
-description: Arrays, objects, and collection utilities.
+description: >
+  JavaScript data guidance for arrays, objects, Map/Set, iteration, transforms,
+  grouping, cloning, equality, and collection utility patterns.
 type: sub-skill
 category: javascript
 library: javascript

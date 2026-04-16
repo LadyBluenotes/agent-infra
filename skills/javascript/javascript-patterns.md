@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/javascript-patterns
-description: Common architecture and composition patterns.
+description: >
+  JavaScript pattern guidance for module design, composition, dependency boundaries,
+  data flow, small abstractions, and organizing behavior without frameworks.
 type: sub-skill
 category: javascript
 library: javascript

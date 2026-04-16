@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/config
-description: tsconfig layout, compiler options, and project references.
+description: >
+  TypeScript config guidance for tsconfig layout, compilerOptions, module
+  resolution, strictness, project references, declaration output, and build setup.
 type: sub-skill
 category: typescript
 library: typescript

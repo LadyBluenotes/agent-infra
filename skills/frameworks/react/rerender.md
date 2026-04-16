@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/rerender
-description: Re-render optimization patterns for React components.
+description: >
+  React re-render guidance for unstable props, context churn, memo/useMemo/useCallback,
+  derived state, and measuring unnecessary component updates.
 type: sub-skill
 category: frameworks
 library: react

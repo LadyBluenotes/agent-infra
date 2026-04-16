@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/ownership
-description: Ownership and cleanup of reactive roots.
+description: >
+  Solid ownership guidance for reactive roots, owner scope, cleanup timing,
+  runWithOwner, createRoot, and avoiding orphaned computations.
 type: sub-skill
 category: frameworks
 library: solidjs

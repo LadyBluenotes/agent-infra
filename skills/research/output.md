@@ -1,6 +1,8 @@
 ---
 name: skills/research/output
-description: Structured research deliverables and findings presentation.
+description: >
+  Research-output guidance for presenting findings, citations, confidence,
+  assumptions, tradeoffs, recommendations, and decision-ready summaries.
 type: sub-skill
 category: research
 ---

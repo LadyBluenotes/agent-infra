@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/effects
-description: Side effects, cleanup, and external subscriptions.
+description: >
+  Solid effect guidance for createEffect, on, onCleanup, subscriptions,
+  external systems, dependency tracking, and avoiding accidental loops.
 type: sub-skill
 category: frameworks
 library: solidjs

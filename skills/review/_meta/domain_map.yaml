@@ -1,41 +1,46 @@
 version: 1
 category: review
-generated_at: 2026-04-16T20:14:20.992Z
+generated_at: 2026-04-16T20:53:39.490Z
 skills:
   - id: skills/review/checklist
     path: skills/review/checklist.md
-    description: Code review checklist for correctness, security, and quality.
+    description: >
+      Code-review checklist for finding correctness bugs, regressions, security
+      risks, missing tests, edge cases, and maintainability issues.
     keywords:
-      - code
-      - review
+      - code-review
       - checklist
+      - finding
       - correctness
+      - bugs
+      - regressions
       - security
-      - quality
-      - setup
-      - core
-      - patterns
-      - errors
+      - risks
+      - missing
       - tests
-      - readability
+      - edge
+      - cases
     related: []
     load_with: []
   - id: skills/review/output
     path: skills/review/output.md
-    description: Structured review feedback with issues, suggestions, and questions.
+    description: >
+      Review-output guidance for severity-ordered findings, file/line
+      references, concise rationale, open questions, summaries, and non-blocking
+      suggestions.
     keywords:
-      - structured
-      - review
-      - feedback
-      - issues
-      - suggestions
+      - review-output
+      - guidance
+      - severity-ordered
+      - findings
+      - fileline
+      - references
+      - concise
+      - rationale
+      - open
       - questions
-      - output
-      - setup
-      - core
-      - patterns
-      - separate
-      - concerns
+      - summaries
+      - non-blocking
     related: []
     load_with: []
   - id: skills/review/pr-closeout

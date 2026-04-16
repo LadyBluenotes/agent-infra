@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/modules
-description: Module boundaries, type-only imports, and resolution behavior.
+description: >
+  TypeScript module guidance for type-only imports, ESM/CJS interop, path
+  aliases, package exports, moduleResolution, and declaration boundaries.
 type: sub-skill
 category: typescript
 library: typescript

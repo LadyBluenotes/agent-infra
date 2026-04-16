@@ -1,6 +1,8 @@
 ---
 name: skills/general/communicate
-description: Reporting changes, touched paths, and verification steps.
+description: >
+  Communication guidance for concise task updates, final summaries, touched
+  paths, verification evidence, unchecked work, blockers, and residual risk.
 type: sub-skill
 category: general
 ---

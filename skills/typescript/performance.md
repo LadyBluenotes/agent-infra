@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/performance
-description: Build performance, incremental checks, and project references.
+description: >
+  TypeScript performance guidance for slow typechecks, incremental builds,
+  project references, compiler tracing, declaration cost, and CI optimization.
 type: sub-skill
 category: typescript
 library: typescript

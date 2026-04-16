@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/browser
-description: Browser APIs, DOM events, and fetch-based I/O.
+description: >
+  Browser JavaScript guidance for DOM APIs, events, fetch, storage, URL/location,
+  timers, observers, and client-side platform behavior.
 type: sub-skill
 category: javascript
 library: javascript

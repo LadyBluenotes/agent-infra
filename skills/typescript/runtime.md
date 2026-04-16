@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/runtime
-description: Runtime boundaries, unknown inputs, and safe type guards.
+description: >
+  TypeScript runtime-boundary guidance for unknown inputs, type guards, asserts
+  functions, parsing external data, schema validation, and narrowing at edges.
 type: sub-skill
 category: typescript
 library: typescript

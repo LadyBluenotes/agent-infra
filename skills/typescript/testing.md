@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/testing
-description: Type-level tests and compile-time assertions.
+description: >
+  TypeScript testing guidance for type-level tests, expectTypeOf/assertType,
+  ts-expect-error, compile-time API regressions, and declaration checks.
 type: sub-skill
 category: typescript
 library: typescript

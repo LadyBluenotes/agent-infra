@@ -1,6 +1,6 @@
 version: 1
 category: performance
-generated_at: 2026-04-16T20:14:20.970Z
+generated_at: 2026-04-16T20:53:39.468Z
 skills:
   - id: skills/performance/benchmark-design
     path: skills/performance/benchmark-design.md
@@ -130,20 +130,23 @@ skills:
     load_with: []
   - id: skills/performance/optimize
     path: skills/performance/optimize.md
-    description: Targeted performance improvements with before/after measurement.
+    description: >
+      Performance optimization guidance for targeted before/after measurement,
+      bottleneck isolation, small fixes, regression checks, and evidence-based
+      tradeoffs.
     keywords:
-      - targeted
       - performance
-      - improvements
+      - optimization
+      - guidance
+      - targeted
       - beforeafter
       - measurement
-      - optimize
-      - setup
-      - core
-      - patterns
-      - establish
-      - baseline
-      - identify
+      - bottleneck
+      - isolation
+      - small
+      - fixes
+      - regression
+      - checks
     related: []
     load_with: []
   - id: skills/performance/ref/benchmarks

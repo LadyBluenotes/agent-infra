@@ -1,6 +1,8 @@
 ---
 name: skills/general/verification-before-completion
-description: Require fresh verification evidence before any completion claim.
+description: >
+  Completion-verification guidance for matching success claims to fresh command
+  output, diff checks, tests, builds, typechecks, and explicit Not verified notes.
 type: sub-skill
 category: general
 sources:

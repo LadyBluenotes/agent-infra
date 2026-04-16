@@ -1,6 +1,8 @@
 ---
 name: skills/general/simplify
-description: Readability-only refactors that preserve behavior.
+description: >
+  Simplification guidance for readability-only refactors, behavior-preserving
+  cleanup, reducing duplication, and avoiding drive-by design changes.
 type: sub-skill
 category: general
 ---

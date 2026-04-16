@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/server
-description: Server-side performance patterns for React and Next.js.
+description: >
+  React and Next.js server performance guidance for RSC, SSR, streaming, route
+  handlers, server data fetching, caching, and backend render bottlenecks.
 type: sub-skill
 category: frameworks
 library: react

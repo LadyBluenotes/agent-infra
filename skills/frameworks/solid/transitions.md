@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/transitions
-description: Transitions for non-blocking updates.
+description: >
+  Solid transition guidance for startTransition/useTransition, non-blocking
+  updates, pending indicators, async resource refreshes, and UI responsiveness.
 type: sub-skill
 category: frameworks
 library: solidjs

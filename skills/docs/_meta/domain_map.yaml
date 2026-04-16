@@ -1,36 +1,46 @@
 version: 1
 category: docs
-generated_at: 2026-04-16T20:14:20.884Z
+generated_at: 2026-04-16T20:53:39.378Z
 skills:
   - id: skills/docs/explanation
     path: skills/docs/explanation.md
-    description: Conceptual guidance that builds understanding and rationale.
+    description: >
+      Explanation-doc guidance for conceptual overviews, rationale, tradeoffs,
+      background, and "why it works" material rather than task steps or API
+      facts.
     keywords:
-      - conceptual
+      - explanation-doc
       - guidance
-      - builds
-      - understanding
+      - conceptual
+      - overviews
       - rationale
-      - explanation
-      - apply
-      - do
-      - dont
-      - output
+      - tradeoffs
+      - background
+      - it
+      - works
+      - material
+      - rather
+      - task
     related: []
     load_with: []
   - id: skills/docs/how-to
     path: skills/docs/how-to.md
-    description: Task-focused instructions for known users.
+    description: >
+      How-to documentation guidance for task-focused instructions, recipes,
+      procedural docs, and experienced-user workflows with a clear end state.
     keywords:
+      - how-to
+      - documentation
+      - guidance
       - task-focused
       - instructions
-      - known
-      - users
-      - how-to
-      - apply
-      - do
-      - dont
-      - output
+      - recipes
+      - procedural
+      - docs
+      - experienced-user
+      - workflows
+      - clear
+      - end
     related: []
     load_with: []
   - id: skills/docs/ref/context-preservation
@@ -76,18 +86,22 @@ skills:
     load_with: []
   - id: skills/docs/reference
     path: skills/docs/reference.md
-    description: Precise documentation for stable facts and APIs.
+    description: >
+      Reference documentation guidance for stable facts, APIs, options,
+      parameters, schemas, commands, and exact source-backed behavior.
     keywords:
-      - precise
+      - reference
       - documentation
+      - guidance
       - stable
       - facts
       - apis
-      - reference
-      - apply
-      - do
-      - dont
-      - output
+      - options
+      - parameters
+      - schemas
+      - commands
+      - exact
+      - source-backed
     related: []
     load_with: []
   - id: skills/docs/source-audit
@@ -113,17 +127,21 @@ skills:
     load_with: []
   - id: skills/docs/tutorial
     path: skills/docs/tutorial.md
-    description: Step-by-step onboarding for beginners to complete a goal.
+    description: >
+      Tutorial documentation guidance for beginner onboarding, guided lessons,
+      first-success walkthroughs, and step-by-step learning paths.
     keywords:
-      - step-by-step
-      - onboarding
-      - beginners
-      - complete
-      - goal
       - tutorial
-      - apply
-      - do
-      - dont
-      - output
+      - documentation
+      - guidance
+      - beginner
+      - onboarding
+      - guided
+      - lessons
+      - first-success
+      - walkthroughs
+      - step-by-step
+      - learning
+      - paths
     related: []
     load_with: []

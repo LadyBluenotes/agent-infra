@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/modules
-description: ES module syntax, static imports, and dynamic import.
+description: >
+  JavaScript module guidance for ESM syntax, static and dynamic imports,
+  exports, circular dependencies, package boundaries, and import ordering.
 type: sub-skill
 category: javascript
 library: javascript

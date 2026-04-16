@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/control-flow
-description: Show, For, Switch, and other control-flow components.
+description: >
+  Solid control-flow guidance for Show, For, Index, Switch/Match, keyed updates,
+  conditional rendering, and list rendering behavior.
 type: sub-skill
 category: frameworks
 library: solidjs

@@ -1,6 +1,8 @@
 ---
 name: skills/review/output
-description: Structured review feedback with issues, suggestions, and questions.
+description: >
+  Review-output guidance for severity-ordered findings, file/line references,
+  concise rationale, open questions, summaries, and non-blocking suggestions.
 type: sub-skill
 category: review
 ---

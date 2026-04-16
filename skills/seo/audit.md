@@ -1,6 +1,8 @@
 ---
 name: skills/seo/audit
-description: Checklist for diagnosing technical and on-page SEO issues.
+description: >
+  SEO audit guidance for technical and on-page checks, crawlability, metadata,
+  canonical links, structured data, performance signals, and content risks.
 type: sub-skill
 category: seo
 sources:

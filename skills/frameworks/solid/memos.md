@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/memos
-description: Derived state with createMemo.
+description: >
+  Solid memo guidance for createMemo, derived state, expensive computations,
+  equality behavior, dependency tracking, and avoiding side effects in memos.
 type: sub-skill
 category: frameworks
 library: solidjs

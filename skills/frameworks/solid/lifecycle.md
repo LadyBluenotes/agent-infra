@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/lifecycle
-description: Lifecycle hooks and mount/cleanup behavior.
+description: >
+  Solid lifecycle guidance for onMount, onCleanup, owner lifetime, client-only
+  work, subscriptions, timers, and browser API setup.
 type: sub-skill
 category: frameworks
 library: solidjs

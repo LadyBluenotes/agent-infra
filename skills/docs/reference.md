@@ -1,6 +1,8 @@
 ---
 name: skills/docs/reference
-description: Precise documentation for stable facts and APIs.
+description: >
+  Reference documentation guidance for stable facts, APIs, options, parameters,
+  schemas, commands, and exact source-backed behavior.
 resources:
   - https://diataxis.fr/reference/
 type: skill

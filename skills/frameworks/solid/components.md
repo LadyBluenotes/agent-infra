@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/components
-description: Components, props, and composition patterns.
+description: >
+  Solid component guidance for props, children, splitProps, composition,
+  JSX patterns, and component API shape.
 type: sub-skill
 category: frameworks
 library: solidjs

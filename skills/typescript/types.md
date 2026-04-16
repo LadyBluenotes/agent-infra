@@ -1,6 +1,8 @@
 ---
 name: skills/typescript/types
-description: Everyday types, unions, narrowing, and generics.
+description: >
+  TypeScript everyday-types guidance for unions, narrowing, generics, object
+  types, functions, inference, nullability, and practical annotation choices.
 type: sub-skill
 category: typescript
 library: typescript

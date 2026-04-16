@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/state
-description: Local component state patterns.
+description: >
+  Solid local-state guidance for choosing signals, stores, memos, resources,
+  component-owned state, and avoiding unnecessary global state.
 type: sub-skill
 category: frameworks
 library: solidjs

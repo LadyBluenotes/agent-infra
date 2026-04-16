@@ -1,40 +1,45 @@
 version: 1
 category: research
-generated_at: 2026-03-02T20:06:45.504Z
+generated_at: 2026-04-16T20:53:39.486Z
 skills:
   - id: skills/research/method
     path: skills/research/method.md
-    description: Structured research methodology with evidence and tradeoffs.
+    description: >
+      Research-method guidance for gathering primary sources, comparing
+      evidence, separating facts from inference, handling uncertainty, and
+      evaluating tradeoffs.
     keywords:
-      - structured
-      - research
-      - methodology
+      - research-method
+      - guidance
+      - gathering
+      - primary
+      - sources
+      - comparing
       - evidence
-      - tradeoffs
-      - method
-      - setup
-      - core
-      - patterns
-      - restate
-      - question
-      - separate
+      - separating
+      - facts
+      - inference
+      - handling
+      - uncertainty
     related: []
     load_with: []
   - id: skills/research/output
     path: skills/research/output.md
-    description: Structured research deliverables and findings presentation.
+    description: >
+      Research-output guidance for presenting findings, citations, confidence,
+      assumptions, tradeoffs, recommendations, and decision-ready summaries.
     keywords:
-      - structured
-      - research
-      - deliverables
+      - research-output
+      - guidance
+      - presenting
       - findings
-      - presentation
-      - output
-      - setup
-      - core
-      - patterns
-      - answer
-      - first
+      - citations
+      - confidence
+      - assumptions
       - tradeoffs
+      - recommendations
+      - decision-ready
+      - summaries
+      - output
     related: []
     load_with: []

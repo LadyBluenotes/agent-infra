@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/react/client-data
-description: Client-side data fetching patterns for React apps.
+description: >
+  React client-data guidance for browser-side fetching, cache state, loading and
+  error UI, abort handling, and avoiding duplicated network requests.
 type: sub-skill
 category: frameworks
 library: react

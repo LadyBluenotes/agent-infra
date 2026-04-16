@@ -1,201 +1,232 @@
 version: 1
 category: typescript
-generated_at: 2026-04-16T19:43:28.431Z
+generated_at: 2026-04-16T20:53:39.518Z
 skills:
   - id: skills/typescript/api-modeling
     path: skills/typescript/api-modeling.md
-    description: Modeling public APIs with discriminants and stable DTOs.
+    description: >
+      TypeScript API modeling guidance for public DTOs, discriminated unions,
+      versioned shapes, stable contracts, validation boundaries, and
+      exhaustiveness.
     keywords:
-      - modeling
-      - public
-      - apis
-      - discriminants
-      - stable
-      - dtos
+      - typescript
       - api
-      - setup
-      - core
-      - patterns
+      - modeling
+      - guidance
+      - public
+      - dtos
       - discriminated
       - unions
+      - versioned
+      - shapes
+      - stable
+      - contracts
     related: []
     load_with: []
   - id: skills/typescript/config
     path: skills/typescript/config.md
-    description: tsconfig layout, compiler options, and project references.
+    description: >
+      TypeScript config guidance for tsconfig layout, compilerOptions, module
+      resolution, strictness, project references, declaration output, and build
+      setup.
     keywords:
+      - typescript
+      - config
+      - guidance
       - tsconfig
       - layout
-      - compiler
-      - options
+      - compileroptions
+      - module
+      - resolution
+      - strictness
       - project
       - references
-      - config
-      - setup
-      - core
-      - patterns
-      - multi-package
-      - repos
+      - declaration
     related: []
     load_with: []
   - id: skills/typescript/errors
     path: skills/typescript/errors.md
-    description: Diagnostics workflow and common TypeScript error fixes.
+    description: >
+      TypeScript diagnostics guidance for reading compiler errors, narrowing
+      root causes, fixing type mismatches, generics, modules, declarations, and
+      strictness.
     keywords:
-      - diagnostics
-      - workflow
-      - common
       - typescript
-      - error
-      - fixes
+      - diagnostics
+      - guidance
+      - reading
+      - compiler
       - errors
-      - setup
-      - core
-      - patterns
-      - read
-      - code
+      - narrowing
+      - root
+      - causes
+      - fixing
+      - type
+      - mismatches
     related: []
     load_with: []
   - id: skills/typescript/interop
     path: skills/typescript/interop.md
-    description: JS interop and declaration file authoring.
+    description: >
+      TypeScript interop guidance for JavaScript packages, declaration files,
+      ambient types, module augmentation, default exports, and mixed JS/TS
+      projects.
     keywords:
-      - js
+      - typescript
       - interop
+      - guidance
+      - javascript
+      - packages
       - declaration
-      - file
-      - authoring
-      - setup
-      - core
-      - patterns
-      - type-only
-      - imports
-      - modules
-      - commonjs
+      - files
+      - ambient
+      - types
+      - module
+      - augmentation
+      - default
     related: []
     load_with: []
   - id: skills/typescript/modules
     path: skills/typescript/modules.md
-    description: Module boundaries, type-only imports, and resolution behavior.
+    description: >
+      TypeScript module guidance for type-only imports, ESM/CJS interop, path
+      aliases, package exports, moduleResolution, and declaration boundaries.
     keywords:
+      - typescript
       - module
-      - boundaries
+      - guidance
       - type-only
       - imports
-      - resolution
-      - behavior
-      - modules
-      - setup
-      - core
-      - patterns
-      - avoid
-      - runtime
+      - esmcjs
+      - interop
+      - path
+      - aliases
+      - package
+      - exports
+      - moduleresolution
     related: []
     load_with: []
   - id: skills/typescript/performance
     path: skills/typescript/performance.md
-    description: Build performance, incremental checks, and project references.
+    description: >
+      TypeScript performance guidance for slow typechecks, incremental builds,
+      project references, compiler tracing, declaration cost, and CI
+      optimization.
     keywords:
-      - build
+      - typescript
       - performance
+      - guidance
+      - slow
+      - typechecks
       - incremental
-      - checks
+      - builds
       - project
       - references
-      - setup
-      - core
-      - patterns
-      - mode
-      - skip
-      - lib
+      - compiler
+      - tracing
+      - declaration
     related: []
     load_with: []
   - id: skills/typescript/ref/curated
     path: skills/typescript/ref/curated.md
-    description: Curated references, release notes, and deep behavior changes.
+    description: >
+      TypeScript curated-reference page for official docs, release notes, deep
+      compiler behavior, type-system changes, and source links used by TS
+      skills.
     keywords:
-      - curated
-      - references
+      - typescript
+      - curated-reference
+      - page
+      - official
+      - docs
       - release
       - notes
       - deep
+      - compiler
       - behavior
+      - type-system
       - changes
-      - primary
-      - behavioral
-      - "55"
-      - typescript
     related: []
     load_with: []
   - id: skills/typescript/ref/typescript-types
     path: skills/typescript/ref/typescript-types.md
-    description: Utility types and type operators reference.
+    description: >
+      TypeScript type-system reference for utility types, conditional types,
+      mapped types, indexed access, keyof, infer, satisfies, and type operators.
     keywords:
+      - typescript
+      - type-system
+      - reference
       - utility
       - types
-      - type
-      - operators
-      - reference
-      - keyof
-      - indexed
-      - access
-      - typeof
       - conditional
       - mapped
-      - template
+      - indexed
+      - access
+      - keyof
+      - infer
+      - satisfies
     related: []
     load_with: []
   - id: skills/typescript/runtime
     path: skills/typescript/runtime.md
-    description: Runtime boundaries, unknown inputs, and safe type guards.
+    description: >
+      TypeScript runtime-boundary guidance for unknown inputs, type guards,
+      asserts functions, parsing external data, schema validation, and narrowing
+      at edges.
     keywords:
-      - runtime
-      - boundaries
+      - typescript
+      - runtime-boundary
+      - guidance
       - unknown
       - inputs
-      - safe
       - type
       - guards
-      - setup
-      - core
-      - patterns
-      - parse
-      - input
+      - asserts
+      - functions
+      - parsing
+      - external
+      - data
     related: []
     load_with: []
   - id: skills/typescript/testing
     path: skills/typescript/testing.md
-    description: Type-level tests and compile-time assertions.
+    description: >
+      TypeScript testing guidance for type-level tests, expectTypeOf/assertType,
+      ts-expect-error, compile-time API regressions, and declaration checks.
     keywords:
+      - typescript
+      - testing
+      - guidance
       - type-level
       - tests
-      - compile-time
-      - assertions
-      - testing
-      - setup
-      - core
-      - patterns
+      - expecttypeofasserttype
       - ts-expect-error
-      - negative
-      - validate
-      - inference
+      - compile-time
+      - api
+      - regressions
+      - declaration
+      - checks
     related: []
     load_with: []
   - id: skills/typescript/types
     path: skills/typescript/types.md
-    description: Everyday types, unions, narrowing, and generics.
+    description: >
+      TypeScript everyday-types guidance for unions, narrowing, generics, object
+      types, functions, inference, nullability, and practical annotation
+      choices.
     keywords:
-      - everyday
-      - types
+      - typescript
+      - everyday-types
+      - guidance
       - unions
       - narrowing
       - generics
-      - setup
-      - core
-      - patterns
-      - discriminated
-      - variants
-      - literal
-      - preservation
+      - object
+      - types
+      - functions
+      - inference
+      - nullability
+      - practical
     related: []
     load_with: []

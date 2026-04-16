@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/runtime
-description: Runtime type checks and boundary validation.
+description: >
+  JavaScript runtime validation guidance for unknown inputs, guards, assertions,
+  schema boundaries, parsing external data, and defensive checks.
 type: sub-skill
 category: javascript
 library: javascript

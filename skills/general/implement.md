@@ -1,6 +1,8 @@
 ---
 name: skills/general/implement
-description: Making code changes with minimal, reversible edits.
+description: >
+  Implementation guidance for scoped code changes, read-before-edit workflow,
+  minimal reversible patches, convention matching, and focused validation.
 type: sub-skill
 category: general
 ---

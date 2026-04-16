@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/rendering
-description: Rendering, hydration, and client entry points.
+description: >
+  Solid rendering guidance for render/hydrate entry points, SSR hydration,
+  client bootstrapping, browser-only code, and markup consistency.
 type: sub-skill
 category: frameworks
 library: solidjs

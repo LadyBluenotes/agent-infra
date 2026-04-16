@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/security
-description: Safe handling of input, eval risks, and injection prevention.
+description: >
+  JavaScript security guidance for untrusted input, injection, eval/function
+  constructors, XSS-prone DOM writes, path traversal, and safe parsing.
 type: sub-skill
 category: javascript
 library: javascript

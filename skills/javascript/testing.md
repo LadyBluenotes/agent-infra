@@ -1,6 +1,8 @@
 ---
 name: skills/javascript/testing
-description: Unit testing patterns and assertions.
+description: >
+  JavaScript testing guidance for unit tests, assertions, fixtures, async tests,
+  mocks, regression coverage, and behavior-focused test structure.
 type: sub-skill
 category: javascript
 library: javascript

@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/context
-description: Context creation and provider usage.
+description: >
+  Solid context guidance for createContext, providers, useContext, dependency
+  injection, owner scope, and avoiding global singleton state.
 type: sub-skill
 category: frameworks
 library: solidjs

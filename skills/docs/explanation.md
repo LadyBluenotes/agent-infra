@@ -1,6 +1,8 @@
 ---
 name: skills/docs/explanation
-description: Conceptual guidance that builds understanding and rationale.
+description: >
+  Explanation-doc guidance for conceptual overviews, rationale, tradeoffs,
+  background, and "why it works" material rather than task steps or API facts.
 resources:
   - https://diataxis.fr/explanation/
 type: skill

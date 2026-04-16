@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/actions
-description: Action patterns and side-effect workflows.
+description: >
+  Solid action guidance for form submissions, mutations, server/client side
+  effects, pending states, invalidation, and event-triggered workflows.
 type: sub-skill
 category: frameworks
 library: solidjs

@@ -1,6 +1,8 @@
 ---
 name: skills/frameworks/solid/resources
-description: Async data with createResource and caching.
+description: >
+  Solid resource guidance for createResource, async loading, refetching,
+  cache keys, Suspense integration, and pending/error states.
 type: sub-skill
 category: frameworks
 library: solidjs
