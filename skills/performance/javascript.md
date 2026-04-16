@@ -128,4 +128,4 @@ Without an explicit budget, dependency bloat accumulates in small changes that a
 
 ## References
 
-- @skills/performance/references/javascript-delivery.md
+- @skills/performance/ref/javascript-delivery.md

@@ -124,4 +124,4 @@ if (!token) throw new Error("Missing token");
 
 ## References
 
-- @skills/typescript/typescript-types.md
+- @skills/typescript/ref/typescript-types.md

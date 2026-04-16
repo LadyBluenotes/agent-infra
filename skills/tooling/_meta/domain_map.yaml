@@ -1,0 +1,366 @@
+version: 1
+category: tooling
+generated_at: 2026-04-16T19:39:45.872Z
+skills:
+  - id: skills/tooling/cli/skill-discovery
+    path: skills/tooling/cli/skill-discovery.md
+    description: >
+      CLI skill discovery and resolver guidance for grouped markdown skills,
+      aliases, refs, compact mappings, local/global scan scope, and install
+      generation.
+    keywords:
+      - cli
+      - skill
+      - discovery
+      - resolver
+      - guidance
+      - grouped
+      - markdown
+      - skills
+      - aliases
+      - refs
+      - compact
+      - mappings
+    related: []
+    load_with: []
+  - id: skills/tooling/pnpm/basics
+    path: skills/tooling/pnpm/basics.md
+    description: >
+      pnpm basics for installs, workspace-aware dependency commands, lockfile
+      expectations, and when to load deeper pnpm refs.
+    keywords:
+      - pnpm
+      - basics
+      - installs
+      - workspace-aware
+      - dependency
+      - commands
+      - lockfile
+      - expectations
+      - load
+      - deeper
+      - refs
+      - setup
+    related: []
+    load_with: []
+  - id: skills/tooling/pnpm/ref/catalogs
+    path: skills/tooling/pnpm/ref/catalogs.md
+    description: >
+      pnpm catalogs reference for centralizing dependency versions in
+      pnpm-workspace.yaml and using catalog protocol entries.
+    keywords:
+      - pnpm
+      - catalogs
+      - reference
+      - centralizing
+      - dependency
+      - versions
+      - pnpm-workspaceyaml
+      - catalog
+      - protocol
+      - entries
+      - setup
+      - core
+    related: []
+    load_with: []
+  - id: skills/tooling/pnpm/ref/patches
+    path: skills/tooling/pnpm/ref/patches.md
+    description: >
+      pnpm patch workflow reference for patching dependencies with pnpm patch,
+      pnpm patch-commit, and reviewable patch files.
+    keywords:
+      - pnpm
+      - patch
+      - workflow
+      - reference
+      - patching
+      - dependencies
+      - patch-commit
+      - reviewable
+      - files
+      - patches
+      - setup
+      - edit
+    related: []
+    load_with: []
+  - id: skills/tooling/pnpm/workspaces
+    path: skills/tooling/pnpm/workspaces.md
+    description: >
+      pnpm workspace guidance for pnpm-workspace.yaml, workspace protocol,
+      filters, local package linking, and monorepo dependency expectations.
+    keywords:
+      - pnpm
+      - workspace
+      - guidance
+      - pnpm-workspaceyaml
+      - protocol
+      - filters
+      - local
+      - package
+      - linking
+      - monorepo
+      - dependency
+      - expectations
+    related: []
+    load_with: []
+  - id: skills/tooling/vite/basics
+    path: skills/tooling/vite/basics.md
+    description: >
+      Vite basics for dev server, production build, config discovery, env
+      loading, and choosing config or plugin refs.
+    keywords:
+      - vite
+      - basics
+      - dev
+      - server
+      - production
+      - build
+      - config
+      - discovery
+      - env
+      - loading
+      - choosing
+      - plugin
+    related: []
+    load_with: []
+  - id: skills/tooling/vite/config
+    path: skills/tooling/vite/config.md
+    description: >
+      Vite config guidance for defineConfig, conditional config, config loaders,
+      env loading, aliases, SSR flags, and shared app/test config.
+    keywords:
+      - vite
+      - config
+      - guidance
+      - defineconfig
+      - conditional
+      - loaders
+      - env
+      - loading
+      - aliases
+      - ssr
+      - flags
+      - shared
+    related: []
+    load_with: []
+  - id: skills/tooling/vite/plugins
+    path: skills/tooling/vite/plugins.md
+    description: >
+      Vite plugin guidance for plugin factories, plugin arrays, ordering,
+      Vite-specific hooks, virtual modules, and when to inspect transforms.
+    keywords:
+      - vite
+      - plugin
+      - guidance
+      - factories
+      - arrays
+      - ordering
+      - vite-specific
+      - hooks
+      - virtual
+      - modules
+      - inspect
+      - transforms
+    related: []
+    load_with: []
+  - id: skills/tooling/vite/ref/environment-api
+    path: skills/tooling/vite/ref/environment-api.md
+    description: >
+      Vite Environment API reference for environment instances,
+      framework/runtime integration, and avoiding old SSR-only assumptions.
+    keywords:
+      - vite
+      - environment
+      - api
+      - reference
+      - instances
+      - frameworkruntime
+      - integration
+      - avoiding
+      - old
+      - ssr-only
+      - assumptions
+      - setup
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/basics
+    path: skills/tooling/vitest/basics.md
+    description: >
+      Vitest basics for Vite-native tests, explicit imports, watch versus run
+      mode, and choosing focused test pages before deeper refs.
+    keywords:
+      - vitest
+      - basics
+      - vite-native
+      - tests
+      - explicit
+      - imports
+      - watch
+      - versus
+      - run
+      - mode
+      - choosing
+      - focused
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/config
+    path: skills/tooling/vitest/config.md
+    description: >
+      Vitest configuration for Vite integration, test defaults, setup files,
+      projects, coverage, and environment selection.
+    keywords:
+      - vitest
+      - configuration
+      - vite
+      - integration
+      - test
+      - defaults
+      - setup
+      - files
+      - projects
+      - coverage
+      - environment
+      - selection
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/benchmarks
+    path: skills/tooling/vitest/ref/benchmarks.md
+    description: >
+      Vitest benchmark reference for `bench`, benchmark config, CodSpeed's
+      `@codspeed/vitest-plugin`, local runs, CI reporting, sharding, and async
+      limits.
+    keywords:
+      - vitest
+      - benchmark
+      - reference
+      - bench
+      - config
+      - codspeeds
+      - codspeedvitest-plugin
+      - local
+      - runs
+      - ci
+      - reporting
+      - sharding
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/cli
+    path: skills/tooling/vitest/ref/cli.md
+    description: >
+      Vitest CLI reference for watch mode, run mode, focused files, update
+      flows, coverage, and benchmark commands.
+    keywords:
+      - vitest
+      - cli
+      - reference
+      - watch
+      - mode
+      - run
+      - focused
+      - files
+      - update
+      - flows
+      - coverage
+      - benchmark
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/coverage
+    path: skills/tooling/vitest/ref/coverage.md
+    description: >
+      Vitest coverage reference for provider selection, reporters, thresholds,
+      and keeping coverage checks separate from ordinary test runs.
+    keywords:
+      - vitest
+      - coverage
+      - reference
+      - provider
+      - selection
+      - reporters
+      - thresholds
+      - keeping
+      - checks
+      - separate
+      - ordinary
+      - test
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/environments
+    path: skills/tooling/vitest/ref/environments.md
+    description: >
+      Vitest environment reference for node, jsdom, happy-dom, edge-runtime,
+      per-file environment control, and DOM test setup.
+    keywords:
+      - vitest
+      - environment
+      - reference
+      - node
+      - jsdom
+      - happy-dom
+      - edge-runtime
+      - per-file
+      - control
+      - dom
+      - test
+      - setup
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/mocking
+    path: skills/tooling/vitest/ref/mocking.md
+    description: >
+      Deep Vitest mocking reference for vi.fn, vi.spyOn, vi.mock hoisting, fake
+      timers, globals, environment stubs, and fetch stubs.
+    keywords:
+      - deep
+      - vitest
+      - mocking
+      - reference
+      - vifn
+      - vispyon
+      - vimock
+      - hoisting
+      - fake
+      - timers
+      - globals
+      - environment
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/type-testing
+    path: skills/tooling/vitest/ref/type-testing.md
+    description: >
+      Vitest type-test reference for expectTypeOf, assertType, ts-expect-error,
+      and compile-time API regression checks.
+    keywords:
+      - vitest
+      - type-test
+      - reference
+      - expecttypeof
+      - asserttype
+      - ts-expect-error
+      - compile-time
+      - api
+      - regression
+      - checks
+      - type
+      - testing
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/testing-patterns
+    path: skills/tooling/vitest/testing-patterns.md
+    description: >
+      Vitest test authoring patterns for behavior-focused tests, async
+      assertions, fixtures, regression coverage, and stable verification.
+    keywords:
+      - vitest
+      - test
+      - authoring
+      - patterns
+      - behavior-focused
+      - tests
+      - async
+      - assertions
+      - fixtures
+      - regression
+      - coverage
+      - stable
+    related: []
+    load_with: []

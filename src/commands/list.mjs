@@ -1,4 +1,4 @@
-import { resolveRepoRoot, readRegistry, discoverModules } from '../helpers.mjs'
+import { resolveRepoRoot, readRegistry, discoverModules, isReferenceModule } from '../helpers.mjs'
 
 export async function cmdList(options) {
   const root = resolveRepoRoot()
@@ -19,6 +19,8 @@ export async function cmdList(options) {
 
   if (options.type) {
     filtered = filtered.filter((m) => m.frontmatter?.type === options.type)
+  } else {
+    filtered = filtered.filter((m) => !isReferenceModule(m))
   }
 
   if (options.json) {

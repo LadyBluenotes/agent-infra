@@ -134,4 +134,4 @@ Base64 grows payload size, weakens caching, and quickly becomes counterproductiv
 
 ## References
 
-- @skills/performance/references/responsive-images.md
+- @skills/performance/ref/responsive-images.md

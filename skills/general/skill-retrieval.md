@@ -42,6 +42,29 @@ List task-relevant domain skills and skills that are the subject of the request.
 
 If no log entry is needed because only common process skills were used and no reusable routing signal exists, do not update the log. State the no-log rationale in the final response.
 
+### Use canonical skill ids in logs
+Write local skill ids without the `.md` suffix and with the leading `@skills/` alias.
+
+```text
+@skills/tooling/vitest/testing-patterns
+@skills/docs/reference-editing
+@skills/frameworks/react/hydration
+```
+
+Plugin skills keep their plugin prefix, such as `github:github`. If a useful skill is repo-local, missing, or not installed globally, record the exact observed id and note the gap in the outcome.
+
+### Inventory repeated signals
+Review `@notes/skill-retrieval.md` monthly or after about 10 new logged prompts, whichever comes first.
+
+Look for:
+- repeated prompts routed to broad skills
+- inconsistent ids for the same skill
+- repo-local skills that should become global skills
+- repeated source-backed workflows that deserve refs
+- explicit user corrections to routing
+
+Record accepted updates in the relevant work-log before implementation.
+
 ### Redact sensitive info
 Strip tokens, credentials, emails, full URLs with query params, and user identifiers before logging.
 
@@ -80,6 +103,17 @@ Correct
 "Added a brief prompt-to-skill note for future retrieval."
 ```
 Explanation: The log helps improve routing decisions over time.
+
+### Logging non-canonical ids
+Wrong
+```text
+"@skills/libraries/vitest.md, skills/docs/solid-reference-editing"
+```
+Correct
+```text
+"@skills/tooling/vitest/testing-patterns, @skills/docs/reference-editing"
+```
+Explanation: Consistent ids make the log searchable and make repeated signals easier to inventory.
 
 ### Writing to repo-local logs
 Wrong

@@ -3,6 +3,7 @@
 import { Command } from 'commander'
 import { cmdList } from './commands/list.mjs'
 import { cmdShow } from './commands/show.mjs'
+import { cmdSearch } from './commands/search.mjs'
 import { cmdInit } from './commands/init.mjs'
 import { cmdInstall } from './commands/install.mjs'
 import { cmdPull } from './commands/pull.mjs'
@@ -29,6 +30,14 @@ const registerModuleCommands = (parent) => {
     .command('show <name>')
     .description('Show the full content of a module by name')
     .action(cmdShow)
+
+  parent
+    .command('search <query...>')
+    .description('Search modules by prompt terms')
+    .option('--references', 'Include reference-depth modules')
+    .option('--limit <number>', 'Maximum results to print', '10')
+    .option('--json', 'Output as JSON')
+    .action(cmdSearch)
 
   parent
     .command('init')

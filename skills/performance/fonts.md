@@ -139,4 +139,4 @@ Font payload is part of the same early-page budget and should not escape review 
 
 ## References
 
-- @skills/performance/references/font-loading.md
+- @skills/performance/ref/font-loading.md

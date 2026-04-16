@@ -1,9 +1,9 @@
 ---
 name: write-a-skill
 description: >
-  Authoring guide for skill files and meta skills in agent-infra.
-  Use when creating or updating skills, reorganizing skill trees,
-  or onboarding contributors to the new agent-friendly format.
+  Authoring guide for CLI-native skill files and meta skills in agent-infra.
+  Use when creating or updating grouped markdown skills, ref pages,
+  reorganizing skill trees, or onboarding contributors.
 metadata:
   version: "2.0"
   category: meta-tooling
@@ -33,7 +33,29 @@ Avoid duplicating guidance across files. Each skill owns one concern.
 
 ## Internal Skills (skills/)
 
-Internal skills follow the agent-friendly format (durable-streams style).
+Internal skills use grouped markdown files that the `ladybluenotes` CLI discovers.
+Do not create `SKILL.md` router pages for this repo; use names, descriptions,
+aliases, tags, `depth`, and `ref/` pages so the CLI can choose the right file.
+
+### File Tree
+
+```text
+skills/
+  tooling/
+    vitest/
+      basics.md
+      config.md
+      ref/
+        mocking.md
+        environments.md
+  preferences/
+    tooling.md
+    ref/
+      package-manager.md
+```
+
+Use `ref/` for deep material that should load only when a prompt needs it.
+Use ordinary `.md` files for primary task pages.
 
 ### Frontmatter
 
@@ -42,10 +64,17 @@ Internal skills follow the agent-friendly format (durable-streams style).
 name: skills/[category]/[skill-name]
 description: >
   Dense, 1–2 sentence routing key. What this skill covers.
-type: [core | sub-skill | reference]
-  category: [general | typescript | javascript | docs | debug | review | performance | seo | research | libraries]
+type: [skill | sub-skill | reference]
+category: [general | typescript | javascript | docs | debug | review | performance | seo | research | tooling | preferences | frameworks]
 library: [optional]
 library_version: [optional]
+depth: [primary | reference]
+aliases:
+  - [optional short lookup name]
+tags:
+  - [optional search terms]
+references:
+  - skills/[category]/[path/to/ref]
 sources:
   - [optional URL]
 ---
@@ -84,12 +113,14 @@ sources:
 
 - @skills/[category]/[reference-skill].md
 
-Include this section whenever you add any references/ files.
+Include this section whenever you add any `ref/` files.
 ```
 
 ## Library Skills (generated)
 
-Library-specific skills should follow the tree-generator format:
+Library-specific skills generated for external npm distribution may still follow
+the tree-generator `SKILL.md` format when the package ecosystem requires it.
+For this repo's own skills, prefer the grouped markdown format above.
 
 ```yaml
 ---
@@ -119,9 +150,9 @@ requires:            # only for framework/composition skills
 [3+ mistakes with wrong/correct and short explanation]
 
 ## References (optional)
-- references/[topic].md
+- ref/[topic].md
 
-Include this section whenever you add any references/ files.
+Include this section whenever you add any `ref/` files.
 ```
 
 Use meta/domain-discovery and meta/tree-generator to build these.
@@ -170,5 +201,5 @@ category: [language | framework | task]
 | Code blocks complete | Real imports, copy-pasteable |
 | No Apply/Do/Don’t | Use Setup/Core Patterns/Common Mistakes |
 | One concern per skill | Split to sub-skills if too broad |
-| References lean | Use references for overflow or deeper optional detail; include References section when references/ exists |
+| References lean | Use `ref/` for overflow or deeper optional detail; include References section when `ref/` exists |
 | Registered | registry.yaml updated |

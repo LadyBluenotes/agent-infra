@@ -1,5 +1,5 @@
 import fsp from 'fs/promises'
-import { resolveRepoRoot, discoverModules } from '../helpers.mjs'
+import { resolveRepoRoot, discoverModules, moduleMatchesName, searchModules } from '../helpers.mjs'
 
 export async function cmdShow(name) {
   const root = resolveRepoRoot()
@@ -10,14 +10,13 @@ export async function cmdShow(name) {
 
   const modules = await discoverModules(root.basePath)
 
-  // Match by name or by relative path (with or without .md)
-  const match = modules.find(
-    (m) =>
-      m.name === name ||
-      m.relPath === name ||
-      m.relPath === name + '.md' ||
-      m.relPath.replace(/\.md$/, '') === name,
-  )
+  // Match by name, alias, or relative path (with or without .md).
+  let match = modules.find((m) => moduleMatchesName(m, name))
+
+  if (!match) {
+    const results = searchModules(modules, name, { limit: 1 })
+    match = results[0]?.module
+  }
 
   if (!match) {
     console.error(`Error: No module found matching "${name}".`)

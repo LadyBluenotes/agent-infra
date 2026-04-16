@@ -125,4 +125,4 @@ Without preserved evidence, later regressions are harder to catch and harder to 
 
 ## References
 
-- @skills/performance/references/budgets.md
+- @skills/performance/ref/budgets.md

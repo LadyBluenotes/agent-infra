@@ -4,6 +4,7 @@ import YAML from "yaml";
 
 const repoRoot = new URL("../", import.meta.url).pathname;
 const skillsRoot = path.join(repoRoot, "skills");
+const registryPath = path.join(repoRoot, "registry.yaml");
 
 const STOPWORDS = new Set([
   "the",
@@ -176,11 +177,14 @@ const readTextIfExists = async (filePath) => {
 
 const stableStringify = (value) => JSON.stringify(value);
 
+const registry = YAML.parse(await fs.readFile(registryPath, "utf8"));
+const registeredCategories = new Set(Object.keys(registry.categories ?? {}));
 const categories = await fs.readdir(skillsRoot, { withFileTypes: true });
 
 for (const entry of categories) {
   if (!entry.isDirectory()) continue;
   const categoryName = entry.name;
+  if (!registeredCategories.has(categoryName)) continue;
   const categoryDir = path.join(skillsRoot, categoryName);
   const metaDir = await ensureMetaDir(categoryDir);
   const domainMap = await buildDomainMap(categoryDir, categoryName);

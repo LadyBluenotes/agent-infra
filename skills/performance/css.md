@@ -138,4 +138,4 @@ One large file may increase churn and cache misses even if it reduces request co
 
 ## References
 
-- @skills/performance/references/css-delivery.md
+- @skills/performance/ref/css-delivery.md

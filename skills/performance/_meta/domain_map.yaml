@@ -1,6 +1,6 @@
 version: 1
 category: performance
-generated_at: 2026-03-13T16:46:39.002Z
+generated_at: 2026-04-16T19:43:11.367Z
 skills:
   - id: skills/performance/css
     path: skills/performance/css.md
@@ -125,8 +125,28 @@ skills:
       - identify
     related: []
     load_with: []
-  - id: skills/performance/references/budgets
-    path: skills/performance/references/budgets.md
+  - id: skills/performance/ref/benchmarks
+    path: skills/performance/ref/benchmarks.md
+    description: >
+      Performance benchmark reference for choosing benchmark targets, using
+      Vitest bench, CodSpeed reporting, CI sharding, and regression guardrails.
+    keywords:
+      - performance
+      - benchmark
+      - reference
+      - choosing
+      - targets
+      - vitest
+      - bench
+      - codspeed
+      - reporting
+      - ci
+      - sharding
+      - regression
+    related: []
+    load_with: []
+  - id: skills/performance/ref/budgets
+    path: skills/performance/ref/budgets.md
     description: >
       Reference for front-end performance budgets and regression guardrails. Use
       when the main tools skill needs more detail on budget shape or
@@ -146,8 +166,8 @@ skills:
       - detail
     related: []
     load_with: []
-  - id: skills/performance/references/css-delivery
-    path: skills/performance/references/css-delivery.md
+  - id: skills/performance/ref/css-delivery
+    path: skills/performance/ref/css-delivery.md
     description: >
       Deeper CSS delivery reference for critical CSS, split versus concatenated
       files, and non-blocking stylesheet tradeoffs.
@@ -166,8 +186,8 @@ skills:
       - tradeoffs
     related: []
     load_with: []
-  - id: skills/performance/references/font-loading
-    path: skills/performance/references/font-loading.md
+  - id: skills/performance/ref/font-loading
+    path: skills/performance/ref/font-loading.md
     description: >
       Deeper webfont loading reference for FOIT, FOUT, FOFT, selective preload,
       and variant management tradeoffs.
@@ -186,8 +206,8 @@ skills:
       - tradeoffs
     related: []
     load_with: []
-  - id: skills/performance/references/javascript-delivery
-    path: skills/performance/references/javascript-delivery.md
+  - id: skills/performance/ref/javascript-delivery
+    path: skills/performance/ref/javascript-delivery.md
     description: >
       Deeper JavaScript delivery reference for script loading attributes,
       third-party cost review, and dependency budget enforcement.
@@ -206,8 +226,8 @@ skills:
       - budget
     related: []
     load_with: []
-  - id: skills/performance/references/loading
-    path: skills/performance/references/loading.md
+  - id: skills/performance/ref/loading
+    path: skills/performance/ref/loading.md
     description: >
       Resource hint reference for HTML loading decisions. Use when the main HTML
       skill needs more detail on `preload`, `prefetch`, `preconnect`, or
@@ -227,8 +247,29 @@ skills:
       - preload
     related: []
     load_with: []
-  - id: skills/performance/references/responsive-images
-    path: skills/performance/references/responsive-images.md
+  - id: skills/performance/ref/profiling
+    path: skills/performance/ref/profiling.md
+    description: >
+      Performance profiling reference for evidence-first CLI profiling,
+      flamegraphs, artifact handling, and separating profiling from benchmark
+      work.
+    keywords:
+      - performance
+      - profiling
+      - reference
+      - evidence-first
+      - cli
+      - flamegraphs
+      - artifact
+      - handling
+      - separating
+      - benchmark
+      - work
+      - setup
+    related: []
+    load_with: []
+  - id: skills/performance/ref/responsive-images
+    path: skills/performance/ref/responsive-images.md
     description: >
       Deeper responsive-image reference for `srcset`, `sizes`, density
       descriptors, and art-direction patterns with `<picture>`.

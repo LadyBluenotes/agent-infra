@@ -1,6 +1,6 @@
 version: 1
 category: frameworks
-generated_at: 2026-03-09T22:41:34.081Z
+generated_at: 2026-04-16T19:39:45.765Z
 skills:
   - id: skills/frameworks/react/async
     path: skills/frameworks/react/async.md
@@ -54,6 +54,47 @@ skills:
       - deduplicate
       - requests
       - global
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/hydration
+    path: skills/frameworks/react/hydration.md
+    description: >
+      React hydration guidance for deterministic first render, browser-only
+      APIs, suppressHydrationWarning, RSC/client boundaries, and DOM mutation
+      risks.
+    keywords:
+      - react
+      - hydration
+      - guidance
+      - deterministic
+      - first
+      - render
+      - browser-only
+      - apis
+      - suppresshydrationwarning
+      - rscclient
+      - boundaries
+      - dom
+    related: []
+    load_with: []
+  - id: skills/frameworks/react/ref/rsc-markdown
+    path: skills/frameworks/react/ref/rsc-markdown.md
+    description: >
+      React RSC markdown rendering reference for hydration-safe generated
+      markup, heading transforms, nested anchors, and client/server prop parity.
+    keywords:
+      - react
+      - rsc
+      - markdown
+      - rendering
+      - reference
+      - hydration-safe
+      - generated
+      - markup
+      - heading
+      - transforms
+      - nested
+      - anchors
     related: []
     load_with: []
   - id: skills/frameworks/react/rendering

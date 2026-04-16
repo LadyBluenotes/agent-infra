@@ -140,4 +140,4 @@ Multiple eager iframes add network, scripting, and layout cost before the main p
 
 ## References
 
-- @skills/performance/references/loading.md
+- @skills/performance/ref/loading.md

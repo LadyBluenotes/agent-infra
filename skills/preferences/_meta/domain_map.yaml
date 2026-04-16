@@ -1,0 +1,146 @@
+version: 1
+category: preferences
+generated_at: 2026-04-16T19:39:45.846Z
+skills:
+  - id: skills/preferences/conventions
+    path: skills/preferences/conventions.md
+    description: >
+      Personal conventions entry point for coding style, tooling choices, tests,
+      project structure, docs, git, verification, and when to load deeper prefs.
+    keywords:
+      - personal
+      - conventions
+      - entry
+      - point
+      - coding
+      - style
+      - tooling
+      - choices
+      - tests
+      - project
+      - structure
+      - docs
+    related: []
+    load_with: []
+  - id: skills/preferences/docs
+    path: skills/preferences/docs.md
+    description: >
+      Personal documentation preferences for concise source-backed docs,
+      Diataxis-aware edits, context preservation, and avoiding unsupported
+      claims.
+    keywords:
+      - personal
+      - documentation
+      - preferences
+      - concise
+      - source-backed
+      - docs
+      - diataxis-aware
+      - edits
+      - context
+      - preservation
+      - avoiding
+      - unsupported
+    related: []
+    load_with: []
+  - id: skills/preferences/git
+    path: skills/preferences/git.md
+    description: >
+      Personal git preferences for scoped changes, no commits unless asked, no
+      destructive history changes, and clear status reporting.
+    keywords:
+      - personal
+      - git
+      - preferences
+      - scoped
+      - changes
+      - no
+      - commits
+      - unless
+      - asked
+      - destructive
+      - history
+      - clear
+    related: []
+    load_with: []
+  - id: skills/preferences/project-structure
+    path: skills/preferences/project-structure.md
+    description: >
+      Personal project-structure preferences for small reviewable modules,
+      grouped skill directories, ref pages, and avoiding junk-drawer categories.
+    keywords:
+      - personal
+      - project-structure
+      - preferences
+      - small
+      - reviewable
+      - modules
+      - grouped
+      - skill
+      - directories
+      - ref
+      - pages
+      - avoiding
+    related: []
+    load_with: []
+  - id: skills/preferences/ref/package-manager
+    path: skills/preferences/ref/package-manager.md
+    description: >
+      Personal package-manager policy reference for lockfiles, pnpm preference,
+      mixed-lockfile handling, and dependency-change review.
+    keywords:
+      - personal
+      - package-manager
+      - policy
+      - reference
+      - lockfiles
+      - pnpm
+      - preference
+      - mixed-lockfile
+      - handling
+      - dependency-change
+      - review
+      - package
+    related: []
+    load_with: []
+  - id: skills/preferences/testing
+    path: skills/preferences/testing.md
+    description: >
+      Personal testing preferences for behavior-focused tests, focused
+      regression coverage, explicit verification claims, and Vitest-style unit
+      tests.
+    keywords:
+      - personal
+      - testing
+      - preferences
+      - behavior-focused
+      - tests
+      - focused
+      - regression
+      - coverage
+      - explicit
+      - verification
+      - claims
+      - vitest-style
+    related: []
+    load_with: []
+  - id: skills/preferences/tooling
+    path: skills/preferences/tooling.md
+    description: >
+      Personal tooling preferences for package managers, Vite/Vitest projects,
+      lockfiles, commands, and dependency-change hygiene.
+    keywords:
+      - personal
+      - tooling
+      - preferences
+      - package
+      - managers
+      - vitevitest
+      - projects
+      - lockfiles
+      - commands
+      - dependency-change
+      - hygiene
+      - setup
+    related: []
+    load_with: []

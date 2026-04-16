@@ -1,6 +1,6 @@
 version: 1
 category: typescript
-generated_at: 2026-03-02T20:06:45.513Z
+generated_at: 2026-04-16T19:43:28.431Z
 skills:
   - id: skills/typescript/api-modeling
     path: skills/typescript/api-modeling.md
@@ -36,23 +36,6 @@ skills:
       - patterns
       - multi-package
       - repos
-    related: []
-    load_with: []
-  - id: skills/typescript/curated
-    path: skills/typescript/curated.md
-    description: Curated references, release notes, and deep behavior changes.
-    keywords:
-      - curated
-      - references
-      - release
-      - notes
-      - deep
-      - behavior
-      - changes
-      - primary
-      - behavioral
-      - "55"
-      - typescript
     related: []
     load_with: []
   - id: skills/typescript/errors
@@ -127,6 +110,41 @@ skills:
       - lib
     related: []
     load_with: []
+  - id: skills/typescript/ref/curated
+    path: skills/typescript/ref/curated.md
+    description: Curated references, release notes, and deep behavior changes.
+    keywords:
+      - curated
+      - references
+      - release
+      - notes
+      - deep
+      - behavior
+      - changes
+      - primary
+      - behavioral
+      - "55"
+      - typescript
+    related: []
+    load_with: []
+  - id: skills/typescript/ref/typescript-types
+    path: skills/typescript/ref/typescript-types.md
+    description: Utility types and type operators reference.
+    keywords:
+      - utility
+      - types
+      - type
+      - operators
+      - reference
+      - keyof
+      - indexed
+      - access
+      - typeof
+      - conditional
+      - mapped
+      - template
+    related: []
+    load_with: []
   - id: skills/typescript/runtime
     path: skills/typescript/runtime.md
     description: Runtime boundaries, unknown inputs, and safe type guards.
@@ -179,23 +197,5 @@ skills:
       - variants
       - literal
       - preservation
-    related: []
-    load_with: []
-  - id: skills/typescript/typescript-types
-    path: skills/typescript/typescript-types.md
-    description: Utility types and type operators reference.
-    keywords:
-      - utility
-      - types
-      - type
-      - operators
-      - reference
-      - keyof
-      - indexed
-      - access
-      - typeof
-      - conditional
-      - mapped
-      - template
     related: []
     load_with: []
