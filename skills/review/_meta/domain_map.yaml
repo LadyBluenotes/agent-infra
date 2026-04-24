@@ -1,12 +1,13 @@
 version: 1
 category: review
-generated_at: 2026-04-16T20:53:39.490Z
+generated_at: 2026-04-24T16:38:53.001Z
 skills:
   - id: skills/review/checklist
     path: skills/review/checklist.md
     description: >
       Code-review checklist for finding correctness bugs, regressions, security
-      risks, missing tests, edge cases, and maintainability issues.
+      risks, missing tests, edge cases, scope creep, premature abstractions, and
+      maintainability issues.
     keywords:
       - code-review
       - checklist

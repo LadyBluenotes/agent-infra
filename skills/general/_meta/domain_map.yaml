@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-04-16T20:53:39.441Z
+generated_at: 2026-04-24T16:38:52.943Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -46,22 +46,22 @@ skills:
   - id: skills/general/implement
     path: skills/general/implement.md
     description: >
-      Implementation guidance for scoped code changes, read-before-edit
-      workflow, minimal reversible patches, convention matching, and focused
-      validation.
+      Implementation guidance for scoped code changes, explicit assumptions,
+      minimal reversible patches, request-traceable diffs, convention matching,
+      and focused validation.
     keywords:
       - implementation
       - guidance
       - scoped
       - code
       - changes
-      - read-before-edit
-      - workflow
+      - explicit
+      - assumptions
       - minimal
       - reversible
       - patches
-      - convention
-      - matching
+      - request-traceable
+      - diffs
     related: []
     load_with: []
   - id: skills/general/process-hygiene
@@ -109,8 +109,8 @@ skills:
     path: skills/general/simplify.md
     description: >
       Simplification guidance for readability-only refactors,
-      behavior-preserving cleanup, reducing duplication, and avoiding drive-by
-      design changes.
+      behavior-preserving cleanup, reducing duplication, avoiding premature
+      abstraction, and avoiding drive-by design changes.
     keywords:
       - simplification
       - guidance
@@ -121,9 +121,9 @@ skills:
       - reducing
       - duplication
       - avoiding
+      - premature
+      - abstraction
       - drive-by
-      - design
-      - changes
     related: []
     load_with: []
   - id: skills/general/skill-retrieval
@@ -170,11 +170,15 @@ skills:
   - id: skills/general/validate
     path: skills/general/validate.md
     description: >
-      Validation guidance for choosing and running tests, builds, typechecks,
-      lint, smoke checks, and reporting exact verification commands.
+      Validation guidance for defining success criteria, choosing and running
+      tests, builds, typechecks, lint, smoke checks, and reporting exact
+      verification commands.
     keywords:
       - validation
       - guidance
+      - defining
+      - success
+      - criteria
       - choosing
       - running
       - tests
@@ -182,9 +186,6 @@ skills:
       - typechecks
       - lint
       - smoke
-      - checks
-      - reporting
-      - exact
     related: []
     load_with: []
   - id: skills/general/verification-before-completion

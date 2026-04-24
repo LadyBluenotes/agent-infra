@@ -1,8 +1,9 @@
 ---
 name: skills/general/implement
 description: >
-  Implementation guidance for scoped code changes, read-before-edit workflow,
-  minimal reversible patches, convention matching, and focused validation.
+  Implementation guidance for scoped code changes, explicit assumptions,
+  minimal reversible patches, request-traceable diffs, convention matching,
+  and focused validation.
 type: sub-skill
 category: general
 ---
@@ -17,17 +18,26 @@ Use this when making code changes for features, fixes, or refactors.
 ### Confirm before changing
 Propose the exact change and wait for user confirmation before editing code, docs, skills, notes, config, generated files, process files, staging files, updating logs, or running formatters that rewrite files.
 
+### Frame non-trivial work
+State assumptions, viable interpretations, tradeoffs, and success criteria before implementation. Ask when ambiguity changes scope, security, privacy, data shape, UX, or verification.
+
 ### Read before editing
 Confirm entry points, constraints, and existing conventions before changing code.
 
-### Minimal, reversible change
-Keep the change set small and local. Make it easy to roll back if needed.
+### Smallest correct solution
+Keep the change set small and local. Do not add features, options, caching, validation layers, strategy objects, configuration, or future-proofing unless requested or proven necessary.
+
+### Request-traceable diff
+Every changed line should trace to the user's request. Avoid adjacent style cleanup, comment rewrites, docstrings, type hints, formatting churn, or broader validation unless needed for the task.
+
+### Clean up only your change
+Remove imports, variables, functions, files, or tests made unused by your change. Leave pre-existing dead code alone unless asked.
 
 ### Follow conventions
 Match existing structure, naming, and tooling rather than introducing new patterns.
 
-### Validate with tests
-Add or update tests when behavior changes and run the most relevant checks.
+### Validate with success criteria
+Turn the request into a verifiable goal. For bug fixes, first create or run a focused test/check that fails the same way the reported bug fails, then patch at that failing surface and make the same check pass. If this cannot be done, say why before fixing.
 
 ## Common Mistakes
 
@@ -63,6 +73,28 @@ Correct
 "I limited changes to the function involved in the bug."
 ```
 Explanation: Large edits increase risk and make review harder.
+
+### Premature flexibility
+Wrong
+```text
+"I added a strategy pattern, optional cache, and notification hook for a single save path."
+```
+Correct
+```text
+"I implemented the requested save path only; add caching or hooks when a concrete requirement appears."
+```
+Explanation: Flexibility added before a requirement makes code harder to read, test, and review.
+
+### Style drift during a narrow fix
+Wrong
+```text
+"I fixed the empty-email bug and also added type hints, rewrote comments, and normalized quotes."
+```
+Correct
+```text
+"I changed only the email handling needed for the empty-email bug."
+```
+Explanation: Unrelated style edits hide the behavioral change and increase regression risk.
 
 ### Inventing new conventions
 Wrong

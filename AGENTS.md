@@ -13,6 +13,16 @@
 - Ask only when blocked.
 - Avoid drive-by refactors.
 
+## Behavioral Guardrails
+
+- For non-trivial implementation, state assumptions, viable interpretations, tradeoffs, and success criteria before changes.
+- Prefer the smallest correct solution; avoid speculative abstractions, configurability, and features not requested.
+- Every changed line must trace to the user's request.
+- Do not change adjacent style, comments, docs, types, or formatting unless needed for the request.
+- Remove only unused code created by your change unless asked.
+- For bug fixes, first create or run a focused test/check that fails the same way the reported bug fails; only then patch and make that check pass. If this cannot be done, say why before fixing.
+- For vague performance requests, clarify the target: latency, throughput, perceived speed, or resource use.
+
 ## Hard Gates
 
 Before substantial work:

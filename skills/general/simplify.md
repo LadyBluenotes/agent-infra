@@ -2,7 +2,8 @@
 name: skills/general/simplify
 description: >
   Simplification guidance for readability-only refactors, behavior-preserving
-  cleanup, reducing duplication, and avoiding drive-by design changes.
+  cleanup, reducing duplication, avoiding premature abstraction, and avoiding
+  drive-by design changes.
 type: sub-skill
 category: general
 ---
@@ -17,11 +18,17 @@ Use this when asked to improve readability or reduce complexity without changing
 ### Preserve behavior
 Identify the observable behavior and keep it identical. Favor refactors that are easy to reason about.
 
+### Remove premature structure
+Prefer direct functions and local logic over single-use classes, managers, strategies, hooks, or configuration systems.
+
 ### Reduce nesting
 Use early returns or small helpers to flatten control flow and make intent clearer.
 
 ### Remove dead code
-Delete unused branches, variables, or helpers once you confirm they are truly unused.
+Delete unused branches, variables, or helpers once you confirm they are truly unused. For task-scoped implementation, remove only dead code created by your change unless asked.
+
+### Defer future needs
+Do not add caching, alternate backends, merging modes, or extension points until the requirement exists or evidence shows the simple version fails.
 
 ## Common Mistakes
 
@@ -51,3 +58,14 @@ Correct
 "I limited changes to the targeted function and its immediate helpers."
 ```
 Explanation: Large formatting diffs make reviews harder and hide unintended changes.
+
+### Single-use abstraction
+Wrong
+```text
+"I introduced a calculator class and strategy interface for one discount formula."
+```
+Correct
+```text
+"I kept one function for the one formula the code needs today."
+```
+Explanation: Abstractions earn their place when multiple real call paths need them.
