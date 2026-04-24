@@ -2,7 +2,7 @@
 name: skills/tooling/vitest/testing-patterns
 description: >
   Vitest test authoring patterns for behavior-focused tests, async assertions,
-  fixtures, regression coverage, and stable verification.
+  fixtures, concurrent tests, regression coverage, and stable verification.
 type: skill
 category: tooling
 library: vitest
@@ -14,10 +14,14 @@ tags:
 references:
   - skills/tooling/vitest/ref/mocking
   - skills/tooling/vitest/ref/cli
+  - skills/tooling/vitest/ref/test-context-fixtures
+  - skills/tooling/vitest/ref/snapshots
   - skills/tooling/vitest/ref/type-testing
 sources:
   - https://vitest.dev/guide/
   - https://vitest.dev/guide/features
+  - https://vitest.dev/guide/test-context.html
+  - https://vitest.dev/guide/parallelism.html
 ---
 
 # Vitest Testing Patterns
@@ -70,6 +74,28 @@ await expect(loadConfig('missing.json')).rejects.toThrow(/missing/)
 
 Direct async assertions keep the failure tied to the promise under test.
 
+### Use context-bound `expect` for concurrent snapshots
+
+```ts
+import { it } from 'vitest'
+
+it.concurrent('formats output', ({ expect }) => {
+  expect(formatOutput()).toMatchInlineSnapshot()
+})
+```
+
+Concurrent snapshot tests need `expect` from the test context so Vitest can attach the assertion to the right test.
+
+### Put reusable setup in fixtures
+
+```ts
+import { test as baseTest } from 'vitest'
+
+export const test = baseTest.extend('config', { port: 3000 })
+```
+
+Use fixtures when multiple tests need shared setup, scoped cleanup, injected values, or typed context.
+
 ## Common Mistakes
 
 ### HIGH Testing helpers instead of contracts
@@ -102,3 +128,21 @@ const createScan = () => ({ packages: [] })
 ```
 
 Fresh fixtures reduce order dependence and make parallel runs safer.
+
+### MEDIUM Using global `expect` in concurrent snapshot tests
+
+```ts
+// Wrong
+it.concurrent('renders', () => {
+  expect(render()).toMatchInlineSnapshot()
+})
+```
+
+```ts
+// Correct
+it.concurrent('renders', ({ expect }) => {
+  expect(render()).toMatchInlineSnapshot()
+})
+```
+
+Global `expect` cannot reliably track concurrent snapshot ownership.

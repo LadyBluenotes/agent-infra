@@ -14,6 +14,9 @@ Use this when making code changes for features, fixes, or refactors.
 
 ## Core Patterns
 
+### Confirm before changing
+Propose the exact change and wait for user confirmation before editing code, docs, skills, notes, config, generated files, process files, staging files, updating logs, or running formatters that rewrite files.
+
 ### Read before editing
 Confirm entry points, constraints, and existing conventions before changing code.
 
@@ -38,6 +41,17 @@ Correct
 "I confirmed the entry point and constraints, then made a small, targeted change."
 ```
 Explanation: A short plan reduces churn and prevents wrong-scope changes.
+
+### Editing without confirmation
+Wrong
+```text
+"I applied the wording change because it was small."
+```
+Correct
+```text
+"I proposed the exact wording and waited for approval before applying it."
+```
+Explanation: User-authored work stays under user control; approval comes before changes, not after.
 
 ### Large sweeping edits
 Wrong

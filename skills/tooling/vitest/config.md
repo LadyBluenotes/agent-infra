@@ -2,7 +2,7 @@
 name: skills/tooling/vitest/config
 description: >
   Vitest configuration for Vite integration, test defaults, setup files,
-  projects, coverage, and environment selection.
+  projects, coverage, browser mode, reporters, pools, and environment selection.
 type: skill
 category: tooling
 library: vitest
@@ -14,10 +14,16 @@ tags:
 references:
   - skills/tooling/vitest/ref/environments
   - skills/tooling/vitest/ref/coverage
+  - skills/tooling/vitest/browser-mode
+  - skills/tooling/vitest/ref/projects
+  - skills/tooling/vitest/ref/reporters
+  - skills/tooling/vitest/ref/performance
   - skills/tooling/vitest/ref/benchmarks
 sources:
   - https://vitest.dev/config/
-  - https://github.com/antfu/skills/tree/main/skills/vitest
+  - https://vitest.dev/guide/projects
+  - https://vitest.dev/guide/reporters
+  - https://vitest.dev/guide/improving-performance.html
 ---
 
 # Vitest Config
@@ -38,6 +44,7 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'html'],
     },
+    reporters: ['default'],
   },
 })
 ```
@@ -59,6 +66,37 @@ export default mergeConfig(viteConfig, defineConfig({
 
 When aliases, plugins, or transforms matter to tests, merge from the Vite config instead of creating a disconnected test config.
 
+### Split distinct runners with projects
+
+```ts
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    projects: [
+      {
+        extends: true,
+        test: {
+          name: 'node',
+          environment: 'node',
+          include: ['tests/**/*.node.test.ts'],
+        },
+      },
+      {
+        extends: true,
+        test: {
+          name: 'dom',
+          environment: 'happy-dom',
+          include: ['tests/**/*.dom.test.ts'],
+        },
+      },
+    ],
+  },
+})
+```
+
+Use projects when Node, DOM, browser, or package-level tests need different environments, aliases, plugins, or includes.
+
 ### Keep default test behavior explicit
 
 ```ts
@@ -77,6 +115,10 @@ Explicit defaults make mixed repos easier to scan and reduce accidental mock lea
 
 - `node`, `jsdom`, `happy-dom`, and per-file environments: @skills/tooling/vitest/ref/environments.md
 - Coverage providers and reporters: @skills/tooling/vitest/ref/coverage.md
+- Browser Mode providers and instances: @skills/tooling/vitest/browser-mode.md
+- Monorepo and multi-runner projects: @skills/tooling/vitest/ref/projects.md
+- CI reporters and output files: @skills/tooling/vitest/ref/reporters.md
+- Pools, isolation, and worker tuning: @skills/tooling/vitest/ref/performance.md
 - Benchmark config and CodSpeed: @skills/tooling/vitest/ref/benchmarks.md
 
 ## Common Mistakes
@@ -103,6 +145,28 @@ export default mergeConfig(viteConfig, defineConfig({
 ```
 
 Disconnected configs can make tests resolve modules differently from the app.
+
+### HIGH Using deprecated `workspace` naming in new config
+
+```ts
+// Wrong for new config
+export default defineConfig({
+  test: {
+    workspace: ['packages/*'],
+  },
+})
+```
+
+```ts
+// Correct
+export default defineConfig({
+  test: {
+    projects: ['packages/*'],
+  },
+})
+```
+
+Vitest replaced `workspace` with `projects`; use `projects` for new guidance and edits.
 
 ### MEDIUM Hiding global test APIs in new projects
 

@@ -1,6 +1,6 @@
 version: 1
 category: tooling
-generated_at: 2026-04-16T20:14:21.008Z
+generated_at: 2026-04-24T01:50:17.956Z
 skills:
   - id: skills/tooling/cli/skill-discovery
     path: skills/tooling/cli/skill-discovery.md
@@ -207,8 +207,9 @@ skills:
   - id: skills/tooling/vitest/basics
     path: skills/tooling/vitest/basics.md
     description: >
-      Vitest basics for Vite-native tests, explicit imports, watch versus run
-      mode, and choosing focused test pages before deeper refs.
+      Vitest basics for Vite-native tests, explicit imports, runtime
+      requirements, watch versus run mode, and choosing focused test pages
+      before deeper refs.
     keywords:
       - vitest
       - basics
@@ -216,19 +217,41 @@ skills:
       - tests
       - explicit
       - imports
+      - runtime
+      - requirements
       - watch
       - versus
       - run
       - mode
-      - choosing
-      - focused
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/browser-mode
+    path: skills/tooling/vitest/browser-mode.md
+    description: >
+      Vitest Browser Mode guidance for real-browser component tests, providers,
+      `vitest/browser` APIs, CI setup, and choosing browser tests versus DOM
+      environments.
+    keywords:
+      - vitest
+      - browser
+      - mode
+      - guidance
+      - real-browser
+      - component
+      - tests
+      - providers
+      - vitestbrowser
+      - apis
+      - ci
+      - setup
     related: []
     load_with: []
   - id: skills/tooling/vitest/config
     path: skills/tooling/vitest/config.md
     description: >
       Vitest configuration for Vite integration, test defaults, setup files,
-      projects, coverage, and environment selection.
+      projects, coverage, browser mode, reporters, pools, and environment
+      selection.
     keywords:
       - vitest
       - configuration
@@ -240,8 +263,8 @@ skills:
       - files
       - projects
       - coverage
-      - environment
-      - selection
+      - browser
+      - mode
     related: []
     load_with: []
   - id: skills/tooling/vitest/ref/benchmarks
@@ -269,7 +292,8 @@ skills:
     path: skills/tooling/vitest/ref/cli.md
     description: >
       Vitest CLI reference for watch mode, run mode, focused files, update
-      flows, coverage, and benchmark commands.
+      flows, line filters, related tests, reporters, coverage, and benchmark
+      commands.
     keywords:
       - vitest
       - cli
@@ -281,35 +305,57 @@ skills:
       - files
       - update
       - flows
-      - coverage
-      - benchmark
+      - line
+      - filters
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/component-testing
+    path: skills/tooling/vitest/ref/component-testing.md
+    description: >
+      Vitest Browser Mode component-testing reference for render wrappers,
+      locators, `expect.element`, provider-backed user events, and MSW setup.
+    keywords:
+      - vitest
+      - browser
+      - mode
+      - component-testing
+      - reference
+      - render
+      - wrappers
+      - locators
+      - expectelement
+      - provider-backed
+      - user
+      - events
     related: []
     load_with: []
   - id: skills/tooling/vitest/ref/coverage
     path: skills/tooling/vitest/ref/coverage.md
     description: >
-      Vitest coverage reference for provider selection, reporters, thresholds,
-      and keeping coverage checks separate from ordinary test runs.
+      Vitest coverage reference for provider packages, include/exclude patterns,
+      reporters, thresholds, and keeping coverage separate from ordinary test
+      runs.
     keywords:
       - vitest
       - coverage
       - reference
       - provider
-      - selection
+      - packages
+      - includeexclude
+      - patterns
       - reporters
       - thresholds
       - keeping
-      - checks
       - separate
       - ordinary
-      - test
     related: []
     load_with: []
   - id: skills/tooling/vitest/ref/environments
     path: skills/tooling/vitest/ref/environments.md
     description: >
       Vitest environment reference for node, jsdom, happy-dom, edge-runtime,
-      per-file environment control, and DOM test setup.
+      per-file environment control, DOM test setup, and when to use Browser
+      Mode.
     keywords:
       - vitest
       - environment
@@ -328,8 +374,9 @@ skills:
   - id: skills/tooling/vitest/ref/mocking
     path: skills/tooling/vitest/ref/mocking.md
     description: >
-      Deep Vitest mocking reference for vi.fn, vi.spyOn, vi.mock hoisting, fake
-      timers, globals, environment stubs, and fetch stubs.
+      Deep Vitest mocking reference for vi.fn, vi.spyOn, vi.mock hoisting,
+      browser mode limits, virtual modules, fake timers, globals, and fetch
+      stubs.
     keywords:
       - deep
       - vitest
@@ -339,10 +386,112 @@ skills:
       - vispyon
       - vimock
       - hoisting
-      - fake
-      - timers
-      - globals
-      - environment
+      - browser
+      - mode
+      - limits
+      - virtual
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/performance
+    path: skills/tooling/vitest/ref/performance.md
+    description: >
+      Vitest performance reference for file parallelism, pools, isolation,
+      `maxWorkers`, profiling, and safely tuning slow test suites.
+    keywords:
+      - vitest
+      - performance
+      - reference
+      - file
+      - parallelism
+      - pools
+      - isolation
+      - maxworkers
+      - profiling
+      - safely
+      - tuning
+      - slow
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/projects
+    path: skills/tooling/vitest/ref/projects.md
+    description: >
+      Vitest projects reference for monorepos, replacing workspace config,
+      inline project configs, `defineProject`, unique names, and browser/node
+      test splits.
+    keywords:
+      - vitest
+      - projects
+      - reference
+      - monorepos
+      - replacing
+      - workspace
+      - config
+      - inline
+      - project
+      - configs
+      - defineproject
+      - unique
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/reporters
+    path: skills/tooling/vitest/ref/reporters.md
+    description: >
+      Vitest reporters reference for built-in reporters, multiple reporters,
+      reporter options, output files, and CI-readable test artifacts.
+    keywords:
+      - vitest
+      - reporters
+      - reference
+      - built-in
+      - multiple
+      - reporter
+      - options
+      - output
+      - files
+      - ci-readable
+      - test
+      - artifacts
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/snapshots
+    path: skills/tooling/vitest/ref/snapshots.md
+    description: >
+      Vitest snapshot reference for inline snapshots, file snapshots, visual
+      snapshots, ARIA snapshots, update flows, and custom serializers.
+    keywords:
+      - vitest
+      - snapshot
+      - reference
+      - inline
+      - snapshots
+      - file
+      - visual
+      - aria
+      - update
+      - flows
+      - custom
+      - serializers
+    related: []
+    load_with: []
+  - id: skills/tooling/vitest/ref/test-context-fixtures
+    path: skills/tooling/vitest/ref/test-context-fixtures.md
+    description: >
+      Vitest test-context and fixtures reference for `test.extend`, builder
+      fixtures, fixture scopes, cleanup, injected values, context `expect`,
+      annotations, and abort signals.
+    keywords:
+      - vitest
+      - test-context
+      - fixtures
+      - reference
+      - testextend
+      - builder
+      - fixture
+      - scopes
+      - cleanup
+      - injected
+      - values
+      - context
     related: []
     load_with: []
   - id: skills/tooling/vitest/ref/type-testing
@@ -365,11 +514,33 @@ skills:
       - testing
     related: []
     load_with: []
+  - id: skills/tooling/vitest/ref/visual-regression
+    path: skills/tooling/vitest/ref/visual-regression.md
+    description: >
+      Vitest visual-regression reference for Browser Mode screenshots, baseline
+      updates, thresholds, masking dynamic content, viewport stability, and CI
+      separation.
+    keywords:
+      - vitest
+      - visual-regression
+      - reference
+      - browser
+      - mode
+      - screenshots
+      - baseline
+      - updates
+      - thresholds
+      - masking
+      - dynamic
+      - content
+    related: []
+    load_with: []
   - id: skills/tooling/vitest/testing-patterns
     path: skills/tooling/vitest/testing-patterns.md
     description: >
       Vitest test authoring patterns for behavior-focused tests, async
-      assertions, fixtures, regression coverage, and stable verification.
+      assertions, fixtures, concurrent tests, regression coverage, and stable
+      verification.
     keywords:
       - vitest
       - test
@@ -380,8 +551,8 @@ skills:
       - async
       - assertions
       - fixtures
+      - concurrent
       - regression
       - coverage
-      - stable
     related: []
     load_with: []

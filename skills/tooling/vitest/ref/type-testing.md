@@ -12,7 +12,7 @@ tags:
   - type tests
   - expectTypeOf
 sources:
-  - https://vitest.dev/guide/features
+  - https://vitest.dev/guide/testing-types.html
 ---
 
 # Vitest Type Testing Reference
@@ -39,6 +39,19 @@ expectTypeOf(resolveSkillUse).returns.toMatchTypeOf<ResolveSkillUseResult>()
 ```
 
 Use type tests when generics, public exports, or overloads are part of the feature.
+
+### Use `.test-d.ts` for compiler-only tests
+
+```ts
+import { assertType, expectTypeOf } from 'vitest'
+
+expectTypeOf(mount).parameter(0).toExtend<{ name: string }>()
+
+// @ts-expect-error name must be a string
+assertType(mount({ name: 42 }))
+```
+
+Vitest statically analyzes type-test files with TypeScript; it does not execute them at runtime.
 
 ### Pair expected errors with `@ts-expect-error`
 

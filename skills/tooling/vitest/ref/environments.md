@@ -2,7 +2,7 @@
 name: skills/tooling/vitest/ref/environments
 description: >
   Vitest environment reference for node, jsdom, happy-dom, edge-runtime,
-  per-file environment control, and DOM test setup.
+  per-file environment control, DOM test setup, and when to use Browser Mode.
 type: reference
 category: tooling
 library: vitest
@@ -14,6 +14,7 @@ tags:
   - happy-dom
 sources:
   - https://vitest.dev/guide/environment.html
+  - https://vitest.dev/guide/browser/
 ---
 
 # Vitest Environments Reference
@@ -71,6 +72,25 @@ it('reads document text', () => {
 
 Use per-file environment comments when only a few files need DOM globals.
 
+### Use Browser Mode for real browser behavior
+
+```ts
+import { defineConfig } from 'vitest/config'
+import { playwright } from '@vitest/browser-playwright'
+
+export default defineConfig({
+  test: {
+    browser: {
+      enabled: true,
+      provider: playwright(),
+      instances: [{ browser: 'chromium' }],
+    },
+  },
+})
+```
+
+`jsdom` and `happy-dom` emulate DOM APIs inside the test runner; Browser Mode runs tests in a real browser through Vite.
+
 ## Common Mistakes
 
 ### HIGH Testing DOM code in `node`
@@ -100,3 +120,23 @@ test: { environment: 'jsdom' }
 ```
 
 Use the narrowest environment that matches the code under test.
+
+### MEDIUM Treating DOM emulation as browser coverage
+
+```ts
+// Wrong claim
+test: { environment: 'jsdom' }
+```
+
+```ts
+// Correct for browser-specific behavior
+test: {
+  browser: {
+    enabled: true,
+    provider: playwright(),
+    instances: [{ browser: 'chromium' }],
+  },
+}
+```
+
+DOM environments are useful for fast unit tests, but they do not prove real browser APIs, layout, focus, or native event behavior.

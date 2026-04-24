@@ -53,6 +53,30 @@ Reference page:
 
 Do not turn reference pages into tutorials or explanations unless requested.
 
+### Link related APIs inline
+
+```text
+When reference prose names another public API:
+- link to that API's reference page on first mention in the section
+- prefer links in Behavior, Parameters, Return value, Examples, and Related
+- avoid repeated links for the same API in adjacent sentences
+```
+
+Cross-links reduce ambiguity when pages describe wrappers, paired primitives, helpers, or shared return objects.
+
+### De-duplicate Behavior
+
+```text
+Before finishing, compare each Behavior bullet against:
+- the intro
+- Parameters
+- Return value
+- adjacent Behavior bullets
+```
+
+Keep Behavior for observable runtime behavior and constraints not already stated elsewhere.
+Remove bullets that restate what an API returns, what a parameter is, or the same condition in different words.
+
 ### Check removed text before completion
 
 ```sh

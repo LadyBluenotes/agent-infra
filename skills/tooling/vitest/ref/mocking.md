@@ -2,7 +2,7 @@
 name: skills/tooling/vitest/ref/mocking
 description: >
   Deep Vitest mocking reference for vi.fn, vi.spyOn, vi.mock hoisting,
-  fake timers, globals, environment stubs, and fetch stubs.
+  browser mode limits, virtual modules, fake timers, globals, and fetch stubs.
 type: reference
 category: tooling
 library: vitest
@@ -14,7 +14,8 @@ tags:
   - vi.fn
 sources:
   - https://vitest.dev/guide/mocking.html
-  - https://github.com/antfu/skills/tree/main/skills/vitest
+  - https://vitest.dev/guide/mocking/modules.html
+  - https://vitest.dev/guide/browser/
 ---
 
 # Vitest Mocking Reference
@@ -63,6 +64,35 @@ warn.mockRestore()
 ```
 
 Spies are better when the real object should mostly stay intact.
+
+### Use `{ spy: true }` for Browser Mode module export spying
+
+```ts
+import * as module from './module'
+import { vi } from 'vitest'
+
+vi.mock('./module', { spy: true })
+
+vi.mocked(module.method).mockReturnValue('mocked')
+```
+
+Browser Mode uses native ESM, so imported module namespace objects are sealed and cannot be reconfigured with ordinary `vi.spyOn`.
+
+### Alias or resolve virtual modules before mocking
+
+```ts
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    alias: {
+      vscode: './test/mocks/vscode.ts',
+    },
+  },
+})
+```
+
+Mock unresolved virtual modules by making them resolvable with `test.alias` or a Vite `resolveId` plugin first.
 
 ### Reset mock state between tests
 
@@ -116,3 +146,22 @@ afterEach(() => {
 ```
 
 Fake timers must be restored or later tests can observe a different clock.
+
+### HIGH Spying on imported module exports in Browser Mode
+
+```ts
+// Wrong in Browser Mode
+import * as module from './module'
+
+vi.spyOn(module, 'method')
+```
+
+```ts
+// Correct in Browser Mode
+import * as module from './module'
+
+vi.mock('./module', { spy: true })
+vi.mocked(module.method).mockImplementation(() => 'mocked')
+```
+
+Browser-native ESM seals the module namespace object; use Vitest's Browser Mode mock transform instead.

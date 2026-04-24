@@ -1,8 +1,8 @@
 ---
 name: skills/tooling/vitest/ref/coverage
 description: >
-  Vitest coverage reference for provider selection, reporters, thresholds,
-  and keeping coverage checks separate from ordinary test runs.
+  Vitest coverage reference for provider packages, include/exclude patterns,
+  reporters, thresholds, and keeping coverage separate from ordinary test runs.
 type: reference
 category: tooling
 library: vitest
@@ -46,6 +46,25 @@ export default defineConfig({
 
 Run coverage when coverage is the claim; do not make every quick test pass pay the coverage cost.
 
+### Install the provider package explicitly in automation
+
+```sh
+pnpm add -D @vitest/coverage-v8
+```
+
+Vitest defaults to the V8 provider, but provider support packages are optional dependencies.
+
+### Include uncovered source files when coverage scope matters
+
+```ts
+coverage: {
+  include: ['src/**/*.{ts,tsx}'],
+  exclude: ['src/**/*.generated.ts'],
+}
+```
+
+By default, coverage reports only files imported during the test run. Add `coverage.include` when the claim includes untested source files.
+
 ### Exclude generated or build output
 
 ```ts
@@ -66,3 +85,22 @@ Correct: "Behavior tests pass; coverage shows which code paths were exercised."
 ```
 
 Coverage is a signal about exercised lines, not proof that assertions cover the right contracts.
+
+### MEDIUM Expecting unimported files in coverage by default
+
+```ts
+// Wrong assumption
+coverage: {
+  provider: 'v8',
+}
+```
+
+```ts
+// Correct when full source scope matters
+coverage: {
+  provider: 'v8',
+  include: ['src/**/*.{ts,tsx}'],
+}
+```
+
+Use `coverage.include` to make uncovered maintained files visible in the report.

@@ -5,6 +5,9 @@
 - Never commit unless explicitly asked.
 - Never force push, rewrite history, or run destructive commands unless explicitly asked.
 - Read before editing.
+- Before editing or changing anything, propose the exact change and wait for user confirmation.
+- This applies to code, docs, skills, notes, config, generated files, process files, formatters that rewrite files, staging, and log updates.
+- Read-only commands and checks are allowed unless the user says otherwise.
 - Preserve project conventions.
 - State uncertainty.
 - Ask only when blocked.
@@ -27,6 +30,7 @@ Before factual claims:
 Before edits:
 - Worktree truth: run `git status --short`.
 - Dirty file truth: read dirty touched files before editing.
+- Confirmation truth: confirm the exact change with the user before editing or running any command that rewrites files.
 - Edit method: use `apply_patch`.
 
 Before completion:
