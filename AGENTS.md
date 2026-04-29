@@ -23,6 +23,17 @@
 - For bug fixes, first create or run a focused test/check that fails the same way the reported bug fails; only then patch and make that check pass. If this cannot be done, say why before fixing.
 - For vague performance requests, clarify the target: latency, throughput, perceived speed, or resource use.
 
+## Upstream Ownership And Simplicity
+
+- Prefer upstream library types, APIs, docs, fixtures, and tests over local mirrors, copied behavior, or custom probes.
+- Do not create local tests for behavior owned by a dependency; use dependency docs, types, fixtures, or tests as source truth.
+- Local tests should cover only this repo's contract, integration glue, and regressions caused by this repo's code.
+- Do not emulate compilers, parsers, formatters, validators, resolvers, or framework internals unless the repo explicitly owns that behavior.
+- Before adding parsing, transformation, normalization, wrapping, abstraction, config, or fallback logic, state why the simpler library/native path is insufficient.
+- If the reason is "might be useful", "handles more cases", "safer", or "future-proof", do not add it.
+- Use the smallest direct API that satisfies the current request.
+- Avoid local structural types for dependencies when the dependency exports types.
+
 ## Hard Gates
 
 Before substantial work:
@@ -40,6 +51,8 @@ Before factual claims:
 Before edits:
 - Worktree truth: run `git status --short`.
 - Dirty file truth: read dirty touched files before editing.
+- Upstream ownership truth: identify whether the repo or a dependency/toolchain/platform owns the behavior before adding local logic or tests.
+- Local logic gate: for non-trivial patches, state `Ownership`, `Upstream source`, `Simplest path`, `Why local logic is needed`, `Tests/checks`, and `Exact files to change`.
 - Confirmation truth: confirm the exact change with the user before editing or running any command that rewrites files.
 - Edit method: use `apply_patch`.
 

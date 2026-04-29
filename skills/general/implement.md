@@ -24,6 +24,13 @@ State assumptions, viable interpretations, tradeoffs, and success criteria befor
 ### Read before editing
 Confirm entry points, constraints, and existing conventions before changing code.
 
+### Upstream ownership preflight
+Before adding local logic, identify who owns the behavior: this repo, dependency, toolchain, platform, or unknown. Prefer upstream library types, APIs, docs, fixtures, and tests over local mirrors, copied behavior, custom probes, or reimplementation.
+
+Do not emulate compilers, parsers, formatters, validators, resolvers, or framework internals unless the repo explicitly owns that behavior.
+
+Before adding parsing, transformation, normalization, wrapping, abstraction, config, fallback logic, or tests, state why the simpler upstream/native path is insufficient.
+
 ### Smallest correct solution
 Keep the change set small and local. Do not add features, options, caching, validation layers, strategy objects, configuration, or future-proofing unless requested or proven necessary.
 

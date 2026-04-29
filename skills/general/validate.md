@@ -21,6 +21,11 @@ Before changing behavior, convert the request into a checkable goal: expected in
 ### Reproduce bugs first
 For bug fixes, write or run the smallest focused test/check that fails the same way the reported bug fails. Then use that same check to prove the fix. If reproduction is not possible, state why before fixing.
 
+### Test repo-owned behavior
+Use tests to prove this repo's contract, integration glue, and regressions caused by this repo's code. Do not create local tests for behavior owned by a dependency when upstream docs, types, fixtures, or tests already establish that behavior.
+
+If validating dependency behavior is necessary, cite or inspect the upstream source first. Add local tests only when this repo's integration with that behavior is the thing being verified.
+
 ### Run the narrowest check
 Pick the smallest relevant command (test, typecheck, lint, build) to validate the change.
 

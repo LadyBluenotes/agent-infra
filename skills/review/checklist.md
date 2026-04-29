@@ -24,6 +24,9 @@ Every changed line traces to the request. No drive-by formatting, comment rewrit
 ### Simplicity
 The solution is the smallest correct shape. No single-use abstractions, speculative options, unused extension points, or future features.
 
+### Upstream ownership
+Flag dependency-owned behavior copied locally, local mirror types where upstream exports types, compiler/parser/framework emulation, speculative edge-case handling, tests that assert dependency behavior, and abstractions not required by the request.
+
 ### Errors
 Failures are explicit and exceptions are not swallowed.
 

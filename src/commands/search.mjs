@@ -1,4 +1,4 @@
-import { resolveRepoRoot, discoverModules, isReferenceModule, searchModules } from '../helpers.mjs'
+import { resolveRepoRoot, discoverModules, findSolidMajorFromPackageJson, isReferenceModule, searchModules } from '../helpers.mjs'
 
 export async function cmdSearch(queryParts, options) {
   const query = Array.isArray(queryParts) ? queryParts.join(' ') : queryParts
@@ -9,8 +9,9 @@ export async function cmdSearch(queryParts, options) {
   }
 
   const modules = await discoverModules(root.basePath)
+  const solidMajor = await findSolidMajorFromPackageJson()
   const searchable = options.references ? modules : modules.filter((module) => !isReferenceModule(module))
-  const filtered = searchModules(searchable, query, { limit: Number(options.limit) || 10 })
+  const filtered = searchModules(searchable, query, { limit: Number(options.limit) || 10, solidMajor })
 
   if (options.json) {
     const output = filtered.map(({ module, score }) => {

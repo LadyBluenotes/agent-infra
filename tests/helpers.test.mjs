@@ -3,10 +3,12 @@ import os from 'node:os'
 import path from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import {
+  findSolidMajorFromPackageJson,
   isReferenceModule,
   moduleMatchesName,
   resolveRepoRoot,
   searchModules,
+  solidMajorFromVersionSpec,
 } from '../src/helpers.mjs'
 
 function makeRegistry(dir) {
@@ -82,6 +84,32 @@ describe('module discovery helpers', () => {
     },
   }
 
+  const solidV1 = {
+    name: 'skills/frameworks/solid/data',
+    relPath: 'skills/frameworks/solid/data.md',
+    frontmatter: {
+      category: 'frameworks',
+      description: 'Solid data-loading guidance for resources and pending UI.',
+      library: 'solidjs',
+      library_version: '1.x',
+      tags: ['solid', 'data'],
+      type: 'sub-skill',
+    },
+  }
+
+  const solidV2 = {
+    name: 'skills/frameworks/solid/v2/async-data',
+    relPath: 'skills/frameworks/solid/v2/async-data.md',
+    frontmatter: {
+      category: 'frameworks',
+      description: 'Solid 2.0 beta async-data guidance for Loading and isPending.',
+      library: 'solidjs',
+      library_version: '2.0 beta',
+      tags: ['solid', 'v2', 'async', 'data'],
+      type: 'sub-skill',
+    },
+  }
+
   it('matches aliases and normalized paths', () => {
     expect(moduleMatchesName(primary, 'vitest')).toBe(true)
     expect(moduleMatchesName(reference, 'skills/tooling/vitest/ref/mocking')).toBe(true)
@@ -95,5 +123,45 @@ describe('module discovery helpers', () => {
   it('ranks specific reference matches above broad primary matches', () => {
     const results = searchModules([primary, reference], 'vitest mocking', { limit: 2 })
     expect(results[0].module.name).toBe('skills/tooling/vitest/ref/mocking')
+  })
+
+  it('defaults unversioned Solid searches to stable v1 skills', () => {
+    const results = searchModules([solidV1, solidV2], 'solid data', { limit: 2 })
+    expect(results[0].module.name).toBe('skills/frameworks/solid/data')
+  })
+
+  it('routes unversioned Solid searches from detected project version', () => {
+    const results = searchModules([solidV1, solidV2], 'solid data', { limit: 2, solidMajor: 2 })
+    expect(results[0].module.name).toBe('skills/frameworks/solid/v2/async-data')
+  })
+
+  it('routes explicit Solid v2 searches to beta skills', () => {
+    const results = searchModules([solidV1, solidV2], 'solid v2 data', { limit: 2, solidMajor: 1 })
+    expect(results[0].module.name).toBe('skills/frameworks/solid/v2/async-data')
+  })
+})
+
+describe('Solid project version detection', () => {
+  it('detects Solid major versions from package specs', () => {
+    expect(solidMajorFromVersionSpec('^1.9.0')).toBe(1)
+    expect(solidMajorFromVersionSpec('>=1 <2')).toBe(1)
+    expect(solidMajorFromVersionSpec('>=1.0.0 <2')).toBe(1)
+    expect(solidMajorFromVersionSpec('2.0.0-beta.8')).toBe(2)
+    expect(solidMajorFromVersionSpec('next')).toBe(2)
+    expect(solidMajorFromVersionSpec('catalog:solid')).toBeNull()
+    expect(solidMajorFromVersionSpec('>=1 <3')).toBeNull()
+  })
+
+  it('walks upward to find solid-js in package.json', async () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'agent-infra-solid-'))
+    const repoDir = path.join(tmpDir, 'repo')
+    const nestedDir = path.join(repoDir, 'packages', 'app')
+    fs.mkdirSync(nestedDir, { recursive: true })
+    fs.writeFileSync(
+      path.join(repoDir, 'package.json'),
+      JSON.stringify({ dependencies: { 'solid-js': '2.0.0-beta.8' } }),
+    )
+
+    await expect(findSolidMajorFromPackageJson(nestedDir)).resolves.toBe(2)
   })
 })

@@ -21,6 +21,9 @@ Identify the observable behavior and keep it identical. Favor refactors that are
 ### Remove premature structure
 Prefer direct functions and local logic over single-use classes, managers, strategies, hooks, or configuration systems.
 
+### Prefer deletion and direct APIs
+Before adding a helper, wrapper, abstraction, fallback, or option, check whether deleting code or using an existing upstream/native API solves the request. If yes, prefer that.
+
 ### Reduce nesting
 Use early returns or small helpers to flatten control flow and make intent clearer.
 

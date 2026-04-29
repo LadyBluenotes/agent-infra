@@ -6,7 +6,7 @@ description: >
 type: sub-skill
 category: frameworks
 library: solidjs
-library_version: "1.8"
+library_version: "1.x"
 sources:
   - https://docs.solidjs.com/concepts/control-flow/conditional-rendering
   - https://docs.solidjs.com/concepts/control-flow/list-rendering

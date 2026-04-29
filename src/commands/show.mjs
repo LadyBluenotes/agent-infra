@@ -1,5 +1,5 @@
 import fsp from 'fs/promises'
-import { resolveRepoRoot, discoverModules, moduleMatchesName, searchModules } from '../helpers.mjs'
+import { resolveRepoRoot, discoverModules, findSolidMajorFromPackageJson, moduleMatchesName, searchModules } from '../helpers.mjs'
 
 export async function cmdShow(name) {
   const root = resolveRepoRoot()
@@ -14,7 +14,8 @@ export async function cmdShow(name) {
   let match = modules.find((m) => moduleMatchesName(m, name))
 
   if (!match) {
-    const results = searchModules(modules, name, { limit: 1 })
+    const solidMajor = await findSolidMajorFromPackageJson()
+    const results = searchModules(modules, name, { limit: 1, solidMajor })
     match = results[0]?.module
   }
 

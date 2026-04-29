@@ -4,13 +4,19 @@ description: SolidJS-specific rules and constraints to keep reactivity correct.
 type: sub-skill
 category: frameworks
 library: solidjs
-library_version: "1.8"
+library_version: "1.x"
 ---
 
 # SolidJS Rules
 
 ## Setup
-Use this as a quick ruleset when working on SolidJS or SolidStart code.
+Use this as a quick ruleset when working on Solid 1.x stable SolidJS or
+SolidStart code. For Solid 2.0 beta, use `skills/frameworks/solid/v2/rules`.
+
+Do not apply Solid 2.0 beta replacements such as `Loading`, `Errored`,
+`onSettled`, `flush`, draft-first store setters, `For keyed={false}` replacing
+`Index`, or `ref` directive factories unless the repo or user explicitly opts
+into Solid 2.
 
 ## Core Patterns
 

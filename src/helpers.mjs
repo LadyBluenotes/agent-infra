@@ -59,6 +59,59 @@ export async function readRegistry(basePath) {
 }
 
 // ---------------------------------------------------------------------------
+// Project dependency detection
+// ---------------------------------------------------------------------------
+
+const DEPENDENCY_FIELDS = [
+  'dependencies',
+  'devDependencies',
+  'peerDependencies',
+  'optionalDependencies',
+]
+
+export function solidMajorFromVersionSpec(spec) {
+  const value = String(spec ?? '').trim().toLowerCase()
+  if (!value) return null
+  if (value === 'next' || value === 'beta' || value.includes('2.0.0-')) return 2
+  if (value.startsWith('workspace:') || value.startsWith('catalog:')) return null
+  if (/^>=\s*1(?:\.\d+){0,2}\s+<\s*2(?:\.|x|$)/.test(value)) return 1
+  if (/^>=\s*2(?:\.\d+){0,2}\s+<\s*3(?:\.|x|$)/.test(value)) return 2
+  if (/^(?:\^|~|=)?\s*2(?:\.|x|$)/.test(value)) return 2
+  if (/^(?:\^|~|=)?\s*1(?:\.|x|$)/.test(value)) return 1
+  return null
+}
+
+export function solidMajorFromLibraryVersion(version) {
+  const value = String(version ?? '').trim().toLowerCase()
+  if (!value) return null
+  if (value.includes('2.0') || value.includes('beta') || value.includes('next')) return 2
+  if (value.includes('1.x') || /^1(?:\.|$)/.test(value)) return 1
+  return null
+}
+
+export async function findSolidMajorFromPackageJson(startDir = process.cwd()) {
+  let dir = startDir
+  while (true) {
+    const pkgPath = path.join(dir, 'package.json')
+    try {
+      const pkg = JSON.parse(await fsp.readFile(pkgPath, 'utf8'))
+      for (const field of DEPENDENCY_FIELDS) {
+        const spec = pkg?.[field]?.['solid-js']
+        const major = solidMajorFromVersionSpec(spec)
+        if (major) return major
+      }
+      if (DEPENDENCY_FIELDS.some((field) => pkg?.[field]?.['solid-js'])) return null
+    } catch (error) {
+      if (error?.code !== 'ENOENT') return null
+    }
+
+    const parent = path.dirname(dir)
+    if (parent === dir) return null
+    dir = parent
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Frontmatter parsing
 // ---------------------------------------------------------------------------
 
@@ -170,7 +223,21 @@ const searchTokens = (query) =>
     .split(/\s+/)
     .filter(Boolean)
 
-export function scoreModule(module, query) {
+const queryMentionsSolid = (tokens) =>
+  tokens.some((token) => token === 'solid' || token === 'solidjs' || token === 'solid-js')
+
+const solidVersionSignal = (tokens) => {
+  if (!queryMentionsSolid(tokens)) return null
+  if (tokens.some((token) => token === 'v2' || token === 'next' || token === 'beta' || /^2(\.|x|$)/.test(token))) {
+    return 2
+  }
+  if (tokens.some((token) => token === 'v1' || token === 'stable' || /^1(\.|x|$)/.test(token))) {
+    return 1
+  }
+  return null
+}
+
+export function scoreModule(module, query, options = {}) {
   const tokens = searchTokens(query)
   if (tokens.length === 0) return 0
 
@@ -204,13 +271,21 @@ export function scoreModule(module, query) {
   if (module.frontmatter?.depth === 'primary') score += 3
   if (isReferenceModule(module)) score -= 2
 
+  if (module.frontmatter?.library === 'solidjs') {
+    const requestedSolidMajor = solidVersionSignal(tokens) ?? options.solidMajor ?? (queryMentionsSolid(tokens) ? 1 : null)
+    const moduleMajor = solidMajorFromLibraryVersion(module.frontmatter?.library_version)
+    if (requestedSolidMajor && moduleMajor) {
+      score += moduleMajor === requestedSolidMajor ? 80 : -80
+    }
+  }
+
   return score
 }
 
 export function searchModules(modules, query, options = {}) {
   const limit = options.limit ?? DEFAULT_SEARCH_LIMIT
   return modules
-    .map((module) => ({ module, score: scoreModule(module, query) }))
+    .map((module) => ({ module, score: scoreModule(module, query, options) }))
     .filter((result) => result.score > 0)
     .sort((a, b) => b.score - a.score || a.module.name.localeCompare(b.module.name))
     .slice(0, limit)

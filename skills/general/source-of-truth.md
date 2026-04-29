@@ -21,6 +21,9 @@ Read exact files before code claims. Read call sites before shared behavior chan
 ### External truth
 Use primary sources first. Use official docs for APIs, libraries, and current behavior. Use live tools for volatile facts.
 
+### Upstream truth
+For dependency behavior, prefer official docs, exported types, source, fixtures, and upstream tests. Do not treat local guesses, local mirror types, or custom reproductions as stronger truth than the upstream source.
+
 ### Missing truth
 Say `Unknown` when no source exists. Say `Not verified` when behavior was not checked.
 

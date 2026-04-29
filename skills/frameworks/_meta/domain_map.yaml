@@ -1,6 +1,6 @@
 version: 1
 category: frameworks
-generated_at: 2026-04-16T20:53:39.414Z
+generated_at: 2026-04-28T17:48:50.645Z
 skills:
   - id: skills/frameworks/react/async
     path: skills/frameworks/react/async.md
@@ -668,5 +668,194 @@ skills:
       - resource
       - refreshes
       - ui
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/actions-optimistic
+    path: skills/frameworks/solid/v2/actions-optimistic.md
+    description: >
+      Solid 2.0 beta mutation guidance for action, createOptimistic,
+      createOptimisticStore, refresh, transition-coordinated optimistic UI, and
+      replacing manual pending/refetch mutation flows.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - mutation
+      - guidance
+      - action
+      - createoptimistic
+      - createoptimisticstore
+      - refresh
+      - transition-coordinated
+      - optimistic
+      - ui
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/async-data
+    path: skills/frameworks/solid/v2/async-data.md
+    description: >
+      Solid 2.0 beta async-data guidance for async computations, Loading,
+      Errored, isPending, latest, refresh, resolve, replacing createResource,
+      and avoiding stale or tearing-prone async UI.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - async-data
+      - guidance
+      - async
+      - computations
+      - loading
+      - errored
+      - ispending
+      - latest
+      - refresh
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/control-flow
+    path: skills/frameworks/solid/v2/control-flow.md
+    description: >
+      Solid 2.0 beta control-flow guidance for For accessors, replacing Index
+      with For keyed=false, Dynamic/dynamic migration, Loading coordination,
+      Reveal, and function-child reactive reads.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - control-flow
+      - guidance
+      - accessors
+      - replacing
+      - index
+      - keyedfalse
+      - dynamicdynamic
+      - migration
+      - loading
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/dom
+    path: skills/frameworks/solid/v2/dom.md
+    description: >
+      Solid 2.0 beta DOM guidance for standards-aligned attributes, class object
+      and array forms, boolean attributes, ref directive factories, array refs,
+      and removal of classList, use:, attr:, bool:, and oncapture:.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - dom
+      - guidance
+      - standards-aligned
+      - attributes
+      - class
+      - object
+      - array
+      - forms
+      - boolean
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/reactivity
+    path: skills/frameworks/solid/v2/reactivity.md
+    description: >
+      Solid 2.0 beta reactivity guidance for microtask batching, flush, split
+      effects, owned-scope write restrictions, top-level read warnings,
+      onSettled, and derived signal patterns.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - reactivity
+      - guidance
+      - microtask
+      - batching
+      - flush
+      - split
+      - effects
+      - owned-scope
+      - write
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/rules
+    path: skills/frameworks/solid/v2/rules.md
+    description: >
+      Solid 2.0 beta rules for version-scoped reactivity, async UI, stores,
+      control flow, DOM directives, migration guardrails, and avoiding Solid 1.x
+      API carryover.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - rules
+      - version-scoped
+      - reactivity
+      - async
+      - ui
+      - stores
+      - control
+      - flow
+      - dom
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/ssr
+    path: skills/frameworks/solid/v2/ssr.md
+    description: >
+      Solid 2.0 beta SSR and hydration guidance for async computations, Loading
+      boundaries, Errored boundaries, deterministic async rendering, hydration
+      timing, and avoiding Solid 1.x Suspense assumptions.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - ssr
+      - hydration
+      - guidance
+      - async
+      - computations
+      - loading
+      - boundaries
+      - errored
+      - deterministic
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/v2/stores
+    path: skills/frameworks/solid/v2/stores.md
+    description: >
+      Solid 2.0 beta store guidance for draft-first setters, storePath
+      migration, merge/omit, snapshot, deep, reconcile, createProjection, and
+      function-form createStore.
+    keywords:
+      - solid
+      - "20"
+      - beta
+      - store
+      - guidance
+      - draft-first
+      - setters
+      - storepath
+      - migration
+      - mergeomit
+      - snapshot
+      - deep
+    related: []
+    load_with: []
+  - id: skills/frameworks/solid/version-selection
+    path: skills/frameworks/solid/version-selection.md
+    description: >
+      Solid version-selection guidance for choosing Solid 1.x stable skills
+      versus Solid 2.0 beta skills, detecting repo version signals, and avoiding
+      API cross-contamination during migration work.
+    keywords:
+      - solid
+      - version-selection
+      - guidance
+      - choosing
+      - 1x
+      - stable
+      - skills
+      - versus
+      - "20"
+      - beta
+      - detecting
+      - repo
     related: []
     load_with: []
