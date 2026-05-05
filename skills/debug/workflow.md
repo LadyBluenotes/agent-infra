@@ -1,43 +1,106 @@
 ---
 name: skills/debug/workflow
-description: A practical debugging workflow for errors, test failures, and unexpected behavior.
+description: >
+  Feedback-loop-first debugging workflow for errors, test failures, flaky
+  behavior, performance regressions, repros, hypotheses, instrumentation, root
+  fixes, regression checks, and cleanup.
 type: sub-skill
 category: debug
+aliases:
+  - diagnose
+  - debugging workflow
+tags:
+  - debug
+  - diagnosis
+  - feedback loop
 ---
 
 # Debugging Workflow
 
 ## Setup
-Use this workflow when you have a concrete failure (error, failing test, incorrect output). Start by capturing the exact failure and a minimal, repeatable way to trigger it.
+
+Use this workflow when you have a concrete failure, failing test, incorrect
+output, flaky behavior, or performance regression.
 
 ## Core Patterns
 
-### Capture and narrow
-Start with the exact error message and reproduce it with the smallest input. Reduce variables until the failure is consistent and isolated.
+### Build the feedback loop first
 
-### Hypothesis, then smallest test
-Form one hypothesis and validate it with the smallest possible experiment (log, breakpoint, targeted test, or single input case). Avoid multiple changes at once.
+```text
+Bug report -> focused pass/fail command -> original scenario verification.
+```
+
+Spend most of the effort on a fast, deterministic loop. Use a failing test,
+CLI fixture, curl script, browser script, replayed trace, or small harness that
+shows the user's failure mode.
+
+### Reproduce and narrow
+
+```text
+Exact symptom:
+Smallest trigger:
+Original trigger:
+```
+
+Confirm the loop fails for the same reason the user reported. Reduce variables
+until the failure is isolated enough to debug.
+
+### Rank falsifiable hypotheses
+
+```text
+1. If X causes the failure, changing Y should make Z happen.
+2. If A causes the failure, instrumenting B should show C.
+```
+
+List 3-5 hypotheses before probing when the cause is not obvious. Each one
+needs a prediction that can be disproven.
+
+### Instrument one prediction
+
+```text
+[DEBUG-a4f2] relevant boundary value
+```
+
+Probe only the boundary that distinguishes hypotheses. Prefer debugger or REPL
+inspection where available. If temporary logs are needed, tag them so cleanup is
+mechanical.
 
 ### Fix at the root
-Implement the smallest change that addresses the root cause, not just the symptom. Confirm the fix on the minimal repro first, then on the original scenario.
 
-### Verify and guard
-Re-run the most relevant test or command. If the failure could regress, add a small test or check near the root cause.
+```text
+Failing loop -> root-cause patch -> same loop passes -> original scenario passes.
+```
+
+Implement the smallest change that addresses the cause, not the symptom.
+
+### Verify and clean up
+
+```text
+Focused loop passes.
+Original scenario passes.
+Regression test added where the repo owns the behavior.
+Temporary debug output removed.
+```
+
+If no correct regression seam exists, say that. Do not add shallow tests that
+exercise a different failure pattern.
 
 ## Common Mistakes
 
-### Changing code without a repro
+### HIGH Changing code without a loop
+
 Wrong
 ```text
-"It only happens sometimes, so I just added a try/catch."
+"I inspected the code and patched the likely cause."
 ```
 Correct
 ```text
-"I reproduced the error with input X and isolated it to function Y."
+"I reproduced the reported failure with this focused command, then patched it."
 ```
-Explanation: Without a repro, changes are guesswork and often mask the real bug.
+Explanation: Without a pass/fail loop, changes are guesses and can mask the real bug.
 
-### Testing multiple hypotheses at once
+### HIGH Testing multiple hypotheses at once
+
 Wrong
 ```text
 "I changed three things and it went away."
@@ -48,7 +111,8 @@ Correct
 ```
 Explanation: Single-variable experiments make causality clear and prevent regressions.
 
-### Fixing the symptom only
+### HIGH Fixing the symptom only
+
 Wrong
 ```text
 "I wrapped it in a try/catch so it doesn't crash."
@@ -58,3 +122,15 @@ Correct
 "I fixed the null value at its source and added a guard test."
 ```
 Explanation: Symptom-only fixes hide the underlying defect and make debugging harder later.
+
+### MEDIUM Leaving debug output behind
+
+Wrong
+```text
+"I added broad console logging and left it because it might help later."
+```
+Correct
+```text
+"I tagged temporary logs, verified the fix, then removed them."
+```
+Explanation: Debug instrumentation should not become production noise.

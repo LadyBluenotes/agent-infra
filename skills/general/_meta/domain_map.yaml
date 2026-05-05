@@ -1,6 +1,6 @@
 version: 1
 category: general
-generated_at: 2026-04-24T16:38:52.943Z
+generated_at: 2026-05-05T00:23:07.089Z
 skills:
   - id: skills/general/accessibility
     path: skills/general/accessibility.md
@@ -165,6 +165,27 @@ skills:
       - claim
       - handling
       - across
+    related: []
+    load_with: []
+  - id: skills/general/tdd
+    path: skills/general/tdd.md
+    description: >
+      Test-driven development workflow for red-green-refactor, tracer-bullet
+      vertical slices, behavior-first tests, public interfaces, and refactoring
+      only after tests pass.
+    keywords:
+      - test-driven
+      - development
+      - workflow
+      - red-green-refactor
+      - tracer-bullet
+      - vertical
+      - slices
+      - behavior-first
+      - tests
+      - public
+      - interfaces
+      - refactoring
     related: []
     load_with: []
   - id: skills/general/validate

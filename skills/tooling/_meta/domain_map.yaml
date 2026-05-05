@@ -1,7 +1,131 @@
 version: 1
 category: tooling
-generated_at: 2026-04-24T01:50:17.956Z
+generated_at: 2026-05-05T16:01:37.801Z
 skills:
+  - id: skills/tooling/chrome-devtools/accessibility-debugging
+    path: skills/tooling/chrome-devtools/accessibility-debugging.md
+    description: >
+      Chrome DevTools MCP accessibility debugging workflow for accessibility
+      snapshots, labels, keyboard flow, tap targets, contrast checks, page
+      metadata, and focused browser-side accessibility probes.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - accessibility
+      - debugging
+      - workflow
+      - snapshots
+      - labels
+      - keyboard
+      - flow
+      - tap
+      - targets
+    related: []
+    load_with: []
+  - id: skills/tooling/chrome-devtools/cli
+    path: skills/tooling/chrome-devtools/cli.md
+    description: >
+      Chrome DevTools MCP CLI guidance for installing, checking status,
+      starting, stopping, and troubleshooting the `chrome-devtools` command.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - cli
+      - guidance
+      - installing
+      - checking
+      - status
+      - starting
+      - stopping
+      - troubleshooting
+      - chrome-devtools
+    related: []
+    load_with: []
+  - id: skills/tooling/chrome-devtools/mcp
+    path: skills/tooling/chrome-devtools/mcp.md
+    description: >
+      Chrome DevTools MCP workflow for browser automation, page inspection,
+      performance traces, DOM snapshots, console/network evidence, and targeted
+      browser debugging through MCP tools.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - workflow
+      - browser
+      - automation
+      - page
+      - inspection
+      - performance
+      - traces
+      - dom
+      - snapshots
+    related: []
+    load_with: []
+  - id: skills/tooling/chrome-devtools/ref/a11y-snippets
+    path: skills/tooling/chrome-devtools/ref/a11y-snippets.md
+    description: >
+      Chrome DevTools MCP accessibility snippet reference for orphaned form
+      inputs, tap target dimensions, approximate color contrast, and page-level
+      metadata.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - accessibility
+      - snippet
+      - reference
+      - orphaned
+      - form
+      - inputs
+      - tap
+      - target
+      - dimensions
+    related: []
+    load_with: []
+  - id: skills/tooling/chrome-devtools/ref/installation
+    path: skills/tooling/chrome-devtools/ref/installation.md
+    description: >
+      Chrome DevTools MCP CLI installation reference for global npm install,
+      status checks, PATH issues, permission errors, and stale CLI versions.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - cli
+      - installation
+      - reference
+      - global
+      - npm
+      - install
+      - status
+      - checks
+      - path
+    related: []
+    load_with: []
+  - id: skills/tooling/chrome-devtools/troubleshooting
+    path: skills/tooling/chrome-devtools/troubleshooting.md
+    description: >
+      Chrome DevTools MCP troubleshooting workflow for connection failures,
+      missing browser tools, blank pages, stale sessions, protocol errors, and
+      environment setup issues.
+    keywords:
+      - chrome
+      - devtools
+      - mcp
+      - troubleshooting
+      - workflow
+      - connection
+      - failures
+      - missing
+      - browser
+      - tools
+      - blank
+      - pages
+    related: []
+    load_with: []
   - id: skills/tooling/cli/skill-discovery
     path: skills/tooling/cli/skill-discovery.md
     description: >

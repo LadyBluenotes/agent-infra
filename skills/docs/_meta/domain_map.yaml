@@ -1,7 +1,27 @@
 version: 1
 category: docs
-generated_at: 2026-04-16T20:53:39.378Z
+generated_at: 2026-05-05T00:23:07.014Z
 skills:
+  - id: skills/docs/adr
+    path: skills/docs/adr.md
+    description: >
+      ADR guidance for recording hard-to-reverse, surprising, tradeoff-driven
+      technical decisions in short source-backed decision records.
+    keywords:
+      - adr
+      - guidance
+      - recording
+      - hard-to-reverse
+      - surprising
+      - tradeoff-driven
+      - technical
+      - decisions
+      - short
+      - source-backed
+      - decision
+      - records
+    related: []
+    load_with: []
   - id: skills/docs/explanation
     path: skills/docs/explanation.md
     description: >

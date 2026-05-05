@@ -1,6 +1,6 @@
 version: 1
 category: performance
-generated_at: 2026-04-16T20:53:39.468Z
+generated_at: 2026-05-05T16:01:37.750Z
 skills:
   - id: skills/performance/benchmark-design
     path: skills/performance/benchmark-design.md
@@ -128,6 +128,27 @@ skills:
       - async
     related: []
     load_with: []
+  - id: skills/performance/lcp-debugging
+    path: skills/performance/lcp-debugging.md
+    description: >
+      Largest Contentful Paint debugging workflow with Chrome DevTools MCP,
+      Performance API evidence, LCP element identification, load subpart
+      analysis, render delay isolation, and targeted LCP optimizations.
+    keywords:
+      - largest
+      - contentful
+      - paint
+      - debugging
+      - workflow
+      - chrome
+      - devtools
+      - mcp
+      - performance
+      - api
+      - evidence
+      - lcp
+    related: []
+    load_with: []
   - id: skills/performance/optimize
     path: skills/performance/optimize.md
     description: >
@@ -210,6 +231,26 @@ skills:
       - tradeoffs
     related: []
     load_with: []
+  - id: skills/performance/ref/elements-and-size
+    path: skills/performance/ref/elements-and-size.md
+    description: >
+      LCP element and size reference for eligible element types, Chromium
+      exclusions, visible area rules, and text/image sizing.
+    keywords:
+      - lcp
+      - element
+      - size
+      - reference
+      - eligible
+      - types
+      - chromium
+      - exclusions
+      - visible
+      - area
+      - rules
+      - textimage
+    related: []
+    load_with: []
   - id: skills/performance/ref/font-loading
     path: skills/performance/ref/font-loading.md
     description: >
@@ -250,6 +291,47 @@ skills:
       - budget
     related: []
     load_with: []
+  - id: skills/performance/ref/lcp-breakdown
+    path: skills/performance/ref/lcp-breakdown.md
+    description: >
+      LCP breakdown reference for TTFB, resource load delay, resource load
+      duration, element render delay, and choosing the right Largest Contentful
+      Paint fix.
+    keywords:
+      - lcp
+      - breakdown
+      - reference
+      - ttfb
+      - resource
+      - load
+      - delay
+      - duration
+      - element
+      - render
+      - choosing
+      - right
+    related: []
+    load_with: []
+  - id: skills/performance/ref/lcp-snippets
+    path: skills/performance/ref/lcp-snippets.md
+    description: >
+      LCP JavaScript snippet reference for Chrome DevTools MCP evaluate_script:
+      identify the LCP element and audit common DOM-based LCP issues.
+    keywords:
+      - lcp
+      - javascript
+      - snippet
+      - reference
+      - chrome
+      - devtools
+      - mcp
+      - evaluatescript
+      - identify
+      - element
+      - audit
+      - common
+    related: []
+    load_with: []
   - id: skills/performance/ref/loading
     path: skills/performance/ref/loading.md
     description: >
@@ -269,6 +351,27 @@ skills:
       - more
       - detail
       - preload
+    related: []
+    load_with: []
+  - id: skills/performance/ref/optimization-strategies
+    path: skills/performance/ref/optimization-strategies.md
+    description: >
+      LCP optimization strategy reference for resource discovery, preload,
+      fetchpriority, lazy loading, render-blocking CSS and JS, image sizing, CDN
+      placement, caching, redirects, and TTFB.
+    keywords:
+      - lcp
+      - optimization
+      - strategy
+      - reference
+      - resource
+      - discovery
+      - preload
+      - fetchpriority
+      - lazy
+      - loading
+      - render-blocking
+      - css
     related: []
     load_with: []
   - id: skills/performance/ref/profiling

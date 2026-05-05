@@ -1,7 +1,28 @@
 version: 1
 category: review
-generated_at: 2026-04-24T16:38:53.001Z
+generated_at: 2026-05-05T00:23:07.139Z
 skills:
+  - id: skills/review/architecture
+    path: skills/review/architecture.md
+    description: >
+      Architecture-review guidance for finding shallow modules, missing seams,
+      poor locality, weak leverage, testability problems, and deep-module
+      refactor candidates.
+    keywords:
+      - architecture-review
+      - guidance
+      - finding
+      - shallow
+      - modules
+      - missing
+      - seams
+      - poor
+      - locality
+      - weak
+      - leverage
+      - testability
+    related: []
+    load_with: []
   - id: skills/review/checklist
     path: skills/review/checklist.md
     description: >

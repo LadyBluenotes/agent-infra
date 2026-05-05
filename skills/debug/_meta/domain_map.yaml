@@ -1,6 +1,6 @@
 version: 1
 category: debug
-generated_at: 2026-04-16T20:14:20.870Z
+generated_at: 2026-05-05T16:01:37.632Z
 skills:
   - id: skills/debug/local-environment
     path: skills/debug/local-environment.md
@@ -22,22 +22,107 @@ skills:
       - mismatches
     related: []
     load_with: []
+  - id: skills/debug/memory-leak-debugging
+    path: skills/debug/memory-leak-debugging.md
+    description: >
+      Browser memory leak debugging workflow with Chrome DevTools MCP heap
+      snapshots, baseline-target-final comparison, retainer traces, detached DOM
+      node checks, closures, event listeners, caches, and Memlab analysis.
+    keywords:
+      - browser
+      - memory
+      - leak
+      - debugging
+      - workflow
+      - chrome
+      - devtools
+      - mcp
+      - heap
+      - snapshots
+      - baseline-target-final
+      - comparison
+    related: []
+    load_with: []
+  - id: skills/debug/ref/common-leaks
+    path: skills/debug/ref/common-leaks.md
+    description: >
+      Common browser memory leak reference for uncleared event listeners,
+      detached DOM nodes, unintentional globals, closures, and unbounded caches.
+    keywords:
+      - common
+      - browser
+      - memory
+      - leak
+      - reference
+      - uncleared
+      - event
+      - listeners
+      - detached
+      - dom
+      - nodes
+      - unintentional
+    related: []
+    load_with: []
+  - id: skills/debug/ref/compare-snapshots
+    path: skills/debug/ref/compare-snapshots.md
+    description: >
+      Heap snapshot comparison helper reference for using compare_snapshots.js
+      to summarize growing object counts and common browser memory leak
+      indicators.
+    keywords:
+      - heap
+      - snapshot
+      - comparison
+      - helper
+      - reference
+      - comparesnapshotsjs
+      - summarize
+      - growing
+      - object
+      - counts
+      - common
+      - browser
+    related: []
+    load_with: []
+  - id: skills/debug/ref/memlab
+    path: skills/debug/ref/memlab.md
+    description: >
+      Memlab reference for browser memory leak analysis, three-snapshot
+      workflows, find-leaks, analyze snapshot, and retainer trace
+      interpretation.
+    keywords:
+      - memlab
+      - reference
+      - browser
+      - memory
+      - leak
+      - analysis
+      - three-snapshot
+      - workflows
+      - find-leaks
+      - analyze
+      - snapshot
+      - retainer
+    related: []
+    load_with: []
   - id: skills/debug/workflow
     path: skills/debug/workflow.md
-    description: A practical debugging workflow for errors, test failures, and
-      unexpected behavior.
+    description: >
+      Feedback-loop-first debugging workflow for errors, test failures, flaky
+      behavior, performance regressions, repros, hypotheses, instrumentation,
+      root fixes, regression checks, and cleanup.
     keywords:
-      - practical
+      - feedback-loop-first
       - debugging
       - workflow
       - errors
       - test
       - failures
-      - unexpected
+      - flaky
       - behavior
-      - setup
-      - core
-      - patterns
-      - capture
+      - performance
+      - regressions
+      - repros
+      - hypotheses
     related: []
     load_with: []
